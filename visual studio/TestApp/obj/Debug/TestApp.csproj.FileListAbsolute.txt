@@ -1,0 +1,7 @@
+C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\bin\Debug\TestApp.exe.config
+C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\bin\Debug\TestApp.exe
+C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\bin\Debug\TestApp.pdb
+C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.csprojAssemblyReference.cache
+C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.exe
+C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.pdb
