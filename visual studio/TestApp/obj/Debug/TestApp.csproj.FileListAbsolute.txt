@@ -5,3 +5,10 @@ C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\obj\Debug\Test
 C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
 C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.exe
 C:\Users\jimtr\Documents\GitHub\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.pdb
+C:\MyWork\adopse-imbd\visual studio\TestApp\bin\Debug\TestApp.exe.config
+C:\MyWork\adopse-imbd\visual studio\TestApp\bin\Debug\TestApp.exe
+C:\MyWork\adopse-imbd\visual studio\TestApp\bin\Debug\TestApp.pdb
+C:\MyWork\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.csprojAssemblyReference.cache
+C:\MyWork\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.csproj.CoreCompileInputs.cache
+C:\MyWork\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.exe
+C:\MyWork\adopse-imbd\visual studio\TestApp\obj\Debug\TestApp.pdb
