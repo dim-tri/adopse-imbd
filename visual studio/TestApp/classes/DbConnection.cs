@@ -12,13 +12,13 @@ namespace TestApp.classes
 {
     class DbConnection
     {
-        private string server = "localhost";
-        private string user = "root";
-        private string database = "imdb";
-        private string port = "3306";
-        private string pass = "";
+        private readonly string server = "localhost";
+        private readonly string user = "root";
+        private readonly string database = "imdb";
+        private readonly string port = "3306";
+        private readonly string pass = "";
         static string connStr = "";
-        MySqlConnection conn = new MySqlConnection();
+        public static MySqlConnection conn;
 
         //constructor to initialize db connection
         public DbConnection() 
@@ -37,7 +37,7 @@ namespace TestApp.classes
                 Console.WriteLine("Error: " + ex.ToString());
             }
         }
-
+        
         //function to close db connection
         public void connectionClose()
         {
@@ -94,6 +94,12 @@ namespace TestApp.classes
                 Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
             }
 
+        }
+
+        public MySqlConnection Conn
+        {
+            get { return conn; }
+           
         }
 
 
