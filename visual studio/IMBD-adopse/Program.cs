@@ -21,6 +21,8 @@ namespace IMBD_adopse
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
+            Debug.WriteLine("New Test!!!!!");
+
             try
             {
                 Movie obj = new Movie();
@@ -29,14 +31,14 @@ namespace IMBD_adopse
                 Console.WriteLine("\n");
                 foreach (Movie movie in movies)
                 {
-                    Console.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
-                    Console.WriteLine("\n");
+                    Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
+                    Debug.WriteLine("\n");
                 }
-                Console.WriteLine("Results: " + movies.Count());
+                Debug.WriteLine("Results: " + movies.Count());
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error: " + e.Message);
+                Debug.WriteLine("Error: " + e.Message);
             }
             Console.ReadLine();
 
