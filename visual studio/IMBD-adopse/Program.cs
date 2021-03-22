@@ -21,8 +21,7 @@ namespace IMBD_adopse
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            Debug.WriteLine("New Test!!!!!");
-
+            /*
             try
             {
                 Movie obj = new Movie();
@@ -41,7 +40,7 @@ namespace IMBD_adopse
                 Debug.WriteLine("Error: " + e.Message);
             }
             Console.ReadLine();
-
+            */
         
 
     }
