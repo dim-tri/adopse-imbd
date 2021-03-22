@@ -1,0 +1,289 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
+namespace IMBD_adopse.classes
+{
+    class Movie
+    {
+        //movie properties
+        private int id;
+        private int category_id;
+        private string name;
+        private int year;
+        private double rank;
+        private string director;
+        private string stars;
+        private string duration;
+        private string gentre;
+        private string release;
+        private string plot;
+        private string photo;
+        private string created_at;
+        private string updated_at;
+
+        //movie constructor
+        public Movie() {}
+
+        //get - set properties
+
+        public int Id   
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public int Category_id
+        {
+            get { return category_id; }
+            set { category_id = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public int Year
+        {
+            get { return year; }
+            set { year = value; }
+        }
+
+        public double Rank
+        {
+            get { return rank; }
+            set { rank = value; }
+        }
+
+        public string Director
+        {
+            get { return director; }
+            set { director = value; }
+        }
+
+        public string Stars
+        {
+            get { return stars; }
+            set { stars = value; }
+        }
+
+        public string Duration
+        {
+            get { return duration; }
+            set { duration = value; }
+        }
+
+        public string Gentre
+        {
+            get { return gentre; }
+            set { gentre = value; }
+        }
+
+        public string Release
+        {
+            get { return release; }
+            set { release = value; }
+        }
+
+        public string Plot
+        {
+            get { return plot; }
+            set { plot = value; }
+        }
+
+        public string Photo
+        {
+            get { return photo; }
+            set { photo = value; }
+        }
+
+        public string Created_at
+        {
+            get { return created_at; }
+            set { created_at = value; }
+        }
+
+        public string Updated_at
+        {
+            get { return updated_at; }
+            set { updated_at = value; }
+        }
+
+        //functions
+        //function to get all movies
+        public List<Movie> getMovies() 
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                string sql = "SELECT * FROM movies";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                int num_collumns = reader.FieldCount;
+                List<Movie> movies = new List<Movie>();
+                while (reader.Read())
+                {
+                movies.Add(new Movie {Id = (int)reader[0],Gentre = reader[8].ToString(), Name = (string)reader[2], Year =(int) reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
+                }
+                 reader.Close();
+                 db.connectionClose();
+             
+                return movies ;
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+            }
+            return null;
+            
+        }
+
+        //fucntion to get one movie by id
+        public List<Movie> getMovies(int id)
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "SELECT * FROM movies WHERE id = @id Limit 1";
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Prepare();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                int num_collumns = reader.FieldCount;
+                List<Movie> movies = new List<Movie>();
+                while (reader.Read())
+                {
+                    movies.Add(new Movie { Id = (int)reader[0], Gentre = reader[8].ToString(), Name = (string)reader[2], Year = (int)reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
+                }
+                reader.Close();
+                db.connectionClose();
+
+                return movies;
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+            }
+            return null;
+
+        }
+
+        //fucntion to get specified results of movies offers sorting by column
+        public List<Movie> getMovies(int res , string sort)
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                MySqlDataReader reader;
+
+                if (sort == "asc")
+                {
+                    cmd.CommandText = "SELECT * FROM movies ORDER BY year ASC LIMIT @res";
+                    cmd.Parameters.AddWithValue("@res", res);
+                    cmd.Prepare();
+                    reader = cmd.ExecuteReader();
+
+                    List<Movie> movies = new List<Movie>();
+                    while (reader.Read())
+                    {
+                        movies.Add(new Movie { Id = (int)reader[0], Gentre = reader[8].ToString(), Name = (string)reader[2], Year = (int)reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
+                    }
+                    reader.Close();
+                    db.connectionClose();
+
+                    return movies;
+                }
+                else if (sort == "desc")
+                {
+                    cmd.CommandText = "SELECT * FROM movies ORDER BY year DESC LIMIT @res";
+                    cmd.Parameters.AddWithValue("@res", res);
+                    cmd.Prepare();
+                    reader = cmd.ExecuteReader();
+
+                    List<Movie> movies = new List<Movie>();
+                    while (reader.Read())
+                    {
+                        movies.Add(new Movie { Id = (int)reader[0], Gentre = reader[8].ToString(), Name = (string)reader[2], Year = (int)reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
+                    }
+                    reader.Close();
+                    db.connectionClose();
+
+                    return movies;
+                }
+                else
+                {
+                    return null;
+                }
+                
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+            }
+            return null;
+
+        }
+
+        // function to set new movie
+        public Movie setNewMovie(Movie obj)
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "INSERT INTO movies(category_id,name,year,rank,director,stars,duration,gentre,release,plot,photo) VALUES (@cat_id,@name,@year,@rank,@director,@stars,@duration,@gentre,@release,@plot,@photo)";
+                // @cat_id,@name,@year,@rank,@director,@stars,@duration,@gentre,@release,@plot,@photo
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+            }
+            catch(MySqlException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+
+
+                return null;
+        }
+
+
+
+
+    }
+}

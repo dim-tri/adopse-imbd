@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "IMBD-adopse": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
