@@ -24,21 +24,22 @@ namespace IMBD_adopse
             try
             {
                 Movie obj = new Movie();
-                List<Movie> movies = obj.getMovies();
+                List<Movie> movies = obj.getMovies(3,"desc");
                 //List<Movie> moviess = movies.OrderBy(o => o.Name).ToList();
-                Console.WriteLine("\n");
+                Debug.WriteLine("\n");
                 foreach (Movie movie in movies)
                 {
-                    Console.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
-                    Console.WriteLine("\n");
+                    Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
+                    Debug.WriteLine("\n");
                 }
-                Console.WriteLine("Results: " + movies.Count());
+                Debug.WriteLine("Results: " + movies.Count());
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error: " + e.Message);
+                Debug.WriteLine("Error: " + e.Message);
             }
-            Console.ReadLine();
+            
+           
 
         
 
