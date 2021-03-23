@@ -33,13 +33,20 @@ namespace IMBD_adopse
                           Debug.WriteLine("\n");
                       }
                       Debug.WriteLine("Results: " + movies.Count());*/
-                obj.Category_id = 1;
-                obj.Name = "test movie2";
-                obj.Gentre = "Action";
-                obj.Year = 2021;
-                obj.Rank = 9.7;
+                /*   obj.Category_id = 1;
+                   obj.Name = "test movie2";
+                   obj.Gentre = "Action";
+                   obj.Year = 2021;
+                   obj.Rank = 9.7;
 
-                obj.setNewMovie(obj);
+                   obj.setNewMovie(obj);*/
+                List<Movie> results = obj.Search("sher");
+                foreach (Movie movie in results) 
+                {
+                    Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
+                    Debug.WriteLine("\n");
+                }
+                Debug.WriteLine("Results: " + results.Count());
             }
             catch (Exception e)
             {

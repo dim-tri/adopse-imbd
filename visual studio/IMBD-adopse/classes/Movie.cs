@@ -283,6 +283,46 @@ namespace IMBD_adopse.classes
                 return null;
         }
 
+        public List<Movie> Search(string query) 
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                MySqlDataReader reader;
+                cmd.CommandText = "call search_movie(@query)";
+                cmd.Parameters.AddWithValue("@query", query);
+                cmd.Prepare();
+                reader = cmd.ExecuteReader();
+                List<Movie> movies = new List<Movie>();
+                while (reader.Read()) 
+                {
+                    movies.Add(new Movie { Id = (int)reader[0], Gentre = reader[8].ToString(), Name = (string)reader[2], Year = (int)reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
+                }
+
+                reader.Close();
+                db.connectionClose();
+                return movies;
+
+            }
+            catch (MySqlException ex) 
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            return null;
+        }
+
+
+
+
+
+
+
+
+
+        
 
 
 
