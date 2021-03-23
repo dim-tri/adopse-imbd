@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using System.Diagnostics;
 
 namespace IMBD_adopse.classes
 {
@@ -139,11 +140,11 @@ namespace IMBD_adopse.classes
             }
             catch (MySqlException ex)
             {
-                Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error: " + e.Message);
+                Debug.WriteLine("Error: " + e.Message);
             }
             return null;
             
@@ -175,17 +176,17 @@ namespace IMBD_adopse.classes
             }
             catch (MySqlException ex)
             {
-                Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error: " + e.Message);
+                Debug.WriteLine("Error: " + e.Message);
             }
             return null;
 
         }
 
-        //fucntion to get specified results of movies offers sorting by column
+        //fucntion to get specified results of movies offers sorting by year (both acsending and descending order)
         public List<Movie> getMovies(int res , string sort)
         {
             try
@@ -238,11 +239,11 @@ namespace IMBD_adopse.classes
             }
             catch (MySqlException ex)
             {
-                Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
             }
             catch (Exception e)
             {
-                Console.WriteLine("Error: " + e.Message);
+                Debug.WriteLine("Error: " + e.Message);
             }
             return null;
 
@@ -257,25 +258,25 @@ namespace IMBD_adopse.classes
                 MySqlConnection conn = db.Conn;
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO movies(category_id,name,year,rank,director,stars,duration,gentre,release,plot,photo) VALUES (@cat_id,@name,@year,@rank,@director,@stars,@duration,@gentre,@release,@plot,@photo)";
-                // @cat_id,@name,@year,@rank,@director,@stars,@duration,@gentre,@release,@plot,@photo
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@id", id);
+                cmd.CommandText = "INSERT INTO `movies`(`category_id`,`name`,`year`,`rank`,`director`,`stars`,`duration`,`gentre`,`release`,`plot`,`photo`) VALUES(@cat_id,@name,@year,@rank,@director,@stars,@duration,@gentre,@release,@plot,@photo)";
+                cmd.Parameters.AddWithValue("@cat_id", obj.Category_id);
+                cmd.Parameters.AddWithValue("@name", obj.Name);
+                cmd.Parameters.AddWithValue("@year", obj.Year);
+                cmd.Parameters.AddWithValue("@rank", obj.Rank);
+                cmd.Parameters.AddWithValue("@director", obj.Director);
+                cmd.Parameters.AddWithValue("@stars", obj.Stars);
+                cmd.Parameters.AddWithValue("@duration", obj.Duration);
+                cmd.Parameters.AddWithValue("@gentre", obj.Gentre);
+                cmd.Parameters.AddWithValue("@release", obj.Release);
+                cmd.Parameters.AddWithValue("@plot", obj.Plot);
+                cmd.Parameters.AddWithValue("@photo", obj.Photo);
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
+                Debug.WriteLine("Movie Created !!");
             }
             catch(MySqlException ex)
             {
-                Console.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
             }
 
 

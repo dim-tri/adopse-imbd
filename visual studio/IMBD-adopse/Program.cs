@@ -24,15 +24,22 @@ namespace IMBD_adopse
             try
             {
                 Movie obj = new Movie();
-                List<Movie> movies = obj.getMovies(3,"desc");
+               // List<Movie> movies = obj.getMovies();
                 //List<Movie> moviess = movies.OrderBy(o => o.Name).ToList();
                 Debug.WriteLine("\n");
-                foreach (Movie movie in movies)
-                {
-                    Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
-                    Debug.WriteLine("\n");
-                }
-                Debug.WriteLine("Results: " + movies.Count());
+                /*      foreach (Movie movie in movies)
+                      {
+                          Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
+                          Debug.WriteLine("\n");
+                      }
+                      Debug.WriteLine("Results: " + movies.Count());*/
+                obj.Category_id = 1;
+                obj.Name = "test movie2";
+                obj.Gentre = "Action";
+                obj.Year = 2021;
+                obj.Rank = 9.7;
+
+                obj.setNewMovie(obj);
             }
             catch (Exception e)
             {
