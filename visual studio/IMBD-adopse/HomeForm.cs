@@ -49,6 +49,13 @@ namespace IMBD_adopse
                 movieImage.ImageLocation = movies[0].Photo;
                 movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
 
+                //Add Click Event
+                movieImage.Click += (sender, e) =>
+                {
+                    GlimpseForm glimpseForm = new GlimpseForm(movies[0].Id);
+                    glimpseForm.Show();
+                };
+
                 //Assign to flow panel
                 flowPanelTopMovies.Controls.Add(movieImage);
             }
