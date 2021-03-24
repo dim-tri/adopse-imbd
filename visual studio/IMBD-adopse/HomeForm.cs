@@ -1,19 +1,13 @@
 ﻿using IMBD_adopse.classes;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace IMBD_adopse
 {
-    public partial class Form1 : Form
+    public partial class HomeForm : Form
     {
-        public Form1()
+        public HomeForm()
         {
             InitializeComponent();
         }
@@ -31,8 +25,15 @@ namespace IMBD_adopse
                 PictureBox movieImage = new PictureBox();
                 movieImage.ImageLocation = movies[0].Photo;
                 movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
+                
+                //Add Click Event
+                movieImage.Click += (sender, e) =>
+                {
+                    GlimpseForm glimpseForm = new GlimpseForm(movies[0].Id);
+                    glimpseForm.Show();
+                };
 
-                //Assign to flow panel
+                //Assign to Flow Panel
                 flowPanelNewReleases.Controls.Add(movieImage);
             }
 
@@ -51,8 +52,6 @@ namespace IMBD_adopse
                 //Assign to flow panel
                 flowPanelTopMovies.Controls.Add(movieImage);
             }
-
-
 
         }
     }
