@@ -40,13 +40,19 @@ namespace IMBD_adopse
                    obj.Rank = 9.7;
 
                    obj.setNewMovie(obj);*/
-                List<Movie> results = obj.Search("sher");
+                List<Movie> results = obj.DynamicSearch("Flash");
+                Debug.WriteLine("\n");
                 foreach (Movie movie in results) 
                 {
-                    Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
+                    Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot + " --|-- " + "Poster: " + movie.Photo);
                     Debug.WriteLine("\n");
                 }
-                Debug.WriteLine("Results: " + results.Count());
+                Debug.WriteLine("Results: " + results.Count() + "\n");
+               
+               
+
+
+
             }
             catch (Exception e)
             {

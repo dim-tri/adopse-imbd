@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
+
 
 namespace IMBD_adopse.classes
 {
@@ -26,6 +30,7 @@ namespace IMBD_adopse.classes
         private string photo;
         private string created_at;
         private string updated_at;
+        private string error;
 
         //movie constructor
         public Movie() {}
@@ -114,6 +119,12 @@ namespace IMBD_adopse.classes
         {
             get { return updated_at; }
             set { updated_at = value; }
+        }
+
+        public string Error
+        {
+            get { return error; }
+            set { error = value; }
         }
 
         //functions
@@ -314,15 +325,64 @@ namespace IMBD_adopse.classes
             return null;
         }
 
+        public List<Movie> DynamicSearch(string query)
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                MySqlDataReader reader;
+                cmd.CommandText = "call search_movie(@query)";
+                cmd.Parameters.AddWithValue("@query", query);
+                cmd.Prepare();
+                reader = cmd.ExecuteReader();
+                List<Movie> movies = new List<Movie>();
+                while (reader.Read())
+                {
+                    movies.Add(new Movie { Id = (int)reader[0], Gentre = reader[8].ToString(), Name = (string)reader[2], Year = (int)reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
+                }
 
+                if(movies.Count() == 0)
+                {
+                    ApiClient api = new ApiClient("http://www.omdbapi.com/", "?apikey=9d652152&type=movie&t="+query);
+                    ApiClient obj = api.getData();
+                    if(obj.Response == "True")
+                    {
+                        List<Movie> movies2 = new List<Movie>();
+                        movies2.Add(new Movie { Id = 1, Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars =obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
+                        Movie mov = new Movie();
+                        mov.Category_id = 1;
+                        mov.Gentre = obj.Genre;
+                        mov.Name = obj.Title;
+                        mov.Year = Int32.Parse(obj.Year);
+                        mov.Rank = Convert.ToDouble(obj.imdbRating);
+                        mov.Release = obj.Released;
+                        mov.Director = obj.Director;
+                        mov.Stars = obj.Actors;
+                        mov.Duration = obj.Runtime;
+                        mov.Plot = obj.Plot;
+                        mov.Photo = obj.Poster;
+                        setNewMovie(mov);
+                        reader.Close();
+                        db.connectionClose();
+                        return movies2;
+                    }
+                   
+                }
+                reader.Close();
+                db.connectionClose();
+                return movies;
 
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            return null;
+        }
 
-
-
-
-
-
-        
 
 
 
