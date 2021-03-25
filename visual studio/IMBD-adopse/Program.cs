@@ -24,15 +24,16 @@ namespace IMBD_adopse
             try
             {
                 Movie obj = new Movie();
-               // List<Movie> movies = obj.getMovies();
+                // List<Movie> movies = obj.getMovies();
                 //List<Movie> moviess = movies.OrderBy(o => o.Name).ToList();
+                List<Movie> movies = obj.getTopMovies();
                 Debug.WriteLine("\n");
-                /*      foreach (Movie movie in movies)
+                      foreach (Movie movie in movies)
                       {
                           Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
                           Debug.WriteLine("\n");
                       }
-                      Debug.WriteLine("Results: " + movies.Count());*/
+                      Debug.WriteLine("Results: " + movies.Count());
                 /*   obj.Category_id = 1;
                    obj.Name = "test movie2";
                    obj.Gentre = "Action";
@@ -40,14 +41,14 @@ namespace IMBD_adopse
                    obj.Rank = 9.7;
 
                    obj.setNewMovie(obj);*/
-                List<Movie> results = obj.DynamicSearch("Flash");
+              /*  List<Movie> results = obj.DynamicSearch("Flash");
                 Debug.WriteLine("\n");
                 foreach (Movie movie in results) 
                 {
                     Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot + " --|-- " + "Poster: " + movie.Photo);
                     Debug.WriteLine("\n");
                 }
-                Debug.WriteLine("Results: " + results.Count() + "\n");
+                Debug.WriteLine("Results: " + results.Count() + "\n");*/
                
                
 
