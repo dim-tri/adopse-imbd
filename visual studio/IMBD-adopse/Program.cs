@@ -21,7 +21,7 @@ namespace IMBD_adopse
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            Debug.WriteLine("New Test!!!!!");
+           
 
             try
             {
@@ -67,10 +67,10 @@ namespace IMBD_adopse
 
 
 
-                  Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
-                    Debug.WriteLine("\n");
-                }
-                Debug.WriteLine("Results: " + movies.Count());
+                //  Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
+                 //   Debug.WriteLine("\n");
+             //   }
+             //   Debug.WriteLine("Results: " + movies.Count());
 
             }
             catch (Exception e)
