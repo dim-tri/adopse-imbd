@@ -21,6 +21,8 @@ namespace IMBD_adopse
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
+            Debug.WriteLine("New Test!!!!!");
+
             try
             {
                // Movie obj = new Movie();
@@ -55,6 +57,7 @@ namespace IMBD_adopse
                 Debug.WriteLine("\n");
                 foreach (Actor actor in actors)
                 {
+
                     Debug.WriteLine("Id: " + actor.Id + " --|-- " + "Category: Actor" + " --|-- " + "Name: " + actor.Name + " --|-- ");
                    // Debug.WriteLine("Movie ID: " + actor.Movie_id + " --|-- " + "Id: " + actor.Id + " --|-- " + "Name: " + actor.Name + " --|-- " + "Role: " + actor.Role);
                     Debug.WriteLine("\n");
@@ -63,6 +66,11 @@ namespace IMBD_adopse
 
 
 
+
+                  Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
+                    Debug.WriteLine("\n");
+                }
+                Debug.WriteLine("Results: " + movies.Count());
 
             }
             catch (Exception e)
