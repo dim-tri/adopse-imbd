@@ -20,29 +20,7 @@ namespace IMBD_adopse
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new HomeForm());
-            //Application.Run(new GlimpseForm(55));
-
-            /*
-            try
-            {
-                Movie obj = new Movie();
-                List<Movie> movies = obj.getMovies();
-                //List<Movie> moviess = movies.OrderBy(o => o.Name).ToList();
-                Console.WriteLine("\n");
-                foreach (Movie movie in movies)
-                {
-                    Debug.WriteLine("Id: " + movie.Id + " --|-- " + "Category: Movie" + " --|-- " + "Name: " + movie.Name + " --|-- " + "Gentre: " + movie.Gentre + " --|-- " + "Year: " + movie.Year + " --|-- " + "Release: " + movie.Release + " --|-- " + "Rank: " + movie.Rank + " --|-- " + "Plot: " + movie.Plot);
-                    Debug.WriteLine("\n");
-                }
-                Debug.WriteLine("Results: " + movies.Count());
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine("Error: " + e.Message);
-            }
-            Console.ReadLine();
-            */
-
+ 
 
         }
     }

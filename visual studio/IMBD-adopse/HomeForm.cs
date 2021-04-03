@@ -17,6 +17,7 @@ namespace IMBD_adopse
         public void loadHome()
         {
             //stougiannou Endeiktikh Prosegisi
+            //load top movies
             Movie obj = new Movie();
             List<Movie> movies = obj.getTopMovies();
             foreach (Movie movie in movies)
@@ -32,7 +33,7 @@ namespace IMBD_adopse
                 };
                 flowPanelTopMovies.Controls.Add(movieImage);
             }
-
+            //load 10 movies
             Movie obj2= new Movie();
             List<Movie> movies2 = obj.getMovies(10,"desc");
             foreach (Movie movie2 in movies2)
@@ -51,60 +52,11 @@ namespace IMBD_adopse
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //Fill New Releases with random movies
-            /* for (int i = 0; i < 6; i++)
-             {
-                 //Get DB data
-                 Movie obj = new Movie();
-                 List<Movie> movies = obj.getMovies(11 + i);
-
-                 //Create Picture Box
-                 PictureBox movieImage = new PictureBox();
-                 movieImage.ImageLocation = movies[0].Photo;
-                 movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
-
-                 //Add Click Event
-                 movieImage.Click += (sender, e) =>
-                 {
-                     GlimpseForm glimpseForm = new GlimpseForm(movies[0].Id);
-                     glimpseForm.Show();
-                 };
-
-                 //Assign to Flow Panel
-                 flowPanelNewReleases.Controls.Add(movieImage);
-             }*/
-
-            //Fill Top Movies with random movies
-            /*  for (int i = 0; i < 6; i++)
-              {
-                  //Get DB data
-                  Movie obj = new Movie();
-                  List<Movie> movies = obj.getMovies(21 + i);
-
-                  //Create Picture Box
-                  PictureBox movieImage = new PictureBox();
-                  movieImage.ImageLocation = movies[0].Photo;
-                  movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
-
-                  //Add Click Event
-                  movieImage.Click += (sender, e) =>
-                  {
-                      GlimpseForm glimpseForm = new GlimpseForm(movies[0].Id);
-                      glimpseForm.Show();
-                  };
-
-                  //Assign to flow panel
-                  flowPanelTopMovies.Controls.Add(movieImage);
-              }*/
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            Login loginpage = new Login();
-            loginpage.Show();
+             Login loginpage = new Login();
+             loginpage.Show();
+           
         }
     }
 }

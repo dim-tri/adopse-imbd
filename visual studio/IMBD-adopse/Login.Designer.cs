@@ -29,19 +29,16 @@ namespace IMBD_adopse
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelExit = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.pictureBoxUsername = new System.Windows.Forms.PictureBox();
-            this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.linkLabelSingup = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsername)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,6 +84,9 @@ namespace IMBD_adopse
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(234, 33);
             this.textBoxUsername.TabIndex = 1;
+            this.textBoxUsername.Tag = "";
+            this.textBoxUsername.Text = "Username";
+           
             // 
             // textBoxPassword
             // 
@@ -96,27 +96,18 @@ namespace IMBD_adopse
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(234, 33);
             this.textBoxPassword.TabIndex = 2;
+            this.textBoxPassword.Text = "Password";
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // pictureBoxUsername
             // 
-            this.pictureBoxUsername.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUsername.Image")));
-            this.pictureBoxUsername.Location = new System.Drawing.Point(137, 97);
+            this.pictureBoxUsername.ImageLocation = "https://register.wyfegypt.com/images/form-wizard-login.jpg";
+            this.pictureBoxUsername.Location = new System.Drawing.Point(12, 107);
             this.pictureBoxUsername.Name = "pictureBoxUsername";
-            this.pictureBoxUsername.Size = new System.Drawing.Size(47, 42);
+            this.pictureBoxUsername.Size = new System.Drawing.Size(172, 91);
             this.pictureBoxUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxUsername.TabIndex = 3;
             this.pictureBoxUsername.TabStop = false;
-            // 
-            // pictureBoxPassword
-            // 
-            this.pictureBoxPassword.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPassword.Image")));
-            this.pictureBoxPassword.Location = new System.Drawing.Point(137, 156);
-            this.pictureBoxPassword.Name = "pictureBoxPassword";
-            this.pictureBoxPassword.Size = new System.Drawing.Size(47, 40);
-            this.pictureBoxPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxPassword.TabIndex = 4;
-            this.pictureBoxPassword.TabStop = false;
             // 
             // buttonLogin
             // 
@@ -151,7 +142,6 @@ namespace IMBD_adopse
             this.ClientSize = new System.Drawing.Size(546, 374);
             this.Controls.Add(this.linkLabelSingup);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.pictureBoxPassword);
             this.Controls.Add(this.pictureBoxUsername);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
@@ -163,7 +153,6 @@ namespace IMBD_adopse
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsername)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,11 +162,9 @@ namespace IMBD_adopse
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label labelTitle;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.PictureBox pictureBoxUsername;
-        private System.Windows.Forms.PictureBox pictureBoxPassword;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.LinkLabel linkLabelSingup;
         private System.Windows.Forms.Label labelExit;

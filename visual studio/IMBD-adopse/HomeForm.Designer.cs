@@ -29,25 +29,12 @@ namespace IMBD_adopse
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.flowPanelNewReleases = new System.Windows.Forms.FlowLayoutPanel();
             this.flowPanelTopMovies = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(12, 652);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 70);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Load";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // flowPanelNewReleases
             // 
@@ -93,7 +80,7 @@ namespace IMBD_adopse
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(916, 13);
+            this.button2.Location = new System.Drawing.Point(1223, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
@@ -111,7 +98,6 @@ namespace IMBD_adopse
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowPanelTopMovies);
             this.Controls.Add(this.flowPanelNewReleases);
-            this.Controls.Add(this.button1);
             this.Name = "HomeForm";
             this.Text = "IMBD";
             this.ResumeLayout(false);
@@ -120,7 +106,6 @@ namespace IMBD_adopse
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowPanelNewReleases;
         private System.Windows.Forms.FlowLayoutPanel flowPanelTopMovies;
         private System.Windows.Forms.Label label1;
