@@ -34,6 +34,7 @@ namespace IMBD_adopse
             this.flowPanelTopMovies = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -90,17 +91,28 @@ namespace IMBD_adopse
             this.label2.TabIndex = 8;
             this.label2.Text = "Top Movies";
             // 
-            // Form1
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(916, 13);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Login";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1310, 734);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowPanelTopMovies);
             this.Controls.Add(this.flowPanelNewReleases);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "HomeForm";
             this.Text = "IMBD";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -113,6 +125,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.FlowLayoutPanel flowPanelTopMovies;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
     }
 }
 
