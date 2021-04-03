@@ -54,9 +54,22 @@ namespace IMBD_adopse
 
         private void button2_Click(object sender, EventArgs e)
         {
-             Login loginpage = new Login();
+            if(loginBtn.Text == "Logout")
+            {
+                Users user = new Users();
+                if (user.logout())
+                {
+                    loginState.Text = "Logged in as: Guest";
+                    loginBtn.Text = "Login";
+                    MessageBox.Show("You are now logged out.", "Login Status");
+                    return;
+                }
+            }
+
+             LoginForm loginpage = new LoginForm();
+             loginpage.homeFormObject(this);
              loginpage.Show();
-           
+            
         }
     }
 }
