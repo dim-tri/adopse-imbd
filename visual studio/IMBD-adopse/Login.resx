@@ -57,39 +57,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing.Common" name="System.Drawing.Common, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
-  <data name="pictureBoxUsername.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABBxJREFUeF7t
-        mjmoFUkUhp8rgoqZI0aaqMkI4zKBjKHjgjsi4wKCgWAgMipjYqCBo7iLkaAm7gwmM06mGCq4i6gICjKu
-        CAaOCu7+H9wDh6L63dvd795369o/fHCprqqu01V1zql6r6tSpUqVKlWqVKlSpUqVKrVGfcREsUz8XoPf
-        EwTPOlYjxD7xRHzNgGd7xQ+iY8Ss/iHeiJjRMf4XG0TyK2KQOClCA58JyneLPbXflIX1Tgj6SFLMXmj8
-        FfGr6CtCUTZdXBO+DR8hyZXAsveGMNP9RD31F/gK33a9SErDxWthBrDU82q/sPb4BJxoMvIzyLJvZOZD
-        sRL8dmAFJSH2qw917PmimiGsn8ciCV8wSdign4qYw2tUtH0urD+SpbbXUmEDJgqU1Wlh/f1GQbuLBMYG
-        vJOCktolrL8kogGDtAEz+LIiglh/6yhody0RNuDvcgtw0rMBk96WdYIvhPX3k2h7hWGQUFZUs4T1859I
-        JiXmSGsDJ5khqckr2twQ1k+RbLLXFKbCZIZ5dUBYe1Lh5O4IfDgEcvtGVgJ1vPHArVFyYr9ylPWGsB3w
-        CTHHSBl73i97OCaS2fuhuMwIPwKQ3p4SHHCAUOe9vXFcJHshYmL2SI7Yx6GBWeA/WPbJznxMODFmm1Nd
-        zGgg1OHtcaJ5NFQsEHbLPF8MEW0pZpWEhozRBsxvyvLOONtju3gnwo/5Vvwpkt9CWRomLonQ8JCLgrod
-        p3+FN/SWMKd6s1Zm/C06SrOFN5ALWB9a2UprhK8zU/S6BorJYrFYJTbWWCvwAz8LHFo9nRFm2CEKMnRE
-        WL2/KOgN/Si2isvivbABZfFJkAztEFNETP6wNYaCDI0TVo/o0zINECvFbWEDKAppcSg+kj3v7saZZ1aP
-        Ni3RcvFA2Is9X8Q9wRI+KAhhgONiiTLzH4Vvc0eE8s/rKU/dUhopzgr/QiADJJ+fIxoJR4MFDuuwIIQt
-        FKF8//WUp25hTROvhH/ZS4GDa0ZG5t9TT3nqFtIK8UHYSz4LLkSamYrmMYrx2Lh6XKsF+9oG80hMFc3Q
-        aHFeNBJJsqDtOTFKlBZ72nvj6wI/0CxhvDemDHyEUhov/H984KwaSWDKqMzMh9BXYXFlxV98rTNCXt7j
-        axF5A3qCwtokrBOOnGNFK+QHn8XDGrFnIYXEgQOjrRPO8q2SH3wMfASZH1yolXVHYV0VdMALY5ebzZK/
-        Zo+xRZj4Hatj0FdhEd9/Ea2+aSGFjhljbBYmfsfqGPSVnEinY8YYeT7AUZGcFomYMYa/9flHxOoY9JWc
-        OGLfFzGDDO4I690T0gd9Jal5wqfeeaHtXJG0tomYcY3ANXnyIvRiSJ6VQF3atDJsN10s5Xo+AaiT/LLP
-        Es4Mj06IvCu4fQKu0Qh1PEvW4bVAXV3fANOTasOVvHRCAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="pictureBoxPassword.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAS1JREFUSEvt
-        1UFOwkAYBeDudIEnUFagRzDewQ0XQbgWMS5hzRJdKXtuoIkKe3jP9E8mk/dqO3XpS74E2v+fYVo6rVrm
-        HGbwDIfaBh7gDP4kQ9jC0XiFK+gVriQmeYN7GNT4Oc5xsl4rm0NMwsHzXMAOWDPlgdK8AAfhr3eZAGt4
-        z4qzBw6iVhPhqljz/fOtMByAfkvbOpv/iTqFD98j8ObGAG2x5wmuoTGc5APUIF1wjEuw4UpUY4kF2JRc
-        LucTbFRDHzaqOLUE3kda1cea2KjiVPo64OtD1aRsVHFqBJExqJqUjSpOrSHCz6omZaOKcxF1LmejinMR
-        dS5no4pzt3CXHXNsvkA1lGh8YLkhqqYS3M5sbuAdVGMX3FT5928Md11uiCWXkT1cSTZJVZ0AavlNn9yH
-        g8UAAAAASUVORK5CYII=
-</value>
-  </data>
 </root>
