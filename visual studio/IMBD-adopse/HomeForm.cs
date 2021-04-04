@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace IMBD_adopse
 {
@@ -52,11 +53,35 @@ namespace IMBD_adopse
 
         }
 
+        public int userID;
         private void button2_Click(object sender, EventArgs e)
         {
-             Login loginpage = new Login();
+            if(loginBtn.Text == "Logout")
+            {
+                Users user = new Users();
+                if (user.logout(userID))
+                {
+                  //  Debug.WriteLine("Status: " + user.getUserStatus(userID));
+                  //  user.registerUser("giannis", "mparzas", "giannis@hotmail.com", "123456789", "gms4all");
+                    loginState.Text = "Logged in as: Guest";
+                    loginBtn.Text = "Login";
+                    MessageBox.Show("You are now logged out.", "Login Status");
+                    return;
+                }
+            }
+
+             LoginForm loginpage = new LoginForm();
+             loginpage.homeFormObject(this);
              loginpage.Show();
-           
+            
         }
+
+
+        //trexon user id tou sundedemenou
+        public void setUserID(int id) 
+        {
+            userID = id;
+        }
+
     }
 }
