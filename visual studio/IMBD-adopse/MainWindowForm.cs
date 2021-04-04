@@ -15,6 +15,14 @@ namespace IMBD_adopse
         public MainWindowForm()
         {
             InitializeComponent();
+            LoadHomePage();
+        }
+
+        private void LoadHomePage() {
+            HomeForm homeForm = new HomeForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+            this.MainPanel.Controls.Add(homeForm);
+            homeForm.FormBorderStyle = FormBorderStyle.FixedDialog;
+            homeForm.Show();
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -26,5 +34,6 @@ namespace IMBD_adopse
         {
 
         }
+
     }
 }

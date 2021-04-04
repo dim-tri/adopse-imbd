@@ -35,7 +35,7 @@ namespace IMBD_adopse
             this.SearchBox = new System.Windows.Forms.ToolStripTextBox();
             this.Watchlist = new System.Windows.Forms.ToolStripButton();
             this.UserButton = new System.Windows.Forms.ToolStripButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.MainPanel = new System.Windows.Forms.Panel();
             this.MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,22 +98,22 @@ namespace IMBD_adopse
             this.UserButton.Size = new System.Drawing.Size(36, 36);
             this.UserButton.Text = "toolStripButton1";
             // 
-            // panel1
+            // MainPanel
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.MainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Location = new System.Drawing.Point(12, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1880, 986);
-            this.panel1.TabIndex = 1;
+            this.MainPanel.Location = new System.Drawing.Point(12, 43);
+            this.MainPanel.Name = "MainPanel";
+            this.MainPanel.Size = new System.Drawing.Size(1880, 986);
+            this.MainPanel.TabIndex = 1;
             // 
             // MainWindowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.MainPanel);
             this.Controls.Add(this.MainMenu);
             this.Name = "MainWindowForm";
             this.Text = "MainWindowForm";
@@ -133,6 +133,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.ToolStripButton Watchlist;
         private System.Windows.Forms.ToolStripTextBox SearchBox;
         private System.Windows.Forms.ToolStripButton UserButton;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel MainPanel;
     }
 }
