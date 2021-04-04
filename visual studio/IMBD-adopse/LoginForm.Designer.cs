@@ -34,11 +34,14 @@ namespace IMBD_adopse
             this.labelTitle = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.pictureBoxUsername = new System.Windows.Forms.PictureBox();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.linkLabelSingup = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.labelfalse = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsername)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,7 +89,6 @@ namespace IMBD_adopse
             this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.Tag = "";
             this.textBoxUsername.Text = "Username";
-           
             // 
             // textBoxPassword
             // 
@@ -99,24 +101,14 @@ namespace IMBD_adopse
             this.textBoxPassword.Text = "Password";
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
-            // pictureBoxUsername
-            // 
-            this.pictureBoxUsername.ImageLocation = "https://register.wyfegypt.com/images/form-wizard-login.jpg";
-            this.pictureBoxUsername.Location = new System.Drawing.Point(12, 107);
-            this.pictureBoxUsername.Name = "pictureBoxUsername";
-            this.pictureBoxUsername.Size = new System.Drawing.Size(172, 91);
-            this.pictureBoxUsername.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxUsername.TabIndex = 3;
-            this.pictureBoxUsername.TabStop = false;
-            // 
             // buttonLogin
             // 
             this.buttonLogin.BackColor = System.Drawing.Color.Maroon;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonLogin.Location = new System.Drawing.Point(137, 225);
+            this.buttonLogin.Location = new System.Drawing.Point(125, 242);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(292, 40);
+            this.buttonLogin.Size = new System.Drawing.Size(304, 40);
             this.buttonLogin.TabIndex = 5;
             this.buttonLogin.Text = "LOGIN";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -126,7 +118,7 @@ namespace IMBD_adopse
             // 
             this.linkLabelSingup.AutoSize = true;
             this.linkLabelSingup.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabelSingup.Location = new System.Drawing.Point(195, 291);
+            this.linkLabelSingup.Location = new System.Drawing.Point(179, 298);
             this.linkLabelSingup.Name = "linkLabelSingup";
             this.linkLabelSingup.Size = new System.Drawing.Size(188, 17);
             this.linkLabelSingup.TabIndex = 6;
@@ -134,25 +126,58 @@ namespace IMBD_adopse
             this.linkLabelSingup.Text = "Don\'t Have an Account?SignUp";
             this.linkLabelSingup.Click += new System.EventHandler(this.linkLabelSingup_Click);
             // 
-            // Login
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.icons8_user_locked_64;
+            this.pictureBox1.Location = new System.Drawing.Point(125, 93);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 47);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.icons8_lock_26;
+            this.pictureBox2.Location = new System.Drawing.Point(125, 156);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 42);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
+            // labelfalse
+            // 
+            this.labelfalse.AutoSize = true;
+            this.labelfalse.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelfalse.ForeColor = System.Drawing.Color.OrangeRed;
+            this.labelfalse.Location = new System.Drawing.Point(170, 212);
+            this.labelfalse.Name = "labelfalse";
+            this.labelfalse.Size = new System.Drawing.Size(0, 18);
+            this.labelfalse.TabIndex = 9;
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(546, 374);
+            this.Controls.Add(this.labelfalse);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.linkLabelSingup);
             this.Controls.Add(this.buttonLogin);
-            this.Controls.Add(this.pictureBoxUsername);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsername)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,9 +189,11 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.PictureBox pictureBoxUsername;
         private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.LinkLabel linkLabelSingup;
         private System.Windows.Forms.Label labelExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label labelfalse;
     }
 }

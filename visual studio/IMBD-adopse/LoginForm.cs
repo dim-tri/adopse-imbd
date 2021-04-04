@@ -41,14 +41,12 @@ namespace IMBD_adopse
             string pass = textBoxPassword.Text;
             if (string.IsNullOrWhiteSpace(user))
             {
-                MessageBox.Show("Username is empty.", "Username Error");
-                return;
+                labelfalse.Text = "Wrong Username or Password"; 
             }
 
             if (string.IsNullOrWhiteSpace(pass))
             {
-                MessageBox.Show("Password is empty.", "Password Error");
-                return;
+                labelfalse.Text = "Wrong Username or Password";
             }
 
                 //Attempt to login
@@ -64,8 +62,7 @@ namespace IMBD_adopse
                 }
                 else
                 {
-                    MessageBox.Show("Authentication Not Successful.", "Authentication");
-                    return;
+                labelfalse.Text = "Wrong Username or Password";
                 }
             
           
