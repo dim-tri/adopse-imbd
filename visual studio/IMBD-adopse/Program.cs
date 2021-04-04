@@ -19,7 +19,7 @@ namespace IMBD_adopse
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomeForm());
+            Application.Run(new MainWindowForm());
  
 
         }
