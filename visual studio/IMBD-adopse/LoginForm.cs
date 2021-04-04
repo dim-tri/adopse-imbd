@@ -58,6 +58,7 @@ namespace IMBD_adopse
                     MessageBox.Show("Authentication Success.", "Authentication");
                     obj2.loginState.Text = "Logged in as: " + newLogin.Name;
                     obj2.loginBtn.Text = "Logout";
+                    obj2.setUserID(newLogin.Id);
                     this.Dispose();
                     return;
                 }
@@ -82,6 +83,8 @@ namespace IMBD_adopse
             obj2 = obj;
             
         }
+
+
 
     
     }

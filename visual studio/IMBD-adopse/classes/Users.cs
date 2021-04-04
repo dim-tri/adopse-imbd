@@ -96,6 +96,13 @@ namespace IMBD_adopse.classes
 
                 if(this.Username == user && this.Password == password)
                 {
+                    db = new DbConnection();
+                    conn = db.Conn;
+                    sql = "UPDATE users SET loggedIn = TRUE WHERE id = @id";
+                    cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", this.Id);
+                    cmd.Prepare();
+                    cmd.ExecuteNonQuery();
                     return true;
                 }
                
@@ -109,9 +116,94 @@ namespace IMBD_adopse.classes
         }
 
 
-        public bool logout() { return true; }
+        public bool logout(int id) 
+        {
+              try
+              {
+                  //Debug.WriteLine("User id: " + id);
+                  DbConnection db = new DbConnection();
+                  MySqlConnection conn = db.Conn;
+                  string sql = "SELECT * FROM users where id = @id";
+                  MySqlCommand cmd = new MySqlCommand(sql, conn);
+                  cmd.Parameters.AddWithValue("@id", id);
+                  cmd.Prepare();
+                  MySqlDataReader reader = cmd.ExecuteReader();
+                  if (!reader.HasRows) { return false; }
+                  //Debug.WriteLine("User id: " + id);
+                  reader.Close();
+                  db.connectionClose();
+                  db = new DbConnection();
+                  conn = db.Conn;
+                  sql = "UPDATE users SET loggedIn = 'FALSE' WHERE id = @id2";
+                  cmd = new MySqlCommand(sql, conn);
+                  cmd.Parameters.AddWithValue("@id2", id);
+                  cmd.Prepare();
+                  cmd.ExecuteNonQuery();
+                  reader.Close();
+                  db.connectionClose();
+                  return true;
+              }
+              catch (MySqlException ex)
+              {
+                  Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+              }
+
+              return false;
+        }
+
+        public string getUserStatus(int id) 
+        {
+            try
+            {
+                string status = "";
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                string sql = "SELECT * FROM users where id = @id";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Prepare();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (!reader.HasRows) { return null; }
+                while (reader.Read())
+                {
+                    status = (string)reader[7];
+                }
+                reader.Close();
+                db.connectionClose();
+                return status;
+            }
+            catch (MySqlException ex) 
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            return null;
+        }
 
 
+        public bool registerUser(string name, string surname,string email,string password,string username) 
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                string sql = "INSERT INTO users(name,surname,email,password,username) VALUES(@name,@surname,@email,@password,@username)";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@name", name);
+                cmd.Parameters.AddWithValue("@surname", surname);
+                cmd.Parameters.AddWithValue("@email", email);
+                cmd.Parameters.AddWithValue("@password", password);
+                cmd.Parameters.AddWithValue("@username", username);
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+                db.connectionClose();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            return false;
+        }
 
 
 
