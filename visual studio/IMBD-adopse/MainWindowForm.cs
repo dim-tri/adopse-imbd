@@ -21,7 +21,7 @@ namespace IMBD_adopse
         private void LoadHomePage() {
             HomeForm homeForm = new HomeForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
             this.MainPanel.Controls.Add(homeForm);
-            homeForm.FormBorderStyle = FormBorderStyle.FixedDialog;
+            //homeForm.FormBorderStyle = FormBorderStyle.FixedDialog;
             homeForm.Show();
         }
 
