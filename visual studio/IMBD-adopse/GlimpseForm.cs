@@ -59,7 +59,7 @@ namespace IMBD_adopse
         public int userID;
         private void checkUserLoggedIn()
         {
-            Debug.WriteLine("User iD: " + userID);
+           // Debug.WriteLine("User iD: " + userID);
             if (userID != 0) {
                 WishlistButton.Enabled = true;
             }
