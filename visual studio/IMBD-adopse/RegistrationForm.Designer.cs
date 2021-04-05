@@ -29,7 +29,6 @@ namespace IMBD_adopse
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
             this.name = new System.Windows.Forms.TextBox();
             this.surname = new System.Windows.Forms.TextBox();
             this.email = new System.Windows.Forms.TextBox();
@@ -122,7 +121,7 @@ namespace IMBD_adopse
             // nameBox
             // 
             this.nameBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.nameBox.Image = ((System.Drawing.Image)(resources.GetObject("nameBox.Image")));
+            this.nameBox.Image = global::IMBD_adopse.Properties.Resources.profileArtboard_2;
             this.nameBox.Location = new System.Drawing.Point(103, 243);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(37, 37);
@@ -133,7 +132,7 @@ namespace IMBD_adopse
             // surnameBox
             // 
             this.surnameBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.surnameBox.Image = ((System.Drawing.Image)(resources.GetObject("surnameBox.Image")));
+            this.surnameBox.Image = global::IMBD_adopse.Properties.Resources.profileArtboard_2;
             this.surnameBox.Location = new System.Drawing.Point(103, 300);
             this.surnameBox.Name = "surnameBox";
             this.surnameBox.Size = new System.Drawing.Size(37, 37);
@@ -143,7 +142,7 @@ namespace IMBD_adopse
             // emailBox
             // 
             this.emailBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.emailBox.Image = ((System.Drawing.Image)(resources.GetObject("emailBox.Image")));
+            this.emailBox.Image = global::IMBD_adopse.Properties.Resources.emailArtboard_2;
             this.emailBox.Location = new System.Drawing.Point(103, 357);
             this.emailBox.Name = "emailBox";
             this.emailBox.Size = new System.Drawing.Size(37, 37);
@@ -153,7 +152,7 @@ namespace IMBD_adopse
             // usernameBox
             // 
             this.usernameBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.usernameBox.Image = ((System.Drawing.Image)(resources.GetObject("usernameBox.Image")));
+            this.usernameBox.Image = global::IMBD_adopse.Properties.Resources.userArtboard_2;
             this.usernameBox.Location = new System.Drawing.Point(103, 414);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(37, 37);
@@ -163,7 +162,7 @@ namespace IMBD_adopse
             // passwordBox
             // 
             this.passwordBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.passwordBox.Image = ((System.Drawing.Image)(resources.GetObject("passwordBox.Image")));
+            this.passwordBox.Image = global::IMBD_adopse.Properties.Resources.lockArtboard_2;
             this.passwordBox.Location = new System.Drawing.Point(103, 471);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(37, 37);
@@ -184,7 +183,7 @@ namespace IMBD_adopse
             // 
             // correctIcon
             // 
-            this.correctIcon.Image = ((System.Drawing.Image)(resources.GetObject("correctIcon.Image")));
+            this.correctIcon.Image = global::IMBD_adopse.Properties.Resources.correct_icon38;
             this.correctIcon.Location = new System.Drawing.Point(497, 243);
             this.correctIcon.Name = "correctIcon";
             this.correctIcon.Size = new System.Drawing.Size(38, 38);
@@ -206,7 +205,7 @@ namespace IMBD_adopse
             // 
             // wrongIcon
             // 
-            this.wrongIcon.Image = ((System.Drawing.Image)(resources.GetObject("wrongIcon.Image")));
+            this.wrongIcon.Image = global::IMBD_adopse.Properties.Resources.wrongArtboard_2;
             this.wrongIcon.Location = new System.Drawing.Point(497, 300);
             this.wrongIcon.Name = "wrongIcon";
             this.wrongIcon.Size = new System.Drawing.Size(38, 38);
@@ -215,7 +214,7 @@ namespace IMBD_adopse
             // 
             // registerIcon
             // 
-            this.registerIcon.Image = ((System.Drawing.Image)(resources.GetObject("registerIcon.Image")));
+            this.registerIcon.Image = global::IMBD_adopse.Properties.Resources.registerArtboard_3;
             this.registerIcon.Location = new System.Drawing.Point(268, 136);
             this.registerIcon.Name = "registerIcon";
             this.registerIcon.Size = new System.Drawing.Size(57, 75);
@@ -224,7 +223,7 @@ namespace IMBD_adopse
             // 
             // lineBox2
             // 
-            this.lineBox2.Image = ((System.Drawing.Image)(resources.GetObject("lineBox2.Image")));
+            this.lineBox2.Image = global::IMBD_adopse.Properties.Resources.line133_10Artboard_4;
             this.lineBox2.Location = new System.Drawing.Point(358, 170);
             this.lineBox2.Name = "lineBox2";
             this.lineBox2.Size = new System.Drawing.Size(133, 12);
@@ -233,7 +232,7 @@ namespace IMBD_adopse
             // 
             // lineBox1
             // 
-            this.lineBox1.Image = ((System.Drawing.Image)(resources.GetObject("lineBox1.Image")));
+            this.lineBox1.Image = global::IMBD_adopse.Properties.Resources.line133_10Artboard_4;
             this.lineBox1.Location = new System.Drawing.Point(103, 170);
             this.lineBox1.Name = "lineBox1";
             this.lineBox1.Size = new System.Drawing.Size(133, 12);
