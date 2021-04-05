@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace IMBD_adopse
 {
@@ -24,6 +25,7 @@ namespace IMBD_adopse
         {
             this.MovieID = movieId;
             InitializeComponent();
+           
         }
         
 
@@ -53,5 +55,27 @@ namespace IMBD_adopse
         {
             //TO-DO: Add movied id to wishlist database
         }
+
+        public int userID;
+        private void checkUserLoggedIn()
+        {
+            Debug.WriteLine("User iD: " + userID);
+            if (userID != 0) {
+                WishlistButton.Enabled = true;
+            }
+            else
+            {
+                WishlistButton.Enabled = false;
+            }
+            
+        }
+
+        public void setUserId(int id)
+        {
+            userID = id;
+            checkUserLoggedIn();
+        }
+
+
     }
 }
