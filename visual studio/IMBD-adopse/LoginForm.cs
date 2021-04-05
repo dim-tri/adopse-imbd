@@ -83,6 +83,7 @@ namespace IMBD_adopse
 
         private void linkLabelSingup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            this.Dispose();
             RegistrationForm registration = new RegistrationForm();
             registration.Show();
         }
