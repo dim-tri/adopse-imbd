@@ -18,7 +18,9 @@ namespace IMBD_adopse
             LoadHomePage();
         }
 
+        //Clear Main Window and Load Home Page
         public void LoadHomePage() {
+            this.MainPanel.Controls.Clear();
             HomeForm homeForm = new HomeForm(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
             this.MainPanel.Controls.Add(homeForm);
             homeForm.Show();
@@ -26,9 +28,10 @@ namespace IMBD_adopse
             
         }
 
+        //Clear Main Window and Load Movie Page
         public void LoadMoviePage(int movieId) {
 
-            this.MainPanel.Controls.Clear();
+            this.MainPanel.Controls.Clear(); //Clear Panel
             MoviePage moviePage = new MoviePage(movieId) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.MainPanel.Controls.Add(moviePage);
             moviePage.Show();

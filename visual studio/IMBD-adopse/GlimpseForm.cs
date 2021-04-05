@@ -31,6 +31,7 @@ namespace IMBD_adopse
         }
         
 
+        //Load Movie Info from Id
         private void GlimpseForm_Load(object sender, EventArgs e)
         {
             //Get DB data
@@ -57,9 +58,11 @@ namespace IMBD_adopse
         {
             //TO-DO: Add movied id to wishlist database
         }
-
+        
+        //Button that opens the movie page of the currently displayed movie
         private void MoreButton_Click(object sender, EventArgs e)
         {
+            //Load the Movie Page on main window
             MainForm.LoadMoviePage(MovieID);
             this.Close();
         }

@@ -8,6 +8,7 @@ namespace IMBD_adopse
 {
     public partial class HomeForm : Form
     {
+        //Parent Main window
         private MainWindowForm MainWindow;
 
         public HomeForm(MainWindowForm mainWindow)
