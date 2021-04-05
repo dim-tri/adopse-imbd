@@ -29,6 +29,7 @@ namespace IMBD_adopse
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.labelExit = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
@@ -124,11 +125,13 @@ namespace IMBD_adopse
             this.linkLabelSingup.TabIndex = 6;
             this.linkLabelSingup.TabStop = true;
             this.linkLabelSingup.Text = "Don\'t Have an Account?SignUp";
+            this.linkLabelSingup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSingup_LinkClicked);
             this.linkLabelSingup.Click += new System.EventHandler(this.linkLabelSingup_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.icons8_user_locked_64;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(125, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 47);
@@ -138,7 +141,8 @@ namespace IMBD_adopse
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.icons8_lock_26;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
             this.pictureBox2.Location = new System.Drawing.Point(125, 156);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(52, 42);
