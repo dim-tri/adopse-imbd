@@ -46,6 +46,8 @@ namespace IMBD_adopse
             this.registerIcon = new System.Windows.Forms.PictureBox();
             this.lineBox2 = new System.Windows.Forms.PictureBox();
             this.lineBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.nameBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.surnameBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailBox)).BeginInit();
@@ -239,12 +241,37 @@ namespace IMBD_adopse
             this.lineBox1.TabIndex = 16;
             this.lineBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label1.Location = new System.Drawing.Point(165, 586);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(199, 19);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Already have an account?";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.LinkColor = System.Drawing.SystemColors.Highlight;
+            this.linkLabel1.Location = new System.Drawing.Point(364, 585);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(54, 19);
+            this.linkLabel1.TabIndex = 18;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Log in";
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(606, 628);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lineBox1);
             this.Controls.Add(this.lineBox2);
             this.Controls.Add(this.registerIcon);
@@ -300,5 +327,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.PictureBox registerIcon;
         private System.Windows.Forms.PictureBox lineBox2;
         private System.Windows.Forms.PictureBox lineBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
