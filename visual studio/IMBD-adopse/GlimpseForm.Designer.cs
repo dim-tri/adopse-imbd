@@ -37,6 +37,7 @@ namespace IMBD_adopse
             this.MovieTitle = new System.Windows.Forms.RichTextBox();
             this.WishlistButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.WishlistRemoveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,12 +131,24 @@ namespace IMBD_adopse
             this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // WishlistRemoveBtn
+            // 
+            this.WishlistRemoveBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.WishlistRemoveBtn.Location = new System.Drawing.Point(348, 236);
+            this.WishlistRemoveBtn.Name = "WishlistRemoveBtn";
+            this.WishlistRemoveBtn.Size = new System.Drawing.Size(116, 37);
+            this.WishlistRemoveBtn.TabIndex = 10;
+            this.WishlistRemoveBtn.Text = "- Wishlist";
+            this.WishlistRemoveBtn.UseVisualStyleBackColor = true;
+            this.WishlistRemoveBtn.Click += new System.EventHandler(this.WishlistRemoveBtn_Click);
+            // 
             // GlimpseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 298);
             this.ControlBox = false;
+            this.Controls.Add(this.WishlistRemoveBtn);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.WishlistButton);
             this.Controls.Add(this.MovieTitle);
@@ -165,6 +178,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.RichTextBox MovieTitle;
         private System.Windows.Forms.Button ExitButton;
         public System.Windows.Forms.Button WishlistButton;
+        private System.Windows.Forms.Button WishlistRemoveBtn;
     }
 
 }

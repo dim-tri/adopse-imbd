@@ -63,12 +63,12 @@ namespace IMBD_adopse
                 Users user = new Users();
                 if (user.logout(userID))
                 {
-                    //  Debug.WriteLine("Status: " + user.getUserStatus(userID));
-                    //  user.registerUser("giannis", "mparzas", "giannis@hotmail.com", "123456789", "gms4all");
+                    
                     userID = 0;
                     loginState.Text = "Logged in as: Guest";
                     loginBtn.Text = "Login";
                     MessageBox.Show("You are now logged out.", "Login Status");
+                    OpenWishlistBtn.Enabled = false;
                     return;
                 }
             }
@@ -86,5 +86,13 @@ namespace IMBD_adopse
             userID = id;
         }
 
+        private void OpenWishlistBtn_Click(object sender, EventArgs e)
+        {
+            Debug.WriteLine("from homwform " + userID);
+            WishlistForm wish = new WishlistForm();
+            wish.UserID = this.userID;
+            wish.Show();
+
+        }
     }
 }

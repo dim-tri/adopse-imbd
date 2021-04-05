@@ -54,6 +54,8 @@ namespace IMBD_adopse
         private void WishlistButton_Click(object sender, EventArgs e)
         {
             //TO-DO: Add movied id to wishlist database
+            WishlistMovie wishlist = new WishlistMovie();
+            if (wishlist.Add(userID, this.MovieID)) { MessageBox.Show("Successfully added movie to wishlist.", "Wishlist"); }
         }
 
         public int userID;
@@ -62,10 +64,13 @@ namespace IMBD_adopse
            // Debug.WriteLine("User iD: " + userID);
             if (userID != 0) {
                 WishlistButton.Enabled = true;
+                WishlistRemoveBtn.Enabled = true;
+                checkWishlistMovieExists();
             }
             else
             {
                 WishlistButton.Enabled = false;
+                WishlistRemoveBtn.Enabled = false;
             }
             
         }
@@ -76,6 +81,29 @@ namespace IMBD_adopse
             checkUserLoggedIn();
         }
 
+        private void WishlistRemoveBtn_Click(object sender, EventArgs e)
+        {
+            WishlistMovie wishlist = new WishlistMovie();
+            if (wishlist.Remove(userID, this.MovieID)) { MessageBox.Show("Successfully removed movie from wishlist.", "Wishlist"); }
+        }
+
+
+        private void checkWishlistMovieExists() 
+        {
+            WishlistMovie wishlist = new WishlistMovie();
+            if (wishlist.check(userID, this.MovieID))
+            {
+                WishlistButton.Enabled = false;
+                WishlistRemoveBtn.Enabled = true;
+            }
+            else
+            {
+                WishlistButton.Enabled = true;
+                WishlistRemoveBtn.Enabled = false;
+            }
+
+
+        }
 
     }
 }
