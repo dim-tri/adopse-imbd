@@ -8,8 +8,12 @@ namespace IMBD_adopse
 {
     public partial class HomeForm : Form
     {
-        public HomeForm()
+        //Parent Main window
+        private MainWindowForm MainWindow;
+
+        public HomeForm(MainWindowForm mainWindow)
         {
+            this.MainWindow = mainWindow;
             InitializeComponent();
             loadHome();
         }
@@ -29,7 +33,9 @@ namespace IMBD_adopse
 
                 movieImage.Click += (sender, e) =>
                 {
-                    GlimpseForm glimpseForm = new GlimpseForm(movie.Id);
+
+                    GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie.Id);
+                   // GlimpseForm glimpseForm = new GlimpseForm(movie.Id);
                     glimpseForm.setUserId(userID);
                     glimpseForm.Show();
                 };
@@ -45,7 +51,8 @@ namespace IMBD_adopse
                 movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
                 movieImage.Click += (sender, e) =>
                 {
-                    GlimpseForm glimpseForm = new GlimpseForm(movie2.Id);
+                    GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie2.Id);
+                    //GlimpseForm glimpseForm = new GlimpseForm(movie2.Id);
                     glimpseForm.setUserId(userID);
                     glimpseForm.Show();
                 };
