@@ -33,7 +33,10 @@ namespace IMBD_adopse
 
                 movieImage.Click += (sender, e) =>
                 {
+
                     GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie.Id);
+                   // GlimpseForm glimpseForm = new GlimpseForm(movie.Id);
+                    glimpseForm.setUserId(userID);
                     glimpseForm.Show();
                 };
                 flowPanelTopMovies.Controls.Add(movieImage);
@@ -49,6 +52,8 @@ namespace IMBD_adopse
                 movieImage.Click += (sender, e) =>
                 {
                     GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie2.Id);
+                    //GlimpseForm glimpseForm = new GlimpseForm(movie2.Id);
+                    glimpseForm.setUserId(userID);
                     glimpseForm.Show();
                 };
                 flowPanelNewReleases.Controls.Add(movieImage);
@@ -65,8 +70,9 @@ namespace IMBD_adopse
                 Users user = new Users();
                 if (user.logout(userID))
                 {
-                  //  Debug.WriteLine("Status: " + user.getUserStatus(userID));
-                  //  user.registerUser("giannis", "mparzas", "giannis@hotmail.com", "123456789", "gms4all");
+                    //  Debug.WriteLine("Status: " + user.getUserStatus(userID));
+                    //  user.registerUser("giannis", "mparzas", "giannis@hotmail.com", "123456789", "gms4all");
+                    userID = 0;
                     loginState.Text = "Logged in as: Guest";
                     loginBtn.Text = "Login";
                     MessageBox.Show("You are now logged out.", "Login Status");

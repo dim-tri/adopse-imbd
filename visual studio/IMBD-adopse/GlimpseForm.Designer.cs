@@ -179,9 +179,9 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label MovieRating;
         private System.Windows.Forms.RichTextBox MovieDesc;
         private System.Windows.Forms.RichTextBox MovieTitle;
-        private System.Windows.Forms.Button WishlistButton;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Button MoreButton;
+        public System.Windows.Forms.Button WishlistButton;
     }
 
 }
