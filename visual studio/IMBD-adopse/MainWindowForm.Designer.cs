@@ -58,7 +58,6 @@ namespace IMBD_adopse
             this.MainMenu.Size = new System.Drawing.Size(1904, 40);
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Text = "toolStrip1";
-            this.MainMenu.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked_1);
             // 
             // HomeButton
             // 

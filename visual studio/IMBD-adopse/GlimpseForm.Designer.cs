@@ -37,6 +37,7 @@ namespace IMBD_adopse
             this.MovieTitle = new System.Windows.Forms.RichTextBox();
             this.WishlistButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.MoreButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +107,7 @@ namespace IMBD_adopse
             this.WishlistButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.WishlistButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.WishlistButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WishlistButton.Location = new System.Drawing.Point(468, 236);
+            this.WishlistButton.Location = new System.Drawing.Point(470, 241);
             this.WishlistButton.Margin = new System.Windows.Forms.Padding(0);
             this.WishlistButton.Name = "WishlistButton";
             this.WishlistButton.Size = new System.Drawing.Size(116, 37);
@@ -130,12 +131,27 @@ namespace IMBD_adopse
             this.ExitButton.UseVisualStyleBackColor = false;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // MoreButton
+            // 
+            this.MoreButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.MoreButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.MoreButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MoreButton.Location = new System.Drawing.Point(232, 241);
+            this.MoreButton.Margin = new System.Windows.Forms.Padding(0);
+            this.MoreButton.Name = "MoreButton";
+            this.MoreButton.Size = new System.Drawing.Size(116, 37);
+            this.MoreButton.TabIndex = 10;
+            this.MoreButton.Text = "View More";
+            this.MoreButton.UseVisualStyleBackColor = true;
+            this.MoreButton.Click += new System.EventHandler(this.MoreButton_Click);
+            // 
             // GlimpseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 298);
             this.ControlBox = false;
+            this.Controls.Add(this.MoreButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.WishlistButton);
             this.Controls.Add(this.MovieTitle);
@@ -165,6 +181,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.RichTextBox MovieTitle;
         private System.Windows.Forms.Button WishlistButton;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button MoreButton;
     }
 
 }

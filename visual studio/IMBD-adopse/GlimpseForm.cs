@@ -17,11 +17,15 @@ namespace IMBD_adopse
     /// </summary>
     public partial class GlimpseForm : Form
     {
+        private MainWindowForm MainForm;
+        
         //Id of the movie to glimpse
         private int MovieID;
 
-        public GlimpseForm(int movieId)
+
+        public GlimpseForm(MainWindowForm mainForm, int movieId)
         {
+            this.MainForm = mainForm;
             this.MovieID = movieId;
             InitializeComponent();
         }
@@ -52,6 +56,12 @@ namespace IMBD_adopse
         private void WishlistButton_Click(object sender, EventArgs e)
         {
             //TO-DO: Add movied id to wishlist database
+        }
+
+        private void MoreButton_Click(object sender, EventArgs e)
+        {
+            MainForm.LoadMoviePage(MovieID);
+            this.Close();
         }
     }
 }

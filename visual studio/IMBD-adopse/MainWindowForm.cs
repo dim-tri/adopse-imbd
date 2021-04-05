@@ -18,21 +18,20 @@ namespace IMBD_adopse
             LoadHomePage();
         }
 
-        private void LoadHomePage() {
-            HomeForm homeForm = new HomeForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+        public void LoadHomePage() {
+            HomeForm homeForm = new HomeForm(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
             this.MainPanel.Controls.Add(homeForm);
-            //homeForm.FormBorderStyle = FormBorderStyle.FixedDialog;
             homeForm.Show();
+
+            
         }
 
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
+        public void LoadMoviePage(int movieId) {
 
-        }
-
-        private void toolStrip1_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
-        {
-
+            this.MainPanel.Controls.Clear();
+            MoviePage moviePage = new MoviePage(movieId) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.MainPanel.Controls.Add(moviePage);
+            moviePage.Show();
         }
 
     }
