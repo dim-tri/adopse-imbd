@@ -58,11 +58,11 @@ namespace IMBD_adopse
             // 
             this.labelExit.AutoSize = true;
             this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelExit.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelExit.ForeColor = System.Drawing.Color.White;
             this.labelExit.Location = new System.Drawing.Point(528, 0);
             this.labelExit.Name = "labelExit";
-            this.labelExit.Size = new System.Drawing.Size(20, 23);
+            this.labelExit.Size = new System.Drawing.Size(24, 24);
             this.labelExit.TabIndex = 1;
             this.labelExit.Text = "X";
             this.labelExit.Click += new System.EventHandler(this.labelExit_Click);

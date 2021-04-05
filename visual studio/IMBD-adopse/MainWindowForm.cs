@@ -37,5 +37,30 @@ namespace IMBD_adopse
             moviePage.Show();
         }
 
+        private void ProfilePictureBox_Click(object sender, EventArgs e)
+        {
+            PictureBox btnSender = (PictureBox)sender;
+            Point ptLowerLeft = new Point(0, btnSender.Height);
+            ptLowerLeft = btnSender.PointToScreen(ptLowerLeft);
+            LoginMenuStrip.Show(ptLowerLeft);
+        }
+
+        private void LoginMenuItem_Click(object sender, EventArgs e) {
+            string message = "Login";
+            MessageBox.Show(message);
+        }
+
+        private void RegisterMenuItem_Click(object sender, EventArgs e)
+        {
+            string message = "Register";
+            MessageBox.Show(message);
+        }
+
+        private void SettingsMenuItem_Click(object sender, EventArgs e)
+        {
+            string message = "Settings";
+            MessageBox.Show(message);
+        }
+
     }
 }
