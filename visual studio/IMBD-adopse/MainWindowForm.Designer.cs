@@ -103,7 +103,6 @@ namespace IMBD_adopse
             // ProfilePictureBox
             // 
             this.ProfilePictureBox.ContextMenuStrip = this.LoginMenuStrip;
-            this.ProfilePictureBox.Image = global::IMBD_adopse.Properties.Resources.thin_line_user_icon;
             this.ProfilePictureBox.Location = new System.Drawing.Point(1833, 15);
             this.ProfilePictureBox.Name = "ProfilePictureBox";
             this.ProfilePictureBox.Size = new System.Drawing.Size(33, 29);
@@ -164,7 +163,7 @@ namespace IMBD_adopse
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.logo_colorArtboard_3;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(10, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
