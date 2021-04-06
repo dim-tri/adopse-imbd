@@ -17,7 +17,6 @@ namespace IMBD_adopse
         public WishlistForm()
         {
             InitializeComponent();
-            loadWishlist();
         }
         private int userID;
 
@@ -25,13 +24,22 @@ namespace IMBD_adopse
         {
             get { return userID; }
             set { userID = value; }
+        } 
+
+        public HomeForm obj;
+
+        public void sendObjHome(int id)
+        {
+            userID = id;
+            loadWishlist(id);
         }
 
-        public void loadWishlist() 
+
+        public void loadWishlist(int uid) 
         {
-            Debug.WriteLine("test: " + this.userID);
+            Debug.WriteLine("test: " + uid);
             WishlistMovie wishlist = new WishlistMovie();
-            List<WishlistMovie> obj = wishlist.get(1);
+            List<WishlistMovie> obj = wishlist.get(uid);
             // List<Movie> mov=null;
             Movie movie = new Movie();
             List<Movie> test;

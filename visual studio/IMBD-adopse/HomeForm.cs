@@ -88,9 +88,9 @@ namespace IMBD_adopse
 
         private void OpenWishlistBtn_Click(object sender, EventArgs e)
         {
-            Debug.WriteLine("from homwform " + userID);
+           // Debug.WriteLine("from homwform " + userID);
             WishlistForm wish = new WishlistForm();
-            wish.UserID = this.userID;
+            wish.sendObjHome(userID);
             wish.Show();
 
         }
