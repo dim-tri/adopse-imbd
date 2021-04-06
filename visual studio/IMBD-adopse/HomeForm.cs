@@ -29,7 +29,11 @@ namespace IMBD_adopse
             {
                 PictureBox movieImage = new PictureBox();
                 movieImage.ImageLocation = movie.Photo;
-                movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
+                // movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
+                movieImage.Size = new System.Drawing.Size(200, 240);
+                movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
+                movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                movieImage.BorderStyle = BorderStyle.Fixed3D;
 
                 movieImage.Click += (sender, e) =>
                 {
@@ -49,7 +53,11 @@ namespace IMBD_adopse
             {
                 PictureBox movieImage = new PictureBox();
                 movieImage.ImageLocation = movie2.Photo;
-                movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
+                //movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
+                movieImage.Size = new System.Drawing.Size(200, 240);
+                movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
+                movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                movieImage.BorderStyle = BorderStyle.Fixed3D;
                 movieImage.Click += (sender, e) =>
                 {
                     GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie2.Id);

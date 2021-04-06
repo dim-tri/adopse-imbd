@@ -26,6 +26,12 @@ namespace IMBD_adopse
 
             //Data to Form
             MovieImage.ImageLocation = movies[0].Photo;
+
+            MovieImage.Size = new System.Drawing.Size(200, 240);
+            MovieImage.SizeMode = PictureBoxSizeMode.CenterImage;
+            MovieImage.SizeMode = PictureBoxSizeMode.StretchImage;
+            MovieImage.BorderStyle = BorderStyle.Fixed3D;
+
             MovieDesc.Text = movies[0].Plot;
             MovieTitle.Text = movies[0].Name;
         }

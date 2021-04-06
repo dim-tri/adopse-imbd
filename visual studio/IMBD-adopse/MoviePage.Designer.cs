@@ -50,7 +50,7 @@ namespace IMBD_adopse
             // 
             this.MovieTitle.AutoSize = true;
             this.MovieTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MovieTitle.Location = new System.Drawing.Point(215, 32);
+            this.MovieTitle.Location = new System.Drawing.Point(245, 12);
             this.MovieTitle.Name = "MovieTitle";
             this.MovieTitle.Size = new System.Drawing.Size(149, 37);
             this.MovieTitle.TabIndex = 2;
@@ -60,7 +60,7 @@ namespace IMBD_adopse
             // 
             this.MovieDesc.BackColor = System.Drawing.SystemColors.Menu;
             this.MovieDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MovieDesc.Location = new System.Drawing.Point(215, 96);
+            this.MovieDesc.Location = new System.Drawing.Point(245, 67);
             this.MovieDesc.Name = "MovieDesc";
             this.MovieDesc.ReadOnly = true;
             this.MovieDesc.Size = new System.Drawing.Size(404, 60);

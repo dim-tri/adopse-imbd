@@ -41,7 +41,7 @@ namespace IMBD_adopse
             this.RegisterMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SettingsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
@@ -71,7 +71,7 @@ namespace IMBD_adopse
             this.panel1.Controls.Add(this.loginState);
             this.panel1.Controls.Add(this.ProfilePictureBox);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.searchBox);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -82,6 +82,7 @@ namespace IMBD_adopse
             // 
             this.watchlistBtn.BackColor = System.Drawing.Color.Goldenrod;
             this.watchlistBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.watchlistBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.watchlistBtn.Enabled = false;
             this.watchlistBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.watchlistBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -105,6 +106,7 @@ namespace IMBD_adopse
             // ProfilePictureBox
             // 
             this.ProfilePictureBox.ContextMenuStrip = this.LoginMenuStrip;
+            this.ProfilePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ProfilePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureBox.Image")));
             this.ProfilePictureBox.Location = new System.Drawing.Point(1845, 12);
             this.ProfilePictureBox.Name = "ProfilePictureBox";
@@ -158,13 +160,13 @@ namespace IMBD_adopse
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // textBox1
+            // searchBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(642, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(644, 29);
-            this.textBox1.TabIndex = 1;
+            this.searchBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchBox.Location = new System.Drawing.Point(642, 12);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(644, 29);
+            this.searchBox.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -204,7 +206,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.Panel MainPanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox ProfilePictureBox;
         private System.Windows.Forms.ContextMenuStrip LoginMenuStrip;
