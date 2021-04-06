@@ -15,6 +15,8 @@ namespace IMBD_adopse
 {
     public partial class MainWindowForm : Form
     {
+        public static int userID;
+       
         public MainWindowForm()
         {
             InitializeComponent();
@@ -41,10 +43,10 @@ namespace IMBD_adopse
         }
 
         //Clear Main Window and Load Watchlist Page
-        public void LoadWatchlistPage(int movieId)
+        public void LoadWatchlistPage()
         {
             this.MainPanel.Controls.Clear(); //Clear Panel
-            WatchlistForm watchlistPage = new WatchlistForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            WatchlistForm watchlistPage = new WatchlistForm(userID) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.MainPanel.Controls.Add(watchlistPage);
             watchlistPage.Show();
         }
@@ -87,9 +89,7 @@ namespace IMBD_adopse
         {
             string message = "Settings";
             MessageBox.Show(message);
-        }
-
-        public static int userID;
+        }     
 
         public void setUserID(int id)
         {
@@ -110,9 +110,11 @@ namespace IMBD_adopse
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WatchlistForm wish = new WatchlistForm();
-            wish.sendObjHome(userID);
-            wish.Show();
+            //WatchlistForm wish = new WatchlistForm();
+            //wish.sendObjHome(userID);
+            //wish.Show();
+
+            this.LoadWatchlistPage();
         }
 
 
