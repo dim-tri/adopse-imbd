@@ -16,7 +16,7 @@ namespace IMBD_adopse
     public partial class MainWindowForm : Form
     {
         public static int userID;
-       
+
         public MainWindowForm()
         {
             InitializeComponent();
@@ -24,17 +24,19 @@ namespace IMBD_adopse
         }
 
         //Clear Main Window and Load Home Page
-        public void LoadHomePage() {
+        public void LoadHomePage()
+        {
             this.MainPanel.Controls.Clear();
-            HomeForm homeForm = new HomeForm(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true};
+            HomeForm homeForm = new HomeForm(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.MainPanel.Controls.Add(homeForm);
             homeForm.Show();
 
-            
+
         }
 
         //Clear Main Window and Load Movie Page
-        public void LoadMoviePage(int movieId) {
+        public void LoadMoviePage(int movieId)
+        {
 
             this.MainPanel.Controls.Clear(); //Clear Panel
             MoviePage moviePage = new MoviePage(movieId) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -59,7 +61,8 @@ namespace IMBD_adopse
             LoginMenuStrip.Show(ptLowerLeft);
         }
 
-        public void LoginMenuItem_Click(object sender, EventArgs e) {
+        public void LoginMenuItem_Click(object sender, EventArgs e)
+        {
             if (LoginMenuItem.Text == "Logout")
             {
                 Users user = new Users();
@@ -92,16 +95,16 @@ namespace IMBD_adopse
             settings.Show();
         }
 
-        public static int userID;
+        //public static int userID;
 
-            string message = "Settings";
-            MessageBox.Show(message);
-        }     
+        //string message = "Settings";
+        //MessageBox.Show(message);
+
 
         public void setUserID(int id)
         {
             userID = id;
-            
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -109,8 +112,8 @@ namespace IMBD_adopse
             if (!string.IsNullOrWhiteSpace(searchBox.Text))
             {
                 Movie movie = new Movie();
-                List <Movie> search = movie.DynamicSearch(searchBox.Text);
-                if(search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
+                List<Movie> search = movie.DynamicSearch(searchBox.Text);
+                if (search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
                 LoadMoviePage(search[0].Id);
             }
 
@@ -121,7 +124,7 @@ namespace IMBD_adopse
         {
 
             // MessageBox.Show("Return to home...", "Home");
-            LoadHomePage();
+            this.LoadHomePage();
 
         }
 
