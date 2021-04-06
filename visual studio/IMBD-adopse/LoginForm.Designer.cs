@@ -36,7 +36,6 @@ namespace IMBD_adopse
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.linkLabelSingup = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelfalse = new System.Windows.Forms.Label();
@@ -115,19 +114,6 @@ namespace IMBD_adopse
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // linkLabelSingup
-            // 
-            this.linkLabelSingup.AutoSize = true;
-            this.linkLabelSingup.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.linkLabelSingup.Location = new System.Drawing.Point(179, 298);
-            this.linkLabelSingup.Name = "linkLabelSingup";
-            this.linkLabelSingup.Size = new System.Drawing.Size(188, 17);
-            this.linkLabelSingup.TabIndex = 6;
-            this.linkLabelSingup.TabStop = true;
-            this.linkLabelSingup.Text = "Don\'t Have an Account?SignUp";
-            this.linkLabelSingup.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelSingup_LinkClicked);
-            this.linkLabelSingup.Click += new System.EventHandler(this.linkLabelSingup_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -169,7 +155,6 @@ namespace IMBD_adopse
             this.Controls.Add(this.labelfalse);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.linkLabelSingup);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
@@ -194,7 +179,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.Button buttonLogin;
-        private System.Windows.Forms.LinkLabel linkLabelSingup;
         private System.Windows.Forms.Label labelExit;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

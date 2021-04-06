@@ -33,8 +33,8 @@ namespace IMBD_adopse
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindowForm));
             this.MainPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.watchlistBtn = new System.Windows.Forms.Button();
+            this.loginState = new System.Windows.Forms.Label();
             this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
             this.LoginMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.LoginMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,8 +67,8 @@ namespace IMBD_adopse
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Goldenrod;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.watchlistBtn);
+            this.panel1.Controls.Add(this.loginState);
             this.panel1.Controls.Add(this.ProfilePictureBox);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.textBox1);
@@ -78,32 +78,35 @@ namespace IMBD_adopse
             this.panel1.Size = new System.Drawing.Size(1904, 53);
             this.panel1.TabIndex = 2;
             // 
-            // button1
+            // watchlistBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Goldenrod;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(1510, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 28);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Watchlist";
-            this.button1.UseVisualStyleBackColor = false;
+            this.watchlistBtn.BackColor = System.Drawing.Color.Goldenrod;
+            this.watchlistBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.watchlistBtn.Enabled = false;
+            this.watchlistBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.watchlistBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.watchlistBtn.Location = new System.Drawing.Point(1510, 16);
+            this.watchlistBtn.Name = "watchlistBtn";
+            this.watchlistBtn.Size = new System.Drawing.Size(140, 28);
+            this.watchlistBtn.TabIndex = 7;
+            this.watchlistBtn.Text = "Watchlist";
+            this.watchlistBtn.UseVisualStyleBackColor = false;
+            this.watchlistBtn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // loginState
             // 
-            this.label1.Location = new System.Drawing.Point(1656, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 23);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Guest";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.loginState.Location = new System.Drawing.Point(1656, 16);
+            this.loginState.Name = "loginState";
+            this.loginState.Size = new System.Drawing.Size(171, 23);
+            this.loginState.TabIndex = 6;
+            this.loginState.Text = "Guest";
+            this.loginState.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ProfilePictureBox
             // 
             this.ProfilePictureBox.ContextMenuStrip = this.LoginMenuStrip;
-            this.ProfilePictureBox.Location = new System.Drawing.Point(1833, 15);
+            this.ProfilePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureBox.Image")));
+            this.ProfilePictureBox.Location = new System.Drawing.Point(1845, 12);
             this.ProfilePictureBox.Name = "ProfilePictureBox";
             this.ProfilePictureBox.Size = new System.Drawing.Size(33, 29);
             this.ProfilePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -145,6 +148,7 @@ namespace IMBD_adopse
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(1292, 12);
             this.pictureBox2.Name = "pictureBox2";
@@ -152,6 +156,7 @@ namespace IMBD_adopse
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // textBox1
             // 
@@ -163,6 +168,7 @@ namespace IMBD_adopse
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(10, 10);
@@ -172,6 +178,7 @@ namespace IMBD_adopse
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MainWindowForm
             // 
@@ -200,11 +207,11 @@ namespace IMBD_adopse
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox ProfilePictureBox;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip LoginMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem LoginMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem LoginMenuItem;
         private System.Windows.Forms.ToolStripMenuItem RegisterMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SettingsMenuItem;
-        private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label loginState;
+        public System.Windows.Forms.Button watchlistBtn;
     }
 }

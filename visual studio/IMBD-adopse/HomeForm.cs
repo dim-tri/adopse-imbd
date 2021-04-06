@@ -35,8 +35,9 @@ namespace IMBD_adopse
                 {
 
                     GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie.Id);
-                   // GlimpseForm glimpseForm = new GlimpseForm(movie.Id);
-                    glimpseForm.setUserId(userID);
+                    // GlimpseForm glimpseForm = new GlimpseForm(movie.Id);
+                    Debug.WriteLine("User id from homeform: " + userID);
+                    glimpseForm.setUserId(MainWindowForm.getUserID());
                     glimpseForm.Show();
                 };
                 flowPanelTopMovies.Controls.Add(movieImage);
@@ -53,7 +54,7 @@ namespace IMBD_adopse
                 {
                     GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie2.Id);
                     //GlimpseForm glimpseForm = new GlimpseForm(movie2.Id);
-                    glimpseForm.setUserId(userID);
+                    glimpseForm.setUserId(MainWindowForm.getUserID());
                     glimpseForm.Show();
                 };
                 flowPanelNewReleases.Controls.Add(movieImage);
@@ -63,30 +64,8 @@ namespace IMBD_adopse
         }
 
         public int userID;
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if(loginBtn.Text == "Logout")
-            {
-                Users user = new Users();
-                if (user.logout(userID))
-                {
-                    //  Debug.WriteLine("Status: " + user.getUserStatus(userID));
-                    //  user.registerUser("giannis", "mparzas", "giannis@hotmail.com", "123456789", "gms4all");
-                    userID = 0;
-                    loginState.Text = "Logged in as: Guest";
-                    loginBtn.Text = "Login";
-                    MessageBox.Show("You are now logged out.", "Login Status");
-                    return;
-                }
-            }
-
-             LoginForm loginpage = new LoginForm();
-             loginpage.homeFormObject(this);
-             loginpage.Show();
-            
-        }
-
-
+       
+       
         //trexon user id tou sundedemenou
         public void setUserID(int id) 
         {

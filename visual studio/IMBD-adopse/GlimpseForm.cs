@@ -36,6 +36,7 @@ namespace IMBD_adopse
         //Load Movie Info from Id
         private void GlimpseForm_Load(object sender, EventArgs e)
         {
+            
             //Get DB data
             Movie obj = new Movie();
             List<Movie> movies = obj.getMovies(MovieID);
@@ -56,9 +57,10 @@ namespace IMBD_adopse
             this.Close();
         }
 
-        private void WishlistButton_Click(object sender, EventArgs e)
+        private void AddBtn_Click(object sender, EventArgs e)
         {
-            //TO-DO: Add movied id to wishlist database
+            WishlistMovie wishlist = new WishlistMovie();
+            if (wishlist.Add(userID, this.MovieID)) { MessageBox.Show("Successfully added movie to wishlist.", "Wishlist"); }
         }
         
         //Button that opens the movie page of the currently displayed movie
@@ -72,21 +74,49 @@ namespace IMBD_adopse
         public int userID;
         private void checkUserLoggedIn()
         {
-           // Debug.WriteLine("User iD: " + userID);
-            if (userID != 0) {
-                WishlistButton.Enabled = true;
+            Debug.WriteLine("User iD from glimpse: " + userID);
+            if (userID != 0)
+            {
+                AddBtn.Enabled = true;
+                RemoveBtn.Enabled = true;
+                checkWishlistMovieExists();
             }
             else
             {
-                WishlistButton.Enabled = false;
+                AddBtn.Enabled = false;
+                RemoveBtn.Enabled = false;
             }
-            
+
         }
 
         public void setUserId(int id)
         {
             userID = id;
             checkUserLoggedIn();
+        }
+
+
+        private void checkWishlistMovieExists()
+        {
+            WishlistMovie wishlist = new WishlistMovie();
+            if (wishlist.check(userID, this.MovieID))
+            {
+                AddBtn.Enabled = false;
+                RemoveBtn.Enabled = true;
+            }
+            else
+            {
+                AddBtn.Enabled = true;
+                RemoveBtn.Enabled = false;
+            }
+
+
+        }
+
+        private void RemoveBtn_Click(object sender, EventArgs e)
+        {
+            WishlistMovie wishlist = new WishlistMovie();
+            if (wishlist.Remove(userID, this.MovieID)) { MessageBox.Show("Successfully removed movie from wishlist.", "Wishlist"); }
         }
     }
 }

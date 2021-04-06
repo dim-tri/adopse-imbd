@@ -55,8 +55,9 @@ namespace IMBD_adopse
                 {
                     MessageBox.Show("Authentication Success.", "Authentication");
                     obj2.loginState.Text = "Logged in as: " + newLogin.Name;
-                    obj2.loginBtn.Text = "Logout";
-                    obj2.setUserID(newLogin.Id);
+                    obj2.LoginMenuItem.Text= "Logout";
+                    obj2.setUserID(newLogin.Id);       
+                    obj2.watchlistBtn.Enabled = true;
                     this.Dispose();
                     return;
                 }
@@ -68,24 +69,17 @@ namespace IMBD_adopse
           
         }
 
-        private void linkLabelSingup_Click(object sender, EventArgs e)
-        {
-
-        }
    
-        public HomeForm obj2;
+        public MainWindowForm obj2;
 
-        public void homeFormObject(HomeForm obj)
+        public void MainWindowForm(MainWindowForm obj)
         {
             obj2 = obj;
             
         }
 
-        private void linkLabelSingup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Dispose();
-            RegistrationForm registration = new RegistrationForm();
-            registration.Show();
-        }
+   
+
+
     }
 }
