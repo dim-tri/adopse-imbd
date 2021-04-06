@@ -14,13 +14,15 @@ namespace IMBD_adopse
 {
     public partial class WatchlistForm : Form
     {
-        public WatchlistForm()
-        {
-            InitializeComponent();
-        }
-
         private int userID;
 
+        public WatchlistForm(int userid)
+        {
+            InitializeComponent();
+            sendObjHome(userid);
+        }
+
+        
         public int UserID
         {
             get { return userID; }

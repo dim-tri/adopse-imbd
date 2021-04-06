@@ -15,6 +15,8 @@ namespace IMBD_adopse
 {
     public partial class MainWindowForm : Form
     {
+        public static int userID;
+       
         public MainWindowForm()
         {
             InitializeComponent();
@@ -38,6 +40,15 @@ namespace IMBD_adopse
             MoviePage moviePage = new MoviePage(movieId) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.MainPanel.Controls.Add(moviePage);
             moviePage.Show();
+        }
+
+        //Clear Main Window and Load Watchlist Page
+        public void LoadWatchlistPage()
+        {
+            this.MainPanel.Controls.Clear(); //Clear Panel
+            WatchlistForm watchlistPage = new WatchlistForm(userID) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.MainPanel.Controls.Add(watchlistPage);
+            watchlistPage.Show();
         }
 
         private void ProfilePictureBox_Click(object sender, EventArgs e)
@@ -76,11 +87,16 @@ namespace IMBD_adopse
 
         public void SettingsMenuItem_Click(object sender, EventArgs e)
         {
+
             SettingsForm settings = new SettingsForm();
             settings.Show();
         }
 
         public static int userID;
+
+            string message = "Settings";
+            MessageBox.Show(message);
+        }     
 
         public void setUserID(int id)
         {
@@ -101,17 +117,21 @@ namespace IMBD_adopse
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void HomeButton_Click(object sender, EventArgs e)
         {
+
             // MessageBox.Show("Return to home...", "Home");
             LoadHomePage();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WatchlistForm wish = new WatchlistForm();
-            wish.sendObjHome(userID);
-            wish.Show();
+            //WatchlistForm wish = new WatchlistForm();
+            //wish.sendObjHome(userID);
+            //wish.Show();
+
+            this.LoadWatchlistPage();
         }
 
 

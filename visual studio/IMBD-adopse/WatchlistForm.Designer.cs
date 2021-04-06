@@ -59,9 +59,10 @@ namespace IMBD_adopse
             this.ClientSize = new System.Drawing.Size(1026, 476);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowWatchlist);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WatchlistForm";
+
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
