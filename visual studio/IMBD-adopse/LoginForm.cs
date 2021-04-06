@@ -57,6 +57,7 @@ namespace IMBD_adopse
                     obj2.loginState.Text = "Logged in as: " + newLogin.Name;
                     obj2.loginBtn.Text = "Logout";
                     obj2.setUserID(newLogin.Id);
+                obj2.OpenWishlistBtn.Enabled = true;
                     this.Dispose();
                     return;
                 }

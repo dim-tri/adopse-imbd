@@ -35,6 +35,7 @@ namespace IMBD_adopse
             this.label2 = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
             this.loginState = new System.Windows.Forms.Label();
+            this.OpenWishlistBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // flowPanelNewReleases
@@ -100,12 +101,26 @@ namespace IMBD_adopse
             this.loginState.TabIndex = 10;
             this.loginState.Text = "Logged in as: Guest";
             // 
+            // OpenWishlistBtn
+            // 
+            this.OpenWishlistBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.OpenWishlistBtn.Enabled = false;
+            this.OpenWishlistBtn.Location = new System.Drawing.Point(0, 710);
+            this.OpenWishlistBtn.Name = "OpenWishlistBtn";
+            this.OpenWishlistBtn.Size = new System.Drawing.Size(1310, 24);
+            this.OpenWishlistBtn.TabIndex = 11;
+            this.OpenWishlistBtn.Text = "Open Wishlist";
+            this.OpenWishlistBtn.UseVisualStyleBackColor = true;
+            this.OpenWishlistBtn.Click += new System.EventHandler(this.OpenWishlistBtn_Click);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1310, 734);
+
             this.ControlBox = false;
+
             this.Controls.Add(this.loginState);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.label2);
@@ -129,6 +144,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label loginState;
         public System.Windows.Forms.Button loginBtn;
+        public System.Windows.Forms.Button OpenWishlistBtn;
     }
 }
 
