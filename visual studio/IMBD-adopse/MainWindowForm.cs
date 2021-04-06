@@ -40,6 +40,15 @@ namespace IMBD_adopse
             moviePage.Show();
         }
 
+        //Clear Main Window and Load Watchlist Page
+        public void LoadWatchlistPage(int movieId)
+        {
+            this.MainPanel.Controls.Clear(); //Clear Panel
+            WatchlistForm watchlistPage = new WatchlistForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.MainPanel.Controls.Add(watchlistPage);
+            watchlistPage.Show();
+        }
+
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
             PictureBox btnSender = (PictureBox)sender;
@@ -94,9 +103,9 @@ namespace IMBD_adopse
            
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void HomeButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Return to home...", "Home");
+            this.LoadHomePage();
         }
 
         private void button1_Click(object sender, EventArgs e)
