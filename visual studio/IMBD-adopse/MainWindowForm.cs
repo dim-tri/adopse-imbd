@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+using IMBD_adopse.classes;
+
 
 namespace IMBD_adopse
 {
@@ -45,22 +48,68 @@ namespace IMBD_adopse
             LoginMenuStrip.Show(ptLowerLeft);
         }
 
-        private void LoginMenuItem_Click(object sender, EventArgs e) {
-            string message = "Login";
-            MessageBox.Show(message);
+        public void LoginMenuItem_Click(object sender, EventArgs e) {
+            if (LoginMenuItem.Text == "Logout")
+            {
+                Users user = new Users();
+                if (user.logout(userID))
+                {
+                    userID = 0;
+                    loginState.Text = "Guest";
+                    LoginMenuItem.Text = "Login";
+                    MessageBox.Show("You are now logged out.", "Login Status");
+                    watchlistBtn.Enabled = false;
+                    return;
+                }
+            }
+
+            LoginForm loginpage = new LoginForm();
+            loginpage.MainWindowForm(this);
+            loginpage.Show();
         }
 
-        private void RegisterMenuItem_Click(object sender, EventArgs e)
+        public void RegisterMenuItem_Click(object sender, EventArgs e)
         {
-            string message = "Register";
-            MessageBox.Show(message);
+            RegistrationForm registration = new RegistrationForm();
+            registration.Show();
         }
 
-        private void SettingsMenuItem_Click(object sender, EventArgs e)
+        public void SettingsMenuItem_Click(object sender, EventArgs e)
         {
             string message = "Settings";
             MessageBox.Show(message);
         }
 
+        public static int userID;
+
+        public void setUserID(int id)
+        {
+            userID = id;
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Searching...", "Search");
+           
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Return to home...", "Home");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WatchlistForm wish = new WatchlistForm();
+            wish.sendObjHome(userID);
+            wish.Show();
+        }
+
+
+        public static int getUserID()
+        {
+            return userID;
+        }
     }
 }

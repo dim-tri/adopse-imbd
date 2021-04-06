@@ -33,8 +33,6 @@ namespace IMBD_adopse
             this.flowPanelTopMovies = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.loginBtn = new System.Windows.Forms.Button();
-            this.loginState = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // flowPanelNewReleases
@@ -79,35 +77,12 @@ namespace IMBD_adopse
             this.label2.TabIndex = 8;
             this.label2.Text = "Top Movies";
             // 
-            // loginBtn
-            // 
-            this.loginBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.loginBtn.Location = new System.Drawing.Point(0, 0);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(1310, 23);
-            this.loginBtn.TabIndex = 9;
-            this.loginBtn.Text = "Login";
-            this.loginBtn.UseVisualStyleBackColor = true;
-            this.loginBtn.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // loginState
-            // 
-            this.loginState.AutoSize = true;
-            this.loginState.Dock = System.Windows.Forms.DockStyle.Top;
-            this.loginState.Location = new System.Drawing.Point(0, 23);
-            this.loginState.Name = "loginState";
-            this.loginState.Size = new System.Drawing.Size(110, 15);
-            this.loginState.TabIndex = 10;
-            this.loginState.Text = "Logged in as: Guest";
-            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1310, 734);
             this.ControlBox = false;
-            this.Controls.Add(this.loginState);
-            this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowPanelTopMovies);
@@ -127,8 +102,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.FlowLayoutPanel flowPanelTopMovies;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.Label loginState;
-        public System.Windows.Forms.Button loginBtn;
     }
 }
 

@@ -35,9 +35,10 @@ namespace IMBD_adopse
             this.MovieRating = new System.Windows.Forms.Label();
             this.MovieDesc = new System.Windows.Forms.RichTextBox();
             this.MovieTitle = new System.Windows.Forms.RichTextBox();
-            this.WishlistButton = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.MoreButton = new System.Windows.Forms.Button();
+            this.RemoveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,19 +103,20 @@ namespace IMBD_adopse
             this.MovieTitle.TabIndex = 7;
             this.MovieTitle.Text = "Title Title";
             // 
-            // WishlistButton
+            // AddBtn
             // 
-            this.WishlistButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.WishlistButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.WishlistButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.WishlistButton.Location = new System.Drawing.Point(470, 241);
-            this.WishlistButton.Margin = new System.Windows.Forms.Padding(0);
-            this.WishlistButton.Name = "WishlistButton";
-            this.WishlistButton.Size = new System.Drawing.Size(116, 37);
-            this.WishlistButton.TabIndex = 8;
-            this.WishlistButton.Text = "+ Wishlist";
-            this.WishlistButton.UseVisualStyleBackColor = true;
-            this.WishlistButton.Click += new System.EventHandler(this.WishlistButton_Click);
+            this.AddBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AddBtn.Enabled = false;
+            this.AddBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AddBtn.Location = new System.Drawing.Point(488, 241);
+            this.AddBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(116, 37);
+            this.AddBtn.TabIndex = 8;
+            this.AddBtn.Text = "+ Watchlist";
+            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // ExitButton
             // 
@@ -145,15 +147,28 @@ namespace IMBD_adopse
             this.MoreButton.UseVisualStyleBackColor = true;
             this.MoreButton.Click += new System.EventHandler(this.MoreButton_Click);
             // 
+            // RemoveBtn
+            // 
+            this.RemoveBtn.Enabled = false;
+            this.RemoveBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.RemoveBtn.Location = new System.Drawing.Point(369, 241);
+            this.RemoveBtn.Name = "RemoveBtn";
+            this.RemoveBtn.Size = new System.Drawing.Size(116, 37);
+            this.RemoveBtn.TabIndex = 11;
+            this.RemoveBtn.Text = "- Watchlist";
+            this.RemoveBtn.UseVisualStyleBackColor = true;
+            this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
+            // 
             // GlimpseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 298);
             this.ControlBox = false;
+            this.Controls.Add(this.RemoveBtn);
             this.Controls.Add(this.MoreButton);
             this.Controls.Add(this.ExitButton);
-            this.Controls.Add(this.WishlistButton);
+            this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.MovieTitle);
             this.Controls.Add(this.MovieDesc);
             this.Controls.Add(this.MovieRating);
@@ -181,7 +196,8 @@ namespace IMBD_adopse
         private System.Windows.Forms.RichTextBox MovieTitle;
         private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Button MoreButton;
-        public System.Windows.Forms.Button WishlistButton;
+        public System.Windows.Forms.Button AddBtn;
+        private System.Windows.Forms.Button RemoveBtn;
     }
 
 }
