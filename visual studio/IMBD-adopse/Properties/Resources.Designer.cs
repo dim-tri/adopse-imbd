@@ -63,6 +63,16 @@ namespace IMBD_adopse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_search_172546__1_ {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_search_172546 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_lock_26 {
             get {
                 object obj = ResourceManager.GetObject("icons8-lock-26", resourceCulture);
@@ -76,6 +86,46 @@ namespace IMBD_adopse.Properties {
         internal static System.Drawing.Bitmap icons8_user_locked_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-locked-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap list_64x64 {
+            get {
+                object obj = ResourceManager.GetObject("list-64x64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_colorArtboard_3 {
+            get {
+                object obj = ResourceManager.GetObject("logo-colorArtboard_3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_colorArtboard_32x {
+            get {
+                object obj = ResourceManager.GetObject("logo-colorArtboard_32x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thin_line_user_icon {
+            get {
+                object obj = ResourceManager.GetObject("thin-line-user-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

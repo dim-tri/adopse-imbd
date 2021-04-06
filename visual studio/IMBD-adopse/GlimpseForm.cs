@@ -18,17 +18,22 @@ namespace IMBD_adopse
     /// </summary>
     public partial class GlimpseForm : Form
     {
+        private MainWindowForm MainForm;
+        
         //Id of the movie to glimpse
         private int MovieID;
 
-        public GlimpseForm(int movieId)
+
+        public GlimpseForm(MainWindowForm mainForm, int movieId)
         {
+            this.MainForm = mainForm;
             this.MovieID = movieId;
             InitializeComponent();
            
         }
         
 
+        //Load Movie Info from Id
         private void GlimpseForm_Load(object sender, EventArgs e)
         {
             //Get DB data
@@ -57,6 +62,14 @@ namespace IMBD_adopse
             WishlistMovie wishlist = new WishlistMovie();
             if (wishlist.Add(userID, this.MovieID)) { MessageBox.Show("Successfully added movie to wishlist.", "Wishlist"); }
         }
+        
+        //Button that opens the movie page of the currently displayed movie
+        private void MoreButton_Click(object sender, EventArgs e)
+        {
+            //Load the Movie Page on main window
+            MainForm.LoadMoviePage(MovieID);
+            this.Close();
+        }
 
         public int userID;
         private void checkUserLoggedIn()
@@ -81,6 +94,7 @@ namespace IMBD_adopse
             checkUserLoggedIn();
         }
 
+
         private void WishlistRemoveBtn_Click(object sender, EventArgs e)
         {
             WishlistMovie wishlist = new WishlistMovie();
@@ -104,6 +118,7 @@ namespace IMBD_adopse
 
 
         }
+
 
     }
 }

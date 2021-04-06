@@ -118,13 +118,18 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1310, 734);
-            this.Controls.Add(this.OpenWishlistBtn);
+
+            this.ControlBox = false;
+
             this.Controls.Add(this.loginState);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowPanelTopMovies);
             this.Controls.Add(this.flowPanelNewReleases);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "HomeForm";
             this.Text = "IMBD";
             this.ResumeLayout(false);
