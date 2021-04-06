@@ -87,6 +87,13 @@ namespace IMBD_adopse
 
         public void SettingsMenuItem_Click(object sender, EventArgs e)
         {
+
+            SettingsForm settings = new SettingsForm();
+            settings.Show();
+        }
+
+        public static int userID;
+
             string message = "Settings";
             MessageBox.Show(message);
         }     
@@ -99,13 +106,23 @@ namespace IMBD_adopse
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Searching...", "Search");
-           
+            if (!string.IsNullOrWhiteSpace(searchBox.Text))
+            {
+                Movie movie = new Movie();
+                List <Movie> search = movie.DynamicSearch(searchBox.Text);
+                if(search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
+                LoadMoviePage(search[0].Id);
+            }
+
+
         }
 
         private void HomeButton_Click(object sender, EventArgs e)
         {
-            this.LoadHomePage();
+
+            // MessageBox.Show("Return to home...", "Home");
+            LoadHomePage();
+
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -61,6 +61,8 @@ namespace IMBD_adopse
             this.Controls.Add(this.flowWatchlist);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WatchlistForm";
+
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 
