@@ -61,6 +61,7 @@ namespace IMBD_adopse
             this.MainPanel.Name = "MainPanel";
             this.MainPanel.Size = new System.Drawing.Size(1904, 980);
             this.MainPanel.TabIndex = 1;
+            this.MainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.MainPanel_Paint);
             // 
             // panel1
             // 
@@ -83,7 +84,6 @@ namespace IMBD_adopse
             this.watchlistBtn.BackColor = System.Drawing.Color.Goldenrod;
             this.watchlistBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.watchlistBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.watchlistBtn.Enabled = false;
             this.watchlistBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.watchlistBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.watchlistBtn.Location = new System.Drawing.Point(1510, 16);
@@ -170,6 +170,7 @@ namespace IMBD_adopse
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.logo_colorArtboard_3;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -189,6 +190,7 @@ namespace IMBD_adopse
             this.Name = "MainWindowForm";
             this.Text = "MainWindowForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MainWindowForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();

@@ -142,5 +142,22 @@ namespace IMBD_adopse
         {
             return userID;
         }
+
+        private void MainPanel_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void MainWindowForm_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.checkBox1State == true)
+            {
+                BackColor = System.Drawing.Color.FromArgb(46, 46, 46);
+            }
+            else
+            {
+                BackColor = System.Drawing.Color.FromArgb(230, 230, 230);
+            }
+        }
     }
 }

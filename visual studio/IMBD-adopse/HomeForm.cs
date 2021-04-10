@@ -80,5 +80,26 @@ namespace IMBD_adopse
             userID = id;
         }
 
+        private void HomeForm_Load(object sender, EventArgs e)
+        {
+            if (Properties.Settings.Default.checkBox1State == true)
+            {
+                BackColor = System.Drawing.Color.FromArgb(46, 46, 46);
+            }
+            else
+            {
+                BackColor = System.Drawing.Color.FromArgb(230, 230, 230);
+            }
+        }
+
+        private void flowPanelTopMovies_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void flowPanelNewReleases_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

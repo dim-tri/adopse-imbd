@@ -39,19 +39,23 @@ namespace IMBD_adopse
             // 
             this.flowPanelNewReleases.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowPanelNewReleases.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flowPanelNewReleases.Location = new System.Drawing.Point(12, 67);
             this.flowPanelNewReleases.Name = "flowPanelNewReleases";
             this.flowPanelNewReleases.Size = new System.Drawing.Size(1286, 231);
             this.flowPanelNewReleases.TabIndex = 5;
+            this.flowPanelNewReleases.Paint += new System.Windows.Forms.PaintEventHandler(this.flowPanelNewReleases_Paint);
             // 
             // flowPanelTopMovies
             // 
             this.flowPanelTopMovies.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowPanelTopMovies.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flowPanelTopMovies.Location = new System.Drawing.Point(12, 370);
             this.flowPanelTopMovies.Name = "flowPanelTopMovies";
             this.flowPanelTopMovies.Size = new System.Drawing.Size(1286, 231);
             this.flowPanelTopMovies.TabIndex = 6;
+            this.flowPanelTopMovies.Paint += new System.Windows.Forms.PaintEventHandler(this.flowPanelTopMovies_Paint);
             // 
             // label1
             // 
@@ -92,6 +96,7 @@ namespace IMBD_adopse
             this.MinimizeBox = false;
             this.Name = "HomeForm";
             this.Text = "IMBD";
+            this.Load += new System.EventHandler(this.HomeForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

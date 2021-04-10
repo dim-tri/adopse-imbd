@@ -68,9 +68,9 @@ namespace IMBD_adopse
             this.name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.name.Multiline = true;
             this.name.Name = "name";
+            this.name.PlaceholderText = "Name";
             this.name.Size = new System.Drawing.Size(309, 29);
             this.name.TabIndex = 0;
-            this.name.Text = " name";
             // 
             // surname
             // 
@@ -81,9 +81,9 @@ namespace IMBD_adopse
             this.surname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.surname.Multiline = true;
             this.surname.Name = "surname";
+            this.surname.PlaceholderText = "Surname";
             this.surname.Size = new System.Drawing.Size(309, 29);
             this.surname.TabIndex = 1;
-            this.surname.Text = " surname";
             // 
             // email
             // 
@@ -94,9 +94,9 @@ namespace IMBD_adopse
             this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.email.Multiline = true;
             this.email.Name = "email";
+            this.email.PlaceholderText = "Email";
             this.email.Size = new System.Drawing.Size(309, 29);
             this.email.TabIndex = 2;
-            this.email.Text = " email";
             // 
             // username
             // 
@@ -107,9 +107,9 @@ namespace IMBD_adopse
             this.username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.username.Multiline = true;
             this.username.Name = "username";
+            this.username.PlaceholderText = "Username";
             this.username.Size = new System.Drawing.Size(309, 29);
             this.username.TabIndex = 3;
-            this.username.Text = " username";
             // 
             // password
             // 
@@ -120,9 +120,9 @@ namespace IMBD_adopse
             this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.password.Multiline = true;
             this.password.Name = "password";
+            this.password.PlaceholderText = "Password";
             this.password.Size = new System.Drawing.Size(309, 29);
             this.password.TabIndex = 4;
-            this.password.Text = " password";
             // 
             // nameBox
             // 
@@ -178,12 +178,13 @@ namespace IMBD_adopse
             // registerBtn
             // 
             this.registerBtn.BackColor = System.Drawing.Color.Gold;
+            this.registerBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.registerBtn.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.registerBtn.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.registerBtn.Location = new System.Drawing.Point(90, 400);
             this.registerBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(340, 28);
+            this.registerBtn.Size = new System.Drawing.Size(340, 34);
             this.registerBtn.TabIndex = 10;
             this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = false;
@@ -273,7 +274,7 @@ namespace IMBD_adopse
             this.Controls.Add(this.email);
             this.Controls.Add(this.surname);
             this.Controls.Add(this.name);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

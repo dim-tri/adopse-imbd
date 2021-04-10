@@ -60,11 +60,12 @@ namespace IMBD_adopse
             this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelExit.ForeColor = System.Drawing.Color.White;
-            this.labelExit.Location = new System.Drawing.Point(528, 0);
+            this.labelExit.Location = new System.Drawing.Point(524, 0);
             this.labelExit.Name = "labelExit";
             this.labelExit.Size = new System.Drawing.Size(24, 24);
             this.labelExit.TabIndex = 1;
             this.labelExit.Text = "X";
+            this.labelExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
             this.labelExit.MouseEnter += new System.EventHandler(this.labelExit_MouseEnter);
             this.labelExit.MouseLeave += new System.EventHandler(this.labelExit_MouseLeave);
@@ -85,10 +86,10 @@ namespace IMBD_adopse
             this.textBoxUsername.Location = new System.Drawing.Point(195, 107);
             this.textBoxUsername.MaxLength = 20;
             this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.PlaceholderText = "Username";
             this.textBoxUsername.Size = new System.Drawing.Size(234, 33);
             this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.Tag = "";
-            this.textBoxUsername.Text = "Username";
             // 
             // textBoxPassword
             // 
@@ -96,14 +97,15 @@ namespace IMBD_adopse
             this.textBoxPassword.Location = new System.Drawing.Point(195, 165);
             this.textBoxPassword.MaxLength = 20;
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PlaceholderText = "Password";
             this.textBoxPassword.Size = new System.Drawing.Size(234, 33);
             this.textBoxPassword.TabIndex = 2;
-            this.textBoxPassword.Text = "Password";
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // buttonLogin
             // 
             this.buttonLogin.BackColor = System.Drawing.Color.Maroon;
+            this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonLogin.Location = new System.Drawing.Point(125, 242);
