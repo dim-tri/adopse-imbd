@@ -34,6 +34,11 @@ namespace IMBD_adopse
 
             MovieDesc.Text = movies[0].Plot;
             MovieTitle.Text = movies[0].Name;
+            labelCategory.Text = movies[0].Gentre;
+            labelLength.Text = movies[0].Duration;
+            labelDate.Text = movies[0].Release;
+            labelRating.Text = movies[0].Rank.ToString() + "/10";
+            labelStar.Text = movies[0].Stars;
         }
 
     }
