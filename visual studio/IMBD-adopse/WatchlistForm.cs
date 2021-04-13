@@ -55,15 +55,18 @@ namespace IMBD_adopse
 
                 PictureBox movieImage = new PictureBox();
                 movieImage.ImageLocation = test[0].Photo;
-                movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
+                // movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
+                movieImage.Size = new System.Drawing.Size(180, 210);
+                movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
+                movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
 
-                /*  movieImage.Click += (sender, e) =>
-                  {
-                      GlimpseForm glimpseForm = new GlimpseForm(null,test[0].Id);
-                      glimpseForm.setUserId(userID);
-                      glimpseForm.Show();
-                  };*/
-                flowWatchlist.Controls.Add(movieImage);
+                    /*  movieImage.Click += (sender, e) =>
+                      {
+                          GlimpseForm glimpseForm = new GlimpseForm(null,test[0].Id);
+                          glimpseForm.setUserId(userID);
+                          glimpseForm.Show();
+                      };*/
+                    flowWatchlist.Controls.Add(movieImage);
             }
 
         }catch(Exception ex)

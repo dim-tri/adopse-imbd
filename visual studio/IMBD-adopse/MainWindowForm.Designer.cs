@@ -170,7 +170,8 @@ namespace IMBD_adopse
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.logo_colorArtboard_3;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(196, 48);

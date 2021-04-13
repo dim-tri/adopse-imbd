@@ -273,7 +273,7 @@ namespace IMBD_adopse
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 27;
-            this.buttonSubmit.Text = "Sumbit";
+            this.buttonSubmit.Text = "Submit";
             this.buttonSubmit.UseVisualStyleBackColor = true;
             // 
             // panel5
@@ -316,7 +316,7 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1310, 788);
+            this.ClientSize = new System.Drawing.Size(1327, 788);
             this.ControlBox = false;
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label9);
