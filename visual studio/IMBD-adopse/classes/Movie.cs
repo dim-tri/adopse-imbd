@@ -261,7 +261,7 @@ namespace IMBD_adopse.classes
         }
 
         // function to set new movie
-        public long setNewMovie(Movie obj)
+        public Movie setNewMovie(Movie obj)
         {
             try
             {
@@ -283,10 +283,7 @@ namespace IMBD_adopse.classes
                 cmd.Parameters.AddWithValue("@photo", obj.Photo);
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
-                long newId = cmd.LastInsertedId;
-                //int newId = Convert.ToInt32(cmd.ExecuteScalar());
                 Debug.WriteLine("Movie Created !!");
-                return newId;
             }
             catch(MySqlException ex)
             {
@@ -294,7 +291,7 @@ namespace IMBD_adopse.classes
             }
 
 
-                return 0;
+                return null;
         }
 
         public List<Movie> Search(string query) 
@@ -354,26 +351,20 @@ namespace IMBD_adopse.classes
                     if(obj.Response == "True")
                     {
                         List<Movie> movies2 = new List<Movie>();
-                        //movies2.Add(new Movie { Id = 1, Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars =obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
+                        movies2.Add(new Movie { Id = 1, Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars =obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
                         Movie mov = new Movie();
                         mov.Category_id = 1;
                         mov.Gentre = obj.Genre;
                         mov.Name = obj.Title;
                         mov.Year = Int32.Parse(obj.Year);
-                        // mov.Rank = Convert.ToDouble(obj.imdbRating);
-                       // Debug.WriteLine("Prin to convert: " + obj.imdbRating);
-                      //  Debug.WriteLine("Meta to convert: " + Double.Parse(obj.imdbRating));
-                        obj.imdbRating = obj.imdbRating.Replace('.', ',');
-                        mov.Rank = Double.Parse(obj.imdbRating);
+                        mov.Rank = Convert.ToDouble(obj.imdbRating);
                         mov.Release = obj.Released;
                         mov.Director = obj.Director;
                         mov.Stars = obj.Actors;
                         mov.Duration = obj.Runtime;
                         mov.Plot = obj.Plot;
                         mov.Photo = obj.Poster;
-                        long newID = setNewMovie(mov);
-                        Debug.WriteLine(newID);
-                        movies2.Add(new Movie { Id = Convert.ToInt32(newID), Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars = obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });                 
+                        setNewMovie(mov);
                         reader.Close();
                         db.connectionClose();
                         return movies2;
