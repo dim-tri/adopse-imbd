@@ -120,6 +120,7 @@ namespace IMBD_adopse
             this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.password.Multiline = true;
             this.password.Name = "password";
+            this.password.PasswordChar = '*';
             this.password.Size = new System.Drawing.Size(309, 29);
             this.password.TabIndex = 4;
             this.password.Text = " password";
