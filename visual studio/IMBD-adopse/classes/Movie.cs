@@ -13,7 +13,7 @@ using System.Net.Http.Headers;
 
 namespace IMBD_adopse.classes
 {
-    class Movie
+    public class Movie
     {
         //movie properties
         private int id;

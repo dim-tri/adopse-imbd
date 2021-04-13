@@ -33,24 +33,26 @@ namespace IMBD_adopse
             this.flowPanelTopMovies = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.flowPanelRecommended = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // flowPanelNewReleases
             // 
             this.flowPanelNewReleases.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowPanelNewReleases.Location = new System.Drawing.Point(12, 67);
+            this.flowPanelNewReleases.Location = new System.Drawing.Point(30, 67);
             this.flowPanelNewReleases.Name = "flowPanelNewReleases";
-            this.flowPanelNewReleases.Size = new System.Drawing.Size(1286, 231);
+            this.flowPanelNewReleases.Size = new System.Drawing.Size(1370, 293);
             this.flowPanelNewReleases.TabIndex = 5;
             // 
             // flowPanelTopMovies
             // 
             this.flowPanelTopMovies.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowPanelTopMovies.Location = new System.Drawing.Point(12, 370);
+            this.flowPanelTopMovies.Location = new System.Drawing.Point(31, 408);
             this.flowPanelTopMovies.Name = "flowPanelTopMovies";
-            this.flowPanelTopMovies.Size = new System.Drawing.Size(1286, 231);
+            this.flowPanelTopMovies.Size = new System.Drawing.Size(1369, 293);
             this.flowPanelTopMovies.TabIndex = 6;
             // 
             // label1
@@ -59,7 +61,7 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(13, 34);
+            this.label1.Location = new System.Drawing.Point(31, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 30);
             this.label1.TabIndex = 7;
@@ -71,18 +73,42 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 328);
+            this.label2.Location = new System.Drawing.Point(30, 375);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 30);
             this.label2.TabIndex = 8;
             this.label2.Text = "Top Movies";
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(31, 717);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(224, 30);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Recommended for You";
+            // 
+            // flowPanelRecommended
+            // 
+            this.flowPanelRecommended.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowPanelRecommended.Location = new System.Drawing.Point(31, 750);
+            this.flowPanelRecommended.Name = "flowPanelRecommended";
+            this.flowPanelRecommended.Size = new System.Drawing.Size(1369, 293);
+            this.flowPanelRecommended.TabIndex = 9;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1310, 734);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1412, 1055);
             this.ControlBox = false;
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.flowPanelRecommended);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowPanelTopMovies);
@@ -102,6 +128,8 @@ namespace IMBD_adopse
         private System.Windows.Forms.FlowLayoutPanel flowPanelTopMovies;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.FlowLayoutPanel flowPanelRecommended;
     }
 }
 
