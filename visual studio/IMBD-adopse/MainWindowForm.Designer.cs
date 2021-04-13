@@ -80,6 +80,7 @@ namespace IMBD_adopse
             // 
             // watchlistBtn
             // 
+            this.watchlistBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.watchlistBtn.BackColor = System.Drawing.Color.Goldenrod;
             this.watchlistBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.watchlistBtn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -96,6 +97,7 @@ namespace IMBD_adopse
             // 
             // loginState
             // 
+            this.loginState.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.loginState.Location = new System.Drawing.Point(1656, 16);
             this.loginState.Name = "loginState";
             this.loginState.Size = new System.Drawing.Size(171, 23);
@@ -105,6 +107,7 @@ namespace IMBD_adopse
             // 
             // ProfilePictureBox
             // 
+            this.ProfilePictureBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.ProfilePictureBox.ContextMenuStrip = this.LoginMenuStrip;
             this.ProfilePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ProfilePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureBox.Image")));
@@ -149,10 +152,11 @@ namespace IMBD_adopse
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1292, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(819, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 29);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -162,16 +166,19 @@ namespace IMBD_adopse
             // 
             // searchBox
             // 
+            this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.searchBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.searchBox.Location = new System.Drawing.Point(642, 12);
+            this.searchBox.Location = new System.Drawing.Point(212, 15);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(644, 29);
+            this.searchBox.Size = new System.Drawing.Size(601, 29);
             this.searchBox.TabIndex = 1;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.logo_colorArtboard_3;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(196, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
