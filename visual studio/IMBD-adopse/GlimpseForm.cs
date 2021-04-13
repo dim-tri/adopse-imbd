@@ -19,15 +19,13 @@ namespace IMBD_adopse
     public partial class GlimpseForm : Form
     {
         private MainWindowForm MainForm;
-        
-        //Id of the movie to glimpse
-        private int MovieID;
+        private Movie Movie;
 
 
-        public GlimpseForm(MainWindowForm mainForm, int movieId)
+        public GlimpseForm(MainWindowForm mainForm, Movie movie)
         {
             this.MainForm = mainForm;
-            this.MovieID = movieId;
+            this.Movie = movie;
             InitializeComponent();
            
         }
@@ -35,24 +33,19 @@ namespace IMBD_adopse
 
         //Load Movie Info from Id
         private void GlimpseForm_Load(object sender, EventArgs e)
-        {
-            
-            //Get DB data
-            Movie obj = new Movie();
-            List<Movie> movies = obj.getMovies(MovieID);
-
+        {            
             //Data to Form
-            MovieImage.ImageLocation = movies[0].Photo;
+            MovieImage.ImageLocation = Movie.Photo;
 
             MovieImage.Size = new System.Drawing.Size(180, 210);
             MovieImage.SizeMode = PictureBoxSizeMode.CenterImage;
             MovieImage.SizeMode = PictureBoxSizeMode.StretchImage;
 
-            MovieDesc.Text = movies[0].Plot;
-            MovieTitle.Text = movies[0].Name;
-            MovieRuntime.Text = movies[0].Duration;
-            MovieYear.Text = movies[0].Year.ToString();
-            MovieRating.Text = movies[0].Rank.ToString();
+            MovieDesc.Text = Movie.Plot;
+            MovieTitle.Text = Movie.Name;
+            MovieRuntime.Text = Movie.Duration;
+            MovieYear.Text = Movie.Year.ToString();
+            MovieRating.Text = Movie.Rank.ToString();
 
         }
         
@@ -65,14 +58,14 @@ namespace IMBD_adopse
         private void AddBtn_Click(object sender, EventArgs e)
         {
             WishlistMovie wishlist = new WishlistMovie();
-            if (wishlist.Add(userID, this.MovieID)) { MessageBox.Show("Successfully added movie to wishlist.", "Wishlist"); }
+            if (wishlist.Add(userID, Movie.Id)) { MessageBox.Show("Successfully added movie to wishlist.", "Wishlist"); }
         }
         
         //Button that opens the movie page of the currently displayed movie
         private void MoreButton_Click(object sender, EventArgs e)
         {
             //Load the Movie Page on main window
-            MainForm.LoadMoviePage(MovieID);
+            MainForm.LoadMoviePage(Movie.Id);
             this.Close();
         }
 
@@ -104,7 +97,7 @@ namespace IMBD_adopse
         private void checkWishlistMovieExists()
         {
             WishlistMovie wishlist = new WishlistMovie();
-            if (wishlist.check(userID, this.MovieID))
+            if (wishlist.check(userID, Movie.Id))
             {
                 AddBtn.Enabled = false;
                 RemoveBtn.Enabled = true;
@@ -121,7 +114,7 @@ namespace IMBD_adopse
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
             WishlistMovie wishlist = new WishlistMovie();
-            if (wishlist.Remove(userID, this.MovieID)) { MessageBox.Show("Successfully removed movie from wishlist.", "Wishlist"); }
+            if (wishlist.Remove(userID, this.Movie.Id)) { MessageBox.Show("Successfully removed movie from wishlist.", "Wishlist"); }
         }
     }
 }

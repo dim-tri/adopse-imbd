@@ -20,54 +20,26 @@ namespace IMBD_adopse
 
         //load home movies
         public void loadHome()
-        {
-            //stougiannou Endeiktikh Prosegisi
-            //load top movies
+        {           
+            //load Top Movies
             Movie obj = new Movie();
-            List<Movie> movies = obj.getTopMovies();
-            foreach (Movie movie in movies)
+            List<Movie> topMovies = obj.getTopMovies();
+            foreach (Movie movie in topMovies)
             {
-                PictureBox movieImage = new PictureBox();
-                movieImage.ImageLocation = movie.Photo;
-                // movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
-                movieImage.Size = new System.Drawing.Size(200, 240);
-                movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
-                movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
-                movieImage.BorderStyle = BorderStyle.Fixed3D;
-
-                movieImage.Click += (sender, e) =>
-                {
-
-                    GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie.Id);
-                    // GlimpseForm glimpseForm = new GlimpseForm(movie.Id);
-                    Debug.WriteLine("User id from homeform: " + userID);
-                    glimpseForm.setUserId(MainWindowForm.getUserID());
-                    glimpseForm.Show();
-                };
-                flowPanelTopMovies.Controls.Add(movieImage);
+                SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, movie) { TopLevel = false, TopMost = true };
+                flowPanelTopMovies.Controls.Add(movieContainer);
+                movieContainer.Show();
             }
+
             //load 10 movies
-            Movie obj2= new Movie();
-            List<Movie> movies2 = obj.getMovies(10,"desc");
-            foreach (Movie movie2 in movies2)
+            List<Movie> newMovies = obj.getMovies(10, "desc");
+            foreach (Movie movie in newMovies)
             {
-                PictureBox movieImage = new PictureBox();
-                movieImage.ImageLocation = movie2.Photo;
-                //movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
-                movieImage.Size = new System.Drawing.Size(200, 240);
-                movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
-                movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
-                movieImage.BorderStyle = BorderStyle.Fixed3D;
-                movieImage.Click += (sender, e) =>
-                {
-                    GlimpseForm glimpseForm = new GlimpseForm(MainWindow, movie2.Id);
-                    //GlimpseForm glimpseForm = new GlimpseForm(movie2.Id);
-                    glimpseForm.setUserId(MainWindowForm.getUserID());
-                    glimpseForm.Show();
-                };
-                flowPanelNewReleases.Controls.Add(movieImage);
+                SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, movie) { TopLevel = false, TopMost = true };
+                flowPanelNewReleases.Controls.Add(movieContainer);
+                movieContainer.Show();
             }
-            
+           
             //Load Recommended
             Movie obj3 = new Movie();
             List<Movie> recMovies = obj3.getTopMovies();

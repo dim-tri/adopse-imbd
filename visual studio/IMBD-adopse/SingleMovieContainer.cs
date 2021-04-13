@@ -30,7 +30,6 @@ namespace IMBD_adopse
         {
             MoviePicture.ImageLocation = Movie.Photo;
             TitleLabel.Text = Movie.Name;
-
         }
 
         //Watchlist Button
@@ -42,13 +41,24 @@ namespace IMBD_adopse
         //Glimpse Button
         private void GlimpseButton_Click(object sender, EventArgs e)
         {
-        
+            GlimpseForm glimpse = new GlimpseForm(MainForm, Movie);
+            glimpse.Show();
         }
 
         //Image Click
         private void MovieImage_Click(object sender, EventArgs e)
         {
             MainForm.LoadMoviePage(Movie.Id);
+        }
+
+        private void MoviePanel_MouseHover(object sender, EventArgs e)
+        {
+            GlimpseButton.Visible = true;
+        }
+
+        private void MoviePanel_MouseLeave(object sender, EventArgs e)
+        {
+            GlimpseButton.Visible = false;
         }
     }
 }
