@@ -67,6 +67,15 @@ namespace IMBD_adopse
                 };
                 flowPanelNewReleases.Controls.Add(movieImage);
             }
+            
+            //Load Recommended
+            Movie obj3 = new Movie();
+            List<Movie> recMovies = obj3.getTopMovies();
+            foreach (Movie movie in recMovies) {
+                SingleMovieContainer movieContainer = new SingleMovieContainer(movie) {TopLevel = false, TopMost = true };
+                flowPanelRecommended.Controls.Add(movieContainer);
+                movieContainer.Show();
+            }
 
 
         }
