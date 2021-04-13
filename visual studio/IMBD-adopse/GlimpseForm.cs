@@ -22,11 +22,7 @@ namespace IMBD_adopse
         private Movie Movie;
 
 
-
-
-
-        public GlimpseForm(MainWindowForm mainForm, int movieId)
-
+        public GlimpseForm(MainWindowForm mainForm, Movie movie)
         {
             this.MainForm = mainForm;
             this.Movie = movie;
