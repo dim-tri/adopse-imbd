@@ -24,6 +24,8 @@ namespace IMBD_adopse
         private int MovieID;
 
 
+
+
         public GlimpseForm(MainWindowForm mainForm, int movieId)
         {
             this.MainForm = mainForm;

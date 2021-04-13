@@ -60,12 +60,16 @@ namespace IMBD_adopse
                 movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
                 movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
 
-                    /*  movieImage.Click += (sender, e) =>
+                      movieImage.Click += (sender, e) =>
                       {
-                          GlimpseForm glimpseForm = new GlimpseForm(null,test[0].Id);
+                          MainWindowForm mainForm = new MainWindowForm();
+                          GlimpseForm glimpseForm = new GlimpseForm(mainForm, wish.Movie_id);
                           glimpseForm.setUserId(userID);
                           glimpseForm.Show();
-                      };*/
+                        //  MainWindowForm obj = new MainWindowForm();
+                          // obj.LoadMoviePage(1);
+                         // MessageBox.Show("Movie Id: "+ wish.Movie_id, "test");
+                      };
                     flowWatchlist.Controls.Add(movieImage);
             }
 
