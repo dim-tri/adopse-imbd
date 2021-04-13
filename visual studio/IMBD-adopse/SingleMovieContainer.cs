@@ -15,13 +15,17 @@ namespace IMBD_adopse
     public partial class SingleMovieContainer : Form
     {
         private Movie Movie;
-        public SingleMovieContainer(Movie movie)
-        {
-            InitializeComponent();
+        private MainWindowForm MainForm;
+
+        public SingleMovieContainer(MainWindowForm mainForm, Movie movie)
+        {            
             Movie = movie;
+            MainForm = mainForm;
+
+            InitializeComponent();
             LoadMovie();
         }
-
+        //Initialize form controls with movie info
         private void LoadMovie()
         {
             MoviePicture.ImageLocation = Movie.Photo;
@@ -29,9 +33,22 @@ namespace IMBD_adopse
 
         }
 
+        //Watchlist Button
         private void WatchlistButton_Click(object sender, EventArgs e)
         {
 
+        }
+
+        //Glimpse Button
+        private void GlimpseButton_Click(object sender, EventArgs e)
+        {
+        
+        }
+
+        //Image Click
+        private void MovieImage_Click(object sender, EventArgs e)
+        {
+            MainForm.LoadMoviePage(Movie.Id);
         }
     }
 }

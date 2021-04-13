@@ -72,7 +72,7 @@ namespace IMBD_adopse
             Movie obj3 = new Movie();
             List<Movie> recMovies = obj3.getTopMovies();
             foreach (Movie movie in recMovies) {
-                SingleMovieContainer movieContainer = new SingleMovieContainer(movie) {TopLevel = false, TopMost = true };
+                SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, movie) {TopLevel = false, TopMost = true };
                 flowPanelRecommended.Controls.Add(movieContainer);
                 movieContainer.Show();
             }

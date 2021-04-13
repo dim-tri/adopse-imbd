@@ -46,6 +46,7 @@ namespace IMBD_adopse
             this.MoviePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MoviePicture.TabIndex = 0;
             this.MoviePicture.TabStop = false;
+            this.MoviePicture.Click += new System.EventHandler(this.MovieImage_Click);
             // 
             // WatchlistButton
             // 
@@ -65,6 +66,7 @@ namespace IMBD_adopse
             this.InfoButton.TabIndex = 2;
             this.InfoButton.Text = "(i)";
             this.InfoButton.UseVisualStyleBackColor = true;
+            this.InfoButton.Click += new System.EventHandler(this.GlimpseButton_Click);
             // 
             // TitleLabel
             // 
