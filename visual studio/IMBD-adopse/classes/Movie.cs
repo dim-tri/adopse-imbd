@@ -33,11 +33,11 @@ namespace IMBD_adopse.classes
         private string error;
 
         //movie constructor
-        public Movie() {}
+        public Movie() { }
 
         //get - set properties
 
-        public int Id   
+        public int Id
         {
             get { return id; }
             set { id = value; }
@@ -129,7 +129,7 @@ namespace IMBD_adopse.classes
 
         //functions
         //function to get all movies
-        public List<Movie> getMovies() 
+        public List<Movie> getMovies()
         {
             try
             {
@@ -142,12 +142,12 @@ namespace IMBD_adopse.classes
                 List<Movie> movies = new List<Movie>();
                 while (reader.Read())
                 {
-                movies.Add(new Movie {Id = (int)reader[0],Gentre = reader[8].ToString(), Name = (string)reader[2], Year =(int) reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
+                    movies.Add(new Movie { Id = (int)reader[0], Gentre = reader[8].ToString(), Name = (string)reader[2], Year = (int)reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
                 }
-                 reader.Close();
-                 db.connectionClose();
-             
-                return movies ;
+                reader.Close();
+                db.connectionClose();
+
+                return movies;
             }
             catch (MySqlException ex)
             {
@@ -158,7 +158,7 @@ namespace IMBD_adopse.classes
                 Debug.WriteLine("Error: " + e.Message);
             }
             return null;
-            
+
         }
 
         //fucntion to get one movie by id
@@ -198,7 +198,7 @@ namespace IMBD_adopse.classes
         }
 
         //fucntion to get specified results of movies offers sorting by year (both acsending and descending order)
-        public List<Movie> getMovies(int res , string sort)
+        public List<Movie> getMovies(int res, string sort)
         {
             try
             {
@@ -246,7 +246,7 @@ namespace IMBD_adopse.classes
                 {
                     return null;
                 }
-                
+
             }
             catch (MySqlException ex)
             {
@@ -261,7 +261,7 @@ namespace IMBD_adopse.classes
         }
 
         // function to set new movie
-        public Movie setNewMovie(Movie obj)
+        public long setNewMovie(Movie obj)
         {
             try
             {
@@ -283,18 +283,21 @@ namespace IMBD_adopse.classes
                 cmd.Parameters.AddWithValue("@photo", obj.Photo);
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
+                long newId = cmd.LastInsertedId;
+                //int newId = Convert.ToInt32(cmd.ExecuteScalar());
                 Debug.WriteLine("Movie Created !!");
+                return newId;
             }
-            catch(MySqlException ex)
+            catch (MySqlException ex)
             {
                 Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
             }
 
 
-                return null;
+            return 0;
         }
 
-        public List<Movie> Search(string query) 
+        public List<Movie> Search(string query)
         {
             try
             {
@@ -308,7 +311,7 @@ namespace IMBD_adopse.classes
                 cmd.Prepare();
                 reader = cmd.ExecuteReader();
                 List<Movie> movies = new List<Movie>();
-                while (reader.Read()) 
+                while (reader.Read())
                 {
                     movies.Add(new Movie { Id = (int)reader[0], Gentre = reader[8].ToString(), Name = (string)reader[2], Year = (int)reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
                 }
@@ -318,7 +321,7 @@ namespace IMBD_adopse.classes
                 return movies;
 
             }
-            catch (MySqlException ex) 
+            catch (MySqlException ex)
             {
                 Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
             }
@@ -344,32 +347,38 @@ namespace IMBD_adopse.classes
                     movies.Add(new Movie { Id = (int)reader[0], Gentre = reader[8].ToString(), Name = (string)reader[2], Year = (int)reader[3], Rank = (double)reader[4], Release = reader[9].ToString(), Director = (string)reader[5], Stars = (string)reader[6], Duration = (string)reader[7], Plot = (string)reader[10], Photo = (string)reader[11] });
                 }
 
-                if(movies.Count() == 0)
+                if (movies.Count() == 0)
                 {
-                    ApiClient api = new ApiClient("http://www.omdbapi.com/", "?apikey=9d652152&type=movie&t="+query);
+                    ApiClient api = new ApiClient("http://www.omdbapi.com/", "?apikey=9d652152&type=movie&t=" + query);
                     ApiClient obj = api.getData();
-                    if(obj.Response == "True")
+                    if (obj.Response == "True")
                     {
                         List<Movie> movies2 = new List<Movie>();
-                        movies2.Add(new Movie { Id = 1, Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars =obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
+                        //movies2.Add(new Movie { Id = 1, Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars =obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
                         Movie mov = new Movie();
                         mov.Category_id = 1;
                         mov.Gentre = obj.Genre;
                         mov.Name = obj.Title;
                         mov.Year = Int32.Parse(obj.Year);
-                        mov.Rank = Convert.ToDouble(obj.imdbRating);
+                        // mov.Rank = Convert.ToDouble(obj.imdbRating);
+                        // Debug.WriteLine("Prin to convert: " + obj.imdbRating);
+                        //  Debug.WriteLine("Meta to convert: " + Double.Parse(obj.imdbRating));
+                        obj.imdbRating = obj.imdbRating.Replace('.', ',');
+                        mov.Rank = Double.Parse(obj.imdbRating);
                         mov.Release = obj.Released;
                         mov.Director = obj.Director;
                         mov.Stars = obj.Actors;
                         mov.Duration = obj.Runtime;
                         mov.Plot = obj.Plot;
                         mov.Photo = obj.Poster;
-                        setNewMovie(mov);
+                        long newID = setNewMovie(mov);
+                        Debug.WriteLine(newID);
+                        movies2.Add(new Movie { Id = Convert.ToInt32(newID), Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars = obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
                         reader.Close();
                         db.connectionClose();
                         return movies2;
                     }
-                   
+
                 }
                 reader.Close();
                 db.connectionClose();
