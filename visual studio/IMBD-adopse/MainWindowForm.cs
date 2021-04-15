@@ -109,13 +109,25 @@ namespace IMBD_adopse
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(searchBox.Text))
+            if (!string.IsNullOrEmpty(searchBox.Text))
             {
-                Movie movie = new Movie();
-                List<Movie> search = movie.DynamicSearch(searchBox.Text);
-                if (search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
-                LoadMoviePage(search[0].Id);
+                try
+                {
+
+                    Movie movie = new Movie();
+                    List<Movie> search = movie.DynamicSearch(searchBox.Text);
+                    if (search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
+                    if (search[0].Id == 0) { MessageBox.Show("Not found results", "Search Results"); return; }
+                    LoadMoviePage(search[0].Id);
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Error: " + ex.Message);
+                    MessageBox.Show("Not found results", "Search Results");
+                }
             }
+            else { MessageBox.Show("Not found results", "Search Results"); }
+
 
 
         }
