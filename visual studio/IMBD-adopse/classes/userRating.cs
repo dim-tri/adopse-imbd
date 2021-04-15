@@ -61,6 +61,39 @@ namespace IMBD_adopse.classes
         }
 
 
+        public bool check(int userID, int movieID)
+        {
+            try
+            {
+                bool exists = false;
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                MySqlCommand cmd = new MySqlCommand();
+                MySqlDataReader reader;
+                cmd.Connection = conn;
+                cmd.CommandText = "SELECT *  FROM `users_reviews` WHERE user_id=@userid AND movie_id=@movieid";
+                cmd.Parameters.AddWithValue("@userid", userID);
+                cmd.Parameters.AddWithValue("@movieid", movieID);
+                cmd.Prepare();
+                reader = cmd.ExecuteReader();
+                if (reader.HasRows) { exists = true; }
+                while (reader.Read())
+                {
+                    this.Rank = (double)reader[3];
+                }
+                reader.Close();
+                db.connectionClose();
+                return exists;
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+
+            return false;
+        }
+
+
 
     }
 }
