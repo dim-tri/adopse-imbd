@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Diagnostics;
+using IMBD_adopse.classes;
 
 namespace IMBD_adopse
 {
@@ -142,6 +143,8 @@ namespace IMBD_adopse
                 star4_filled = false;
                 star5_filled = false;
                 rating = 2;
+                userRating rate = new userRating();
+                rate.setRating(MainWindowForm.getUserID(),MoviePage.getMovieId(),rating);
             }
         }
 
@@ -161,6 +164,8 @@ namespace IMBD_adopse
                 star4_filled = false;
                 star5_filled = false;
                 rating = 4;
+                userRating rate = new userRating();
+                rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating);
             }
         }
 
@@ -180,6 +185,8 @@ namespace IMBD_adopse
                 star4_filled = false;
                 star5_filled = false;
                 rating = 6;
+                userRating rate = new userRating();
+                rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating);
             }
         }
 
@@ -199,6 +206,8 @@ namespace IMBD_adopse
                 star4_filled = false;
                 star5_filled = false;
                 rating = 8;
+                userRating rate = new userRating();
+                rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating);
             }
         }
 
@@ -218,6 +227,8 @@ namespace IMBD_adopse
                 star4_filled = false;
                 star5_filled = false;
                 rating = 10;
+                userRating rate = new userRating();
+                rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating);
             }
         }
 

@@ -54,7 +54,7 @@ namespace IMBD_adopse
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.rating1 = new IMBD_adopse.Rating();
+            this.movieRating = new IMBD_adopse.Rating();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -302,22 +302,23 @@ namespace IMBD_adopse
             this.panel6.Size = new System.Drawing.Size(260, 25);
             this.panel6.TabIndex = 32;
             // 
-            // rating1
+            // movieRating
             // 
-            this.rating1.Location = new System.Drawing.Point(221, 585);
-            this.rating1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rating1.Name = "rating1";
-            this.rating1.Size = new System.Drawing.Size(384, 34);
-            this.rating1.TabIndex = 33;
+            this.movieRating.Enabled = false;
+            this.movieRating.Location = new System.Drawing.Point(221, 585);
+            this.movieRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.movieRating.Name = "movieRating";
+            this.movieRating.Size = new System.Drawing.Size(384, 34);
+            this.movieRating.TabIndex = 33;
             // 
             // MoviePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1412, 788);
+            this.ClientSize = new System.Drawing.Size(1480, 788);
             this.ControlBox = false;
-            this.Controls.Add(this.rating1);
+            this.Controls.Add(this.movieRating);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.flowLayoutPanel2);
@@ -380,6 +381,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel6;
-        private Rating rating1;
+        private Rating movieRating;
     }
 }

@@ -8,12 +8,15 @@ namespace IMBD_adopse
     {
         //Id of movie to display
         private int MovieID;
+        public static int m_id;
        
         public MoviePage(int movieId)
         {
             this.MovieID = movieId;
+            m_id = movieId;
             InitializeComponent();
             MoviePage_Load();
+            checkUser();
         }
 
         //Load Movie Information
@@ -39,6 +42,20 @@ namespace IMBD_adopse
             labelDate.Text = movies[0].Release;
             labelRating.Text = movies[0].Rank.ToString() + "/10";
             labelStar.Text = movies[0].Stars;
+        }
+
+        public void checkUser()
+        {
+            int user = MainWindowForm.getUserID();
+            if ( user != 0) 
+            {
+                movieRating.Enabled = true;
+            }
+        }
+
+        public static int getMovieId() 
+        {
+            return m_id;
         }
 
     }
