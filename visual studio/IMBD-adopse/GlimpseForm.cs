@@ -27,7 +27,7 @@ namespace IMBD_adopse
             this.MainForm = mainForm;
             this.Movie = movie;
             InitializeComponent();
-           
+            setUserId(MainWindowForm.getUserID());
         }
         
 
