@@ -316,7 +316,7 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1480, 788);
+            this.ClientSize = new System.Drawing.Size(1531, 788);
             this.ControlBox = false;
             this.Controls.Add(this.movieRating);
             this.Controls.Add(this.panel6);

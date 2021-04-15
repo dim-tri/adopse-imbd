@@ -137,6 +137,7 @@ namespace IMBD_adopse
 
             // MessageBox.Show("Return to home...", "Home");
             this.LoadHomePage();
+            searchBox.Text = "";
 
         }
 

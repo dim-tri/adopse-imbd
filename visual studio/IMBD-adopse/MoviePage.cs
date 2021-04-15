@@ -1,6 +1,7 @@
 ﻿using IMBD_adopse.classes;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace IMBD_adopse
 {
@@ -50,7 +51,18 @@ namespace IMBD_adopse
             if ( user != 0) 
             {
                 movieRating.Enabled = true;
+                userRating obj = new userRating();
+                //Debug.WriteLine(user);
+               // Debug.WriteLine(m_id);
+               // Debug.WriteLine(obj.check(user, m_id));
+                if (obj.check(user, m_id))
+                {
+                    movieRating.Enabled = false;
+                    movieRating.setDefaultValue(obj.Rank);
+                }
             }
+
+           
         }
 
         public static int getMovieId() 

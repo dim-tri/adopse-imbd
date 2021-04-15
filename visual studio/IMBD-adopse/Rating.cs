@@ -260,6 +260,66 @@ namespace IMBD_adopse
             }
         }
 
+        public void setDefaultValue(double rate) 
+        {
+            switch (rate)
+            {
+                case 2:
+                    star1_filled = true;
+                    pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    break;
+                case 4:
+                    pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    star1_filled = true;
+                    star2_filled = true;
+                    break;
+                case 6:
+                    pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    star1_filled = true;
+                    star2_filled = true;
+                    star3_filled = true;
+                    break;
+                case 8:
+                    pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox5.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    star1_filled = true;
+                    star2_filled = true;
+                    star3_filled = true;
+                    star4_filled = true;
+                    break;
+                case 10:
+                    pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox5.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    pictureBox4.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                    star1_filled = true;
+                    star2_filled = true;
+                    star3_filled = true;
+                    star4_filled = true;
+                    star5_filled = true;
+                    break;
+                default:
+                    pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px;
+                    pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px;
+                    pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px;
+                    pictureBox5.Image = IMBD_adopse.Properties.Resources.star_24px;
+                    pictureBox4.Image = IMBD_adopse.Properties.Resources.star_24px;
+                    star1_filled = false;
+                    star2_filled = false;
+                    star3_filled = false;
+                    star4_filled = false;
+                    star5_filled = false;
+                    break;
+            }
+        
+        }
+
     }
 }
 
