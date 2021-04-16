@@ -55,6 +55,8 @@ namespace IMBD_adopse
             this.label9 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.movieRating = new IMBD_adopse.Rating();
+            this.label8 = new System.Windows.Forms.Label();
+            this.userRateLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,7 +200,7 @@ namespace IMBD_adopse
             this.panel1.BackColor = System.Drawing.Color.Goldenrod;
             this.panel1.Location = new System.Drawing.Point(-3, 316);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(835, 25);
+            this.panel1.Size = new System.Drawing.Size(818, 25);
             this.panel1.TabIndex = 18;
             // 
             // label6
@@ -218,7 +220,7 @@ namespace IMBD_adopse
             this.panel2.BackColor = System.Drawing.Color.Goldenrod;
             this.panel2.Location = new System.Drawing.Point(360, 316);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1155, 25);
+            this.panel2.Size = new System.Drawing.Size(1138, 25);
             this.panel2.TabIndex = 20;
             // 
             // label7
@@ -246,7 +248,7 @@ namespace IMBD_adopse
             this.panel4.BackColor = System.Drawing.Color.Goldenrod;
             this.panel4.Location = new System.Drawing.Point(341, 557);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1143, 25);
+            this.panel4.Size = new System.Drawing.Size(1126, 25);
             this.panel4.TabIndex = 24;
             // 
             // textBoxReview
@@ -260,12 +262,14 @@ namespace IMBD_adopse
             // 
             // buttonSubmit
             // 
+            this.buttonSubmit.Enabled = false;
             this.buttonSubmit.Location = new System.Drawing.Point(530, 761);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(75, 23);
             this.buttonSubmit.TabIndex = 27;
             this.buttonSubmit.Text = "Submit";
             this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // panel5
             // 
@@ -274,7 +278,7 @@ namespace IMBD_adopse
             this.panel5.BackColor = System.Drawing.Color.Goldenrod;
             this.panel5.Location = new System.Drawing.Point(330, 808);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1154, 25);
+            this.panel5.Size = new System.Drawing.Size(1137, 25);
             this.panel5.TabIndex = 29;
             // 
             // flowLayoutPanel2
@@ -311,13 +315,35 @@ namespace IMBD_adopse
             this.movieRating.Size = new System.Drawing.Size(384, 34);
             this.movieRating.TabIndex = 33;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(245, 248);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 21);
+            this.label8.TabIndex = 34;
+            this.label8.Text = "User Ratings:";
+            // 
+            // userRateLabel
+            // 
+            this.userRateLabel.AutoSize = true;
+            this.userRateLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.userRateLabel.Location = new System.Drawing.Point(343, 248);
+            this.userRateLabel.Name = "userRateLabel";
+            this.userRateLabel.Size = new System.Drawing.Size(31, 21);
+            this.userRateLabel.TabIndex = 35;
+            this.userRateLabel.Text = "8.0";
+            // 
             // MoviePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1531, 788);
+            this.ClientSize = new System.Drawing.Size(1701, 788);
             this.ControlBox = false;
+            this.Controls.Add(this.userRateLabel);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.movieRating);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label9);
@@ -381,6 +407,8 @@ namespace IMBD_adopse
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel6;
-        private Rating movieRating;
+        public Rating movieRating;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label userRateLabel;
     }
 }

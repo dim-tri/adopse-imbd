@@ -178,6 +178,38 @@ namespace IMBD_adopse.classes
 
         }
 
+        public bool setNewActor(Actor obj)
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn;
+                cmd.CommandText = "INSERT INTO `actors`(`category_id`,`movie_id`,`name`,`image`,`bio`,`born`,`filmography`,`role`) VALUES(@cat_id,@movieid,@name,@image,@bio,@born,@filmography,@role)";
+                cmd.Parameters.AddWithValue("@cat_id", 3);
+                cmd.Parameters.AddWithValue("@movieid", obj.Movie_id);
+                cmd.Parameters.AddWithValue("@name", obj.Name);
+                cmd.Parameters.AddWithValue("@image", obj.Image);
+                cmd.Parameters.AddWithValue("@bio", obj.Bio);
+                cmd.Parameters.AddWithValue("@born", obj.Born);
+                cmd.Parameters.AddWithValue("@filmography", obj.Filmography);
+                cmd.Parameters.AddWithValue("@role", obj.Role);
+                cmd.Prepare();
+                cmd.ExecuteNonQuery();
+               // long newId = cmd.LastInsertedId;
+                //int newId = Convert.ToInt32(cmd.ExecuteScalar());
+              //  Debug.WriteLine("Movie Created !!");
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+
+
+            return false;
+        }
 
 
 

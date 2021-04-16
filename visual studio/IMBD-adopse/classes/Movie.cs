@@ -376,6 +376,14 @@ namespace IMBD_adopse.classes
                         movies2.Add(new Movie { Id = Convert.ToInt32(newID), Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars = obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
                         reader.Close();
                         db.connectionClose();
+                        string[] actors_arr = mov.Stars.Split(',');
+                        foreach (var act in actors_arr)
+                        {
+                            Actor actor = new Actor();
+                            actor.Movie_id = (int)newID;
+                            actor.Name = act;
+                            actor.setNewActor(actor);
+                        }    
                         return movies2;
                     }
 

@@ -18,6 +18,7 @@ namespace IMBD_adopse
         public bool star4_filled = false;
         public bool star5_filled = false;
         public double rating = 0;
+        public static MoviePage obj_main;
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -144,7 +145,12 @@ namespace IMBD_adopse
                 star5_filled = false;
                 rating = 2;
                 userRating rate = new userRating();
-                rate.setRating(MainWindowForm.getUserID(),MoviePage.getMovieId(),rating);
+                if (rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating))
+                {
+                    obj_main.movieRating.Enabled = false;
+                    obj_main.checkUser();
+                }
+               
             }
         }
 
@@ -165,7 +171,11 @@ namespace IMBD_adopse
                 star5_filled = false;
                 rating = 4;
                 userRating rate = new userRating();
-                rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating);
+                if (rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating))
+                {
+                    obj_main.movieRating.Enabled = false;
+                    obj_main.checkUser();
+                }
             }
         }
 
@@ -186,7 +196,11 @@ namespace IMBD_adopse
                 star5_filled = false;
                 rating = 6;
                 userRating rate = new userRating();
-                rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating);
+                if (rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating))
+                {
+                    obj_main.movieRating.Enabled = false;
+                    obj_main.checkUser();
+                }
             }
         }
 
@@ -207,7 +221,11 @@ namespace IMBD_adopse
                 star5_filled = false;
                 rating = 8;
                 userRating rate = new userRating();
-                rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating);
+                if (rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating))
+                {
+                    obj_main.movieRating.Enabled = false;
+                    obj_main.checkUser();
+                }
             }
         }
 
@@ -228,7 +246,11 @@ namespace IMBD_adopse
                 star5_filled = false;
                 rating = 10;
                 userRating rate = new userRating();
-                rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating);
+                if (rate.setRating(MainWindowForm.getUserID(), MoviePage.getMovieId(), rating))
+                {
+                    obj_main.movieRating.Enabled = false;
+                    obj_main.checkUser();
+                }
             }
         }
 

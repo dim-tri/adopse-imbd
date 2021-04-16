@@ -9,33 +9,39 @@ using System.Diagnostics;
 
 namespace IMBD_adopse.classes
 {
-    class userRating
+    class Comments
     {
+
+        private int id;
         private int user_id;
         private int movie_id;
-        private double rank;
+        private string comment;
 
+        public Comments() { }
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
         public int User_id
         {
             get { return user_id; }
             set { user_id = value; }
         }
-
         public int Movie_id
         {
             get { return movie_id; }
             set { movie_id = value; }
         }
 
-        public double Rank
+        public string Comment
         {
-            get { return rank; }
-            set { rank = value; }
+            get { return comment; }
+            set { comment = value; }
         }
 
-        public userRating() { }
-
-        public bool setRating(int userID , int movieID , double rating) 
+        public bool setComment(int userID, int movieID, string comm)
         {
             try
             {
@@ -43,10 +49,10 @@ namespace IMBD_adopse.classes
                 MySqlConnection conn = db.Conn;
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn;
-                cmd.CommandText = "INSERT INTO `users_reviews`(`user_id`,`movie_id`,`rank`) VALUES(@userid,@movieid,@rank)";
+                cmd.CommandText = "INSERT INTO `comments`(`user_id`,`movie_id`,`comment`) VALUES(@userid,@movieid,@comment)";
                 cmd.Parameters.AddWithValue("@userid", userID);
                 cmd.Parameters.AddWithValue("@movieid", movieID);
-                cmd.Parameters.AddWithValue("@rank", rating);
+                cmd.Parameters.AddWithValue("@comment", comm);
                 cmd.Prepare();
                 cmd.ExecuteNonQuery();
                 db.connectionClose();
@@ -71,7 +77,7 @@ namespace IMBD_adopse.classes
                 MySqlCommand cmd = new MySqlCommand();
                 MySqlDataReader reader;
                 cmd.Connection = conn;
-                cmd.CommandText = "SELECT *  FROM `users_reviews` WHERE user_id=@userid AND movie_id=@movieid";
+                cmd.CommandText = "SELECT *  FROM `comments` WHERE user_id=@userid AND movie_id=@movieid";
                 cmd.Parameters.AddWithValue("@userid", userID);
                 cmd.Parameters.AddWithValue("@movieid", movieID);
                 cmd.Prepare();
@@ -79,7 +85,8 @@ namespace IMBD_adopse.classes
                 if (reader.HasRows) { exists = true; }
                 while (reader.Read())
                 {
-                    this.Rank = (double)reader[3];
+                    this.Comment = (string)reader[3];
+                    this.User_id = (int)reader[1];
                 }
                 reader.Close();
                 db.connectionClose();
@@ -94,36 +101,40 @@ namespace IMBD_adopse.classes
         }
 
 
-        public double getAvgUserMovieRatings(int movieID)
+        public List<Comments> getComments(int movieID)
         {
-            try
-            {
-               // bool exists = false;
-                DbConnection db = new DbConnection();
-                MySqlConnection conn = db.Conn;
-                MySqlCommand cmd = new MySqlCommand();
-                MySqlDataReader reader;
-                cmd.Connection = conn;
-                cmd.CommandText = "SELECT avg(rank)  FROM `users_reviews` WHERE movie_id=@movieid";
-                cmd.Parameters.AddWithValue("@movieid", movieID);
-                cmd.Prepare();
-                reader = cmd.ExecuteReader();
-               // if (reader.HasRows) { exists = true; }
+               try
+               {
+                   // bool exists = false;
+                   DbConnection db = new DbConnection();
+                   MySqlConnection conn = db.Conn;
+                   MySqlCommand cmd = new MySqlCommand();
+                   MySqlDataReader reader;
+                   cmd.Connection = conn;
+                   cmd.CommandText = "SELECT *  FROM `comments` WHERE movie_id=@movieid";
+                   cmd.Parameters.AddWithValue("@movieid", movieID);
+                   cmd.Prepare();
+                   reader = cmd.ExecuteReader();
+                // if (reader.HasRows) { exists = true; }
+                List<Comments> comments = new List<Comments>();
                 while (reader.Read())
-                {
-                    this.Rank = (double)reader[0];
+                   {
+                    comments.Add(new Comments { Id = (int)reader[0], User_id = (int)reader[1],Movie_id = (int)reader[2],Comment = (string)reader[3] });
+
                 }
                 reader.Close();
-                db.connectionClose();
-                return this.Rank;
-            }
-            catch (MySqlException ex)
-            {
-                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
-            }
-
-            return this.Rank;
+                   db.connectionClose();
+                return comments;
+               }
+               catch (MySqlException ex)
+               {
+                   Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+               }
+            
+            return null;
         }
+
+
 
 
 
