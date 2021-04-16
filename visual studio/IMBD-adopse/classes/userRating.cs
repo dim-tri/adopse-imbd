@@ -108,10 +108,18 @@ namespace IMBD_adopse.classes
                 cmd.Parameters.AddWithValue("@movieid", movieID);
                 cmd.Prepare();
                 reader = cmd.ExecuteReader();
-               // if (reader.HasRows) { exists = true; }
+               if (!reader.HasRows) { return 0; }
                 while (reader.Read())
                 {
-                    this.Rank = (double)reader[0];
+                    try 
+                    {
+                        this.Rank = (double)reader[0];
+                    }catch(Exception ex)
+                    {
+                        return 0;
+                    }
+                   
+
                 }
                 reader.Close();
                 db.connectionClose();
@@ -122,7 +130,7 @@ namespace IMBD_adopse.classes
                 Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
             }
 
-            return this.Rank;
+            return 0;
         }
 
 
