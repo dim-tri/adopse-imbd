@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System;
 
 namespace IMBD_adopse
 {
@@ -15,9 +16,11 @@ namespace IMBD_adopse
         {
             this.MovieID = movieId;
             m_id = movieId;
+            Rating.obj_main = this;
             InitializeComponent();
             MoviePage_Load();
             checkUser();
+            refreshRate();
         }
 
         //Load Movie Information
@@ -50,6 +53,7 @@ namespace IMBD_adopse
             int user = MainWindowForm.getUserID();
             if ( user != 0) 
             {
+                buttonSubmit.Enabled = true;
                 movieRating.Enabled = true;
                 userRating obj = new userRating();
                 //Debug.WriteLine(user);
@@ -65,10 +69,41 @@ namespace IMBD_adopse
            
         }
 
+
+        public void refreshRate() 
+        {
+            userRating obj = new userRating();
+            double rank = obj.getAvgUserMovieRatings(m_id);
+            rank = Math.Round(rank, 1);
+            userRateLabel.Text = rank.ToString();
+        }
+
         public static int getMovieId() 
         {
             return m_id;
         }
 
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string userComment = textBoxReview.Text;
+                if (String.IsNullOrWhiteSpace(userComment)) { MessageBox.Show("Comment cannot be empty."); return; }
+                Comments comm = new Comments();
+                comm.setComment(MainWindowForm.getUserID(), m_id, userComment);
+                List<Comments> com = comm.getComments(m_id);
+                foreach(var comment in com)
+                {
+                    Debug.WriteLine("user: " + comment.User_id + " Commnet: " + comment.Comment);
+                }
+
+                MessageBox.Show("Thanks for your comment.");
+                textBoxReview.Text = "";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("An Error occured: " + ex.Message);
+            }
+        }
     }
 }
