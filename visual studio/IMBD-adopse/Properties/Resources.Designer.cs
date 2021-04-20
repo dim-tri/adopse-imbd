@@ -83,6 +83,26 @@ namespace IMBD_adopse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heart {
+            get {
+                object obj = ResourceManager.GetObject("heart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heartSmall {
+            get {
+                object obj = ResourceManager.GetObject("heartSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_search_172546__1_ {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_search_172546 (1)", resourceCulture);
@@ -106,6 +126,16 @@ namespace IMBD_adopse.Properties {
         internal static System.Drawing.Bitmap icons8_user_locked_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-locked-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_icon_regmodeArtboard_11_2x {
+            get {
+                object obj = ResourceManager.GetObject("info-icon-regmodeArtboard 11@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +256,16 @@ namespace IMBD_adopse.Properties {
         internal static System.Drawing.Bitmap thin_line_user_icon {
             get {
                 object obj = ResourceManager.GetObject("thin-line-user-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thin_line_user_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("thin-line-user-icon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

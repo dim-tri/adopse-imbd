@@ -57,7 +57,8 @@ namespace IMBD_adopse
                     obj2.loginState.Text = "Logged in as: " + newLogin.Name;
                     obj2.LoginMenuItem.Text= "Logout";
                     obj2.setUserID(newLogin.Id);       
-                    obj2.watchlistBtn.Enabled = true;
+                    //obj2.watchlistBtn.Enabled = true;
+                    obj2.watchlistBtn.Visible = true;
                     this.Dispose();
                     return;
                 }

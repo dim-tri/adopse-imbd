@@ -57,16 +57,16 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MainPanel.AutoScroll = true;
             this.MainPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.MainPanel.Location = new System.Drawing.Point(0, 59);
+            this.MainPanel.Location = new System.Drawing.Point(0, 50);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1904, 980);
+            this.MainPanel.Size = new System.Drawing.Size(1904, 989);
             this.MainPanel.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.Goldenrod;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.watchlistBtn);
             this.panel1.Controls.Add(this.loginState);
             this.panel1.Controls.Add(this.ProfilePictureBox);
@@ -81,23 +81,28 @@ namespace IMBD_adopse
             // watchlistBtn
             // 
             this.watchlistBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.watchlistBtn.BackColor = System.Drawing.Color.Goldenrod;
+            this.watchlistBtn.BackColor = System.Drawing.Color.Transparent;
             this.watchlistBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.watchlistBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.watchlistBtn.Enabled = false;
             this.watchlistBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.watchlistBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.watchlistBtn.ForeColor = System.Drawing.Color.White;
+            this.watchlistBtn.Image = global::IMBD_adopse.Properties.Resources.heartSmall;
             this.watchlistBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.watchlistBtn.Location = new System.Drawing.Point(1510, 16);
+            this.watchlistBtn.Location = new System.Drawing.Point(1511, 7);
             this.watchlistBtn.Name = "watchlistBtn";
-            this.watchlistBtn.Size = new System.Drawing.Size(140, 28);
+            this.watchlistBtn.Size = new System.Drawing.Size(155, 40);
             this.watchlistBtn.TabIndex = 7;
             this.watchlistBtn.Text = "Watchlist";
+            this.watchlistBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.watchlistBtn.UseVisualStyleBackColor = false;
+            this.watchlistBtn.Visible = false;
             this.watchlistBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // loginState
             // 
             this.loginState.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.loginState.ForeColor = System.Drawing.Color.White;
             this.loginState.Location = new System.Drawing.Point(1656, 16);
             this.loginState.Name = "loginState";
             this.loginState.Size = new System.Drawing.Size(171, 23);
@@ -110,7 +115,7 @@ namespace IMBD_adopse
             this.ProfilePictureBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.ProfilePictureBox.ContextMenuStrip = this.LoginMenuStrip;
             this.ProfilePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProfilePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureBox.Image")));
+            this.ProfilePictureBox.Image = global::IMBD_adopse.Properties.Resources.thin_line_user_icon1;
             this.ProfilePictureBox.Location = new System.Drawing.Point(1845, 12);
             this.ProfilePictureBox.Name = "ProfilePictureBox";
             this.ProfilePictureBox.Size = new System.Drawing.Size(33, 29);
@@ -155,7 +160,7 @@ namespace IMBD_adopse
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.iconfinder_search_172546__1_;
             this.pictureBox2.Location = new System.Drawing.Point(819, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 29);
@@ -167,6 +172,7 @@ namespace IMBD_adopse
             // searchBox
             // 
             this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.searchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.searchBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.searchBox.Location = new System.Drawing.Point(212, 15);
             this.searchBox.Name = "searchBox";
@@ -179,9 +185,9 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(186, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;

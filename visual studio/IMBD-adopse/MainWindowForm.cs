@@ -72,7 +72,8 @@ namespace IMBD_adopse
                     loginState.Text = "Guest";
                     LoginMenuItem.Text = "Login";
                     MessageBox.Show("You are now logged out.", "Login Status");
-                    watchlistBtn.Enabled = false;
+                    //watchlistBtn.Enabled = false;
+                    watchlistBtn.Visible = false;
                     return;
                 }
             }
