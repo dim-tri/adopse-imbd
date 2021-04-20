@@ -200,7 +200,7 @@ namespace IMBD_adopse
             this.panel1.BackColor = System.Drawing.Color.Goldenrod;
             this.panel1.Location = new System.Drawing.Point(-3, 316);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(503, 25);
+            this.panel1.Size = new System.Drawing.Size(818, 25);
             this.panel1.TabIndex = 18;
             // 
             // label6
@@ -220,7 +220,7 @@ namespace IMBD_adopse
             this.panel2.BackColor = System.Drawing.Color.Goldenrod;
             this.panel2.Location = new System.Drawing.Point(360, 316);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1014, 25);
+            this.panel2.Size = new System.Drawing.Size(1138, 25);
             this.panel2.TabIndex = 20;
             // 
             // label7
@@ -248,7 +248,7 @@ namespace IMBD_adopse
             this.panel4.BackColor = System.Drawing.Color.Goldenrod;
             this.panel4.Location = new System.Drawing.Point(341, 557);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1044, 25);
+            this.panel4.Size = new System.Drawing.Size(1126, 25);
             this.panel4.TabIndex = 24;
             // 
             // textBoxReview
@@ -278,7 +278,7 @@ namespace IMBD_adopse
             this.panel5.BackColor = System.Drawing.Color.Goldenrod;
             this.panel5.Location = new System.Drawing.Point(330, 808);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1044, 25);
+            this.panel5.Size = new System.Drawing.Size(1137, 25);
             this.panel5.TabIndex = 29;
             // 
             // flowLayoutPanel2
@@ -340,7 +340,7 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1403, 788);
+            this.ClientSize = new System.Drawing.Size(1701, 788);
             this.ControlBox = false;
             this.Controls.Add(this.userRateLabel);
             this.Controls.Add(this.label8);
