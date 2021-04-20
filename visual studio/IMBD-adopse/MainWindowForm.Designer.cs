@@ -59,7 +59,7 @@ namespace IMBD_adopse
             this.MainPanel.BackColor = System.Drawing.SystemColors.Control;
             this.MainPanel.Location = new System.Drawing.Point(0, 59);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1370, 688);
+            this.MainPanel.Size = new System.Drawing.Size(1904, 980);
             this.MainPanel.TabIndex = 1;
             // 
             // panel1
@@ -75,7 +75,7 @@ namespace IMBD_adopse
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1370, 53);
+            this.panel1.Size = new System.Drawing.Size(1904, 53);
             this.panel1.TabIndex = 2;
             // 
             // watchlistBtn
@@ -87,7 +87,7 @@ namespace IMBD_adopse
             this.watchlistBtn.Enabled = false;
             this.watchlistBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.watchlistBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.watchlistBtn.Location = new System.Drawing.Point(976, 16);
+            this.watchlistBtn.Location = new System.Drawing.Point(1510, 16);
             this.watchlistBtn.Name = "watchlistBtn";
             this.watchlistBtn.Size = new System.Drawing.Size(140, 28);
             this.watchlistBtn.TabIndex = 7;
@@ -98,7 +98,7 @@ namespace IMBD_adopse
             // loginState
             // 
             this.loginState.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.loginState.Location = new System.Drawing.Point(1122, 16);
+            this.loginState.Location = new System.Drawing.Point(1656, 16);
             this.loginState.Name = "loginState";
             this.loginState.Size = new System.Drawing.Size(171, 23);
             this.loginState.TabIndex = 6;
@@ -111,7 +111,7 @@ namespace IMBD_adopse
             this.ProfilePictureBox.ContextMenuStrip = this.LoginMenuStrip;
             this.ProfilePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ProfilePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureBox.Image")));
-            this.ProfilePictureBox.Location = new System.Drawing.Point(1311, 12);
+            this.ProfilePictureBox.Location = new System.Drawing.Point(1845, 12);
             this.ProfilePictureBox.Name = "ProfilePictureBox";
             this.ProfilePictureBox.Size = new System.Drawing.Size(33, 29);
             this.ProfilePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -191,7 +191,7 @@ namespace IMBD_adopse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainPanel);
             this.Name = "MainWindowForm";
