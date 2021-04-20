@@ -33,9 +33,11 @@ namespace IMBD_adopse
             this.TitleLabel = new System.Windows.Forms.Label();
             this.GlimpseButton = new System.Windows.Forms.PictureBox();
             this.WatchlistButton = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GlimpseButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.WatchlistButton)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MoviePicture
@@ -54,7 +56,7 @@ namespace IMBD_adopse
             // 
             this.TitleLabel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.TitleLabel.Location = new System.Drawing.Point(0, 245);
+            this.TitleLabel.Location = new System.Drawing.Point(0, 242);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(138, 45);
             this.TitleLabel.TabIndex = 3;
@@ -63,7 +65,7 @@ namespace IMBD_adopse
             // GlimpseButton
             // 
             this.GlimpseButton.Image = global::IMBD_adopse.Properties.Resources.info_icon_regmodeArtboard_11_2x;
-            this.GlimpseButton.Location = new System.Drawing.Point(136, 250);
+            this.GlimpseButton.Location = new System.Drawing.Point(144, 251);
             this.GlimpseButton.Name = "GlimpseButton";
             this.GlimpseButton.Size = new System.Drawing.Size(39, 36);
             this.GlimpseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,28 +79,38 @@ namespace IMBD_adopse
             this.WatchlistButton.Image = global::IMBD_adopse.Properties.Resources.heart;
             this.WatchlistButton.Location = new System.Drawing.Point(0, 0);
             this.WatchlistButton.Name = "WatchlistButton";
-            this.WatchlistButton.Size = new System.Drawing.Size(32, 31);
+            this.WatchlistButton.Size = new System.Drawing.Size(31, 31);
             this.WatchlistButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.WatchlistButton.TabIndex = 5;
             this.WatchlistButton.TabStop = false;
             this.WatchlistButton.Click += new System.EventHandler(this.WatchlistButton_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.WatchlistButton);
+            this.panel1.Controls.Add(this.GlimpseButton);
+            this.panel1.Controls.Add(this.MoviePicture);
+            this.panel1.Controls.Add(this.TitleLabel);
+            this.panel1.Location = new System.Drawing.Point(3, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(183, 293);
+            this.panel1.TabIndex = 6;
+            // 
             // SingleMovieContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.ClientSize = new System.Drawing.Size(182, 293);
-            this.Controls.Add(this.WatchlistButton);
-            this.Controls.Add(this.GlimpseButton);
-            this.Controls.Add(this.MoviePicture);
-            this.Controls.Add(this.TitleLabel);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
+            this.ClientSize = new System.Drawing.Size(190, 293);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SingleMovieContainer";
             this.Text = "SingleMovieContainer";
             ((System.ComponentModel.ISupportInitialize)(this.MoviePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GlimpseButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WatchlistButton)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -110,5 +122,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.PictureBox GlimpseButton;
         private System.Windows.Forms.PictureBox WatchlistButton;
+        private System.Windows.Forms.Panel panel1;
     }
 }
