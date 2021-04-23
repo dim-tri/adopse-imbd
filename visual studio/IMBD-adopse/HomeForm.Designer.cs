@@ -112,7 +112,7 @@ namespace IMBD_adopse
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(1614, 1102);
+            this.ClientSize = new System.Drawing.Size(1656, 1102);
             this.ControlBox = false;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.flowPanelRecommended);
