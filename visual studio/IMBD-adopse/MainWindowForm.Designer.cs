@@ -87,7 +87,7 @@ namespace IMBD_adopse
             this.watchlistBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.watchlistBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.watchlistBtn.ForeColor = System.Drawing.Color.White;
-            this.watchlistBtn.Image = global::IMBD_adopse.Properties.Resources.heartSmall;
+            this.watchlistBtn.Image = ((System.Drawing.Image)(resources.GetObject("watchlistBtn.Image")));
             this.watchlistBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.watchlistBtn.Location = new System.Drawing.Point(1511, 7);
             this.watchlistBtn.Name = "watchlistBtn";
@@ -115,7 +115,7 @@ namespace IMBD_adopse
             this.ProfilePictureBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.ProfilePictureBox.ContextMenuStrip = this.LoginMenuStrip;
             this.ProfilePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ProfilePictureBox.Image = global::IMBD_adopse.Properties.Resources.thin_line_user_icon1;
+            this.ProfilePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureBox.Image")));
             this.ProfilePictureBox.Location = new System.Drawing.Point(1845, 12);
             this.ProfilePictureBox.Name = "ProfilePictureBox";
             this.ProfilePictureBox.Size = new System.Drawing.Size(33, 29);
@@ -160,7 +160,7 @@ namespace IMBD_adopse
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.iconfinder_search_172546__1_;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(819, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 29);
