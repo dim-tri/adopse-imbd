@@ -46,6 +46,8 @@ namespace IMBD_adopse
             labelDate.Text = movies[0].Release;
             labelRating.Text = movies[0].Rank.ToString() + "/10";
             labelStar.Text = movies[0].Stars;
+            flowLayoutPanelComments.Hide();
+            labelComments.Hide();
         }
 
         public void checkUser()
@@ -104,6 +106,13 @@ namespace IMBD_adopse
             {
                 MessageBox.Show("An Error occured: " + ex.Message);
             }
+        }
+
+        private void linkLabelView_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            labelComments.Show();
+            flowLayoutPanelComments.Show();
+            flowLayoutPanelComments.Focus();
         }
     }
 }
