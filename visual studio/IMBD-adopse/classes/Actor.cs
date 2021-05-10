@@ -211,7 +211,43 @@ namespace IMBD_adopse.classes
             return false;
         }
 
+        //actors plays to specific movie
 
+        public List<Actor> getActorsSpecificMovies(int id)
+        {
+            try
+            {
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                string sql = "SELECT a.name as actorName FROM `movies` m INNER JOIN `actors` a ON(m.id = a.movie_id) where m.id = @id";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Prepare();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                int num_collumns = reader.FieldCount;
+                List<Actor> actors = new List<Actor>();
+                while (reader.Read())
+                {
+
+                    //actors.Add(new Actor { Id = (int)reader[0], Category_id = (int)reader[1], Movie_id = (int)reader[2], Name = (string)reader[3], Image = (string)reader[4], Bio = (string)reader[5], Born = (string)reader[6], Filmography = (string)reader[7], Role = (string)reader[10]});
+                    actors.Add(new Actor { Name = (string)reader[0]});
+                }
+                reader.Close();
+                db.connectionClose();
+
+                return actors;
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine("Error: " + e.Message);
+            }
+            return null;
+
+        }
 
 
 

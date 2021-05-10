@@ -54,10 +54,12 @@ namespace IMBD_adopse
             this.movieRating = new IMBD_adopse.Rating();
             this.label8 = new System.Windows.Forms.Label();
             this.userRateLabel = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.actorsList = new System.Windows.Forms.ListView();
+            this.ListViewItem = new System.Windows.Forms.ColumnHeader();
             this.flowLayoutPanelComments = new System.Windows.Forms.FlowLayoutPanel();
             this.linkLabelView = new System.Windows.Forms.LinkLabel();
             this.labelComments = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -215,7 +217,7 @@ namespace IMBD_adopse
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(245, 297);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(694, 25);
+            this.panel2.Size = new System.Drawing.Size(609, 25);
             this.panel2.TabIndex = 20;
             // 
             // label7
@@ -236,7 +238,7 @@ namespace IMBD_adopse
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(245, 557);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(694, 25);
+            this.panel4.Size = new System.Drawing.Size(609, 25);
             this.panel4.TabIndex = 24;
             // 
             // textBoxReview
@@ -315,14 +317,20 @@ namespace IMBD_adopse
             this.userRateLabel.TabIndex = 35;
             this.userRateLabel.Text = "8.0";
             // 
-            // listView1
+            // actorsList
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 297);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(182, 236);
-            this.listView1.TabIndex = 36;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.actorsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ListViewItem});
+            this.actorsList.HideSelection = false;
+            this.actorsList.Location = new System.Drawing.Point(12, 350);
+            this.actorsList.Name = "actorsList";
+            this.actorsList.Size = new System.Drawing.Size(182, 236);
+            this.actorsList.TabIndex = 36;
+            this.actorsList.UseCompatibleStateImageBehavior = false;
+            // 
+            // ListViewItem
+            // 
+            this.ListViewItem.Name = "ListViewItem";
             // 
             // flowLayoutPanelComments
             // 
@@ -352,17 +360,29 @@ namespace IMBD_adopse
             this.labelComments.TabIndex = 0;
             this.labelComments.Text = "Comments";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(12, 297);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(91, 37);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Actors";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
             // MoviePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1403, 788);
+            this.ClientSize = new System.Drawing.Size(1607, 791);
             this.ControlBox = false;
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.labelComments);
             this.Controls.Add(this.linkLabelView);
             this.Controls.Add(this.flowLayoutPanelComments);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.actorsList);
             this.Controls.Add(this.userRateLabel);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.movieRating);
@@ -428,9 +448,11 @@ namespace IMBD_adopse
         public Rating movieRating;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label userRateLabel;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView actorsList;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelComments;
         private System.Windows.Forms.LinkLabel linkLabelView;
         private System.Windows.Forms.Label labelComments;
+        private System.Windows.Forms.ColumnHeader ListViewItem;
+        private System.Windows.Forms.Label label10;
     }
 }
