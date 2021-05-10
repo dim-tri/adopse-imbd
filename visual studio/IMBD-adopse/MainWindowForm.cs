@@ -16,11 +16,13 @@ namespace IMBD_adopse
     public partial class MainWindowForm : Form
     {
         public static int userID;
+        
 
         public MainWindowForm()
         {
             InitializeComponent();
             LoadHomePage();
+          
         }
 
         //Clear Main Window and Load Home Page
