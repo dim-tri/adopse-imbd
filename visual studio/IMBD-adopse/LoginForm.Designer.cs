@@ -49,10 +49,10 @@ namespace IMBD_adopse
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.labelExit);
             this.panel1.Controls.Add(this.labelTitle);
-            this.panel1.Location = new System.Drawing.Point(138, 80);
+            this.panel1.Location = new System.Drawing.Point(129, 80);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(352, 61);
+            this.panel1.Size = new System.Drawing.Size(353, 61);
             this.panel1.TabIndex = 0;
             // 
             // labelExit
@@ -86,7 +86,7 @@ namespace IMBD_adopse
             this.textBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.textBoxUsername.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.textBoxUsername.Location = new System.Drawing.Point(194, 199);
+            this.textBoxUsername.Location = new System.Drawing.Point(186, 199);
             this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxUsername.MaxLength = 20;
             this.textBoxUsername.Name = "textBoxUsername";
@@ -101,7 +101,7 @@ namespace IMBD_adopse
             this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.textBoxPassword.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(194, 269);
+            this.textBoxPassword.Location = new System.Drawing.Point(185, 269);
             this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxPassword.MaxLength = 20;
             this.textBoxPassword.Name = "textBoxPassword";
@@ -115,10 +115,10 @@ namespace IMBD_adopse
             this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonLogin.Location = new System.Drawing.Point(143, 339);
+            this.buttonLogin.Location = new System.Drawing.Point(128, 339);
             this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(347, 53);
+            this.buttonLogin.Size = new System.Drawing.Size(353, 53);
             this.buttonLogin.TabIndex = 5;
             this.buttonLogin.Text = "LOGIN";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -128,7 +128,7 @@ namespace IMBD_adopse
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(143, 180);
+            this.pictureBox1.Location = new System.Drawing.Point(134, 180);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 52);
@@ -140,7 +140,7 @@ namespace IMBD_adopse
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(143, 257);
+            this.pictureBox2.Location = new System.Drawing.Point(134, 257);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 45);
@@ -153,7 +153,7 @@ namespace IMBD_adopse
             this.labelfalse.AutoSize = true;
             this.labelfalse.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelfalse.ForeColor = System.Drawing.Color.OrangeRed;
-            this.labelfalse.Location = new System.Drawing.Point(194, 312);
+            this.labelfalse.Location = new System.Drawing.Point(185, 312);
             this.labelfalse.Name = "labelfalse";
             this.labelfalse.Size = new System.Drawing.Size(0, 23);
             this.labelfalse.TabIndex = 9;
@@ -163,7 +163,7 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(624, 499);
+            this.ClientSize = new System.Drawing.Size(609, 499);
             this.Controls.Add(this.labelfalse);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

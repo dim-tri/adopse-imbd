@@ -62,5 +62,10 @@ namespace IMBD_adopse
 
 
         }
+
+        private void RegisterForm_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

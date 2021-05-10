@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IMBD_adopse
 {
-    public partial class ActorPageForm : Form
+    public partial class UserPageForm : Form
     {
-        public ActorPageForm()
+        public UserPageForm()
         {
             InitializeComponent();
         }

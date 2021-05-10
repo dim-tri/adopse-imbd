@@ -163,7 +163,7 @@ namespace IMBD_adopse
             // 
             this.registerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
             this.registerBtn.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.registerBtn.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.registerBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.registerBtn.Location = new System.Drawing.Point(103, 478);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(389, 37);
@@ -192,6 +192,7 @@ namespace IMBD_adopse
             this.RegisterForm.TabIndex = 12;
             this.RegisterForm.Text = "Registration Form";
             this.RegisterForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RegisterForm.Click += new System.EventHandler(this.RegisterForm_Click);
             // 
             // wrongIcon
             // 
@@ -206,7 +207,7 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(606, 628);
+            this.ClientSize = new System.Drawing.Size(591, 628);
             this.Controls.Add(this.wrongIcon);
             this.Controls.Add(this.RegisterForm);
             this.Controls.Add(this.correctIcon);
@@ -222,6 +223,7 @@ namespace IMBD_adopse
             this.Controls.Add(this.surname);
             this.Controls.Add(this.name);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration Form";
