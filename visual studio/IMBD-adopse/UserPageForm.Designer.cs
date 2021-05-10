@@ -52,6 +52,8 @@ namespace IMBD_adopse
             this.userIconBox = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.passwordBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailBox)).BeginInit();
@@ -63,6 +65,8 @@ namespace IMBD_adopse
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userIconBox)).BeginInit();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // registerBtn
@@ -225,14 +229,13 @@ namespace IMBD_adopse
             // 
             // DarkModeCheckBox
             // 
-            this.DarkModeCheckBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.DarkModeCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.DarkModeCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.DarkModeCheckBox.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DarkModeCheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.DarkModeCheckBox.Location = new System.Drawing.Point(962, 235);
+            this.DarkModeCheckBox.Location = new System.Drawing.Point(-1, 3);
             this.DarkModeCheckBox.Name = "DarkModeCheckBox";
-            this.DarkModeCheckBox.Size = new System.Drawing.Size(151, 37);
+            this.DarkModeCheckBox.Size = new System.Drawing.Size(147, 34);
             this.DarkModeCheckBox.TabIndex = 27;
             this.DarkModeCheckBox.Text = "Dark Mode";
             this.DarkModeCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -308,6 +311,24 @@ namespace IMBD_adopse
             this.label5.TabIndex = 30;
             this.label5.Text = "Username";
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.panel6.Controls.Add(this.DarkModeCheckBox);
+            this.panel6.Location = new System.Drawing.Point(962, 235);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(151, 37);
+            this.panel6.TabIndex = 31;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(220)))));
+            this.pictureBox1.Location = new System.Drawing.Point(925, 235);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 37);
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
             // UserPageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -315,7 +336,6 @@ namespace IMBD_adopse
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(1368, 861);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.DarkModeCheckBox);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -331,6 +351,8 @@ namespace IMBD_adopse
             this.Controls.Add(this.surname);
             this.Controls.Add(this.name);
             this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "UserPageForm";
             this.Text = "User Page";
@@ -351,6 +373,8 @@ namespace IMBD_adopse
             ((System.ComponentModel.ISupportInitialize)(this.userIconBox)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,5 +405,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.PictureBox userIconBox;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
