@@ -49,6 +49,9 @@ namespace IMBD_adopse
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.userIconBox = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.passwordBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailBox)).BeginInit();
@@ -58,6 +61,8 @@ namespace IMBD_adopse
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userIconBox)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // registerBtn
@@ -67,7 +72,7 @@ namespace IMBD_adopse
             this.registerBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.registerBtn.Location = new System.Drawing.Point(508, 299);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(159, 37);
+            this.registerBtn.Size = new System.Drawing.Size(159, 44);
             this.registerBtn.TabIndex = 24;
             this.registerBtn.Text = "Save";
             this.registerBtn.UseVisualStyleBackColor = false;
@@ -75,7 +80,7 @@ namespace IMBD_adopse
             // passwordBox
             // 
             this.passwordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(220)))));
-            this.passwordBox.Location = new System.Drawing.Point(686, 179);
+            this.passwordBox.Location = new System.Drawing.Point(725, 179);
             this.passwordBox.Name = "passwordBox";
             this.passwordBox.Size = new System.Drawing.Size(37, 37);
             this.passwordBox.TabIndex = 23;
@@ -84,7 +89,7 @@ namespace IMBD_adopse
             // usernameBox
             // 
             this.usernameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(220)))));
-            this.usernameBox.Location = new System.Drawing.Point(686, 121);
+            this.usernameBox.Location = new System.Drawing.Point(725, 121);
             this.usernameBox.Name = "usernameBox";
             this.usernameBox.Size = new System.Drawing.Size(37, 37);
             this.usernameBox.TabIndex = 22;
@@ -122,7 +127,7 @@ namespace IMBD_adopse
             this.password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.password.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.password.Location = new System.Drawing.Point(721, 179);
+            this.password.Location = new System.Drawing.Point(760, 179);
             this.password.Multiline = true;
             this.password.Name = "password";
             this.password.PasswordChar = '*';
@@ -135,7 +140,7 @@ namespace IMBD_adopse
             this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.username.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.username.Location = new System.Drawing.Point(721, 121);
+            this.username.Location = new System.Drawing.Point(760, 121);
             this.username.Multiline = true;
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(353, 37);
@@ -184,7 +189,7 @@ namespace IMBD_adopse
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(279, 42);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(795, 45);
+            this.panel1.Size = new System.Drawing.Size(834, 45);
             this.panel1.TabIndex = 25;
             // 
             // label1
@@ -204,7 +209,7 @@ namespace IMBD_adopse
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(279, 86);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(795, 11);
+            this.panel2.Size = new System.Drawing.Size(834, 11);
             this.panel2.TabIndex = 26;
             // 
             // label2
@@ -225,7 +230,7 @@ namespace IMBD_adopse
             this.DarkModeCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.DarkModeCheckBox.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.DarkModeCheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.DarkModeCheckBox.Location = new System.Drawing.Point(923, 235);
+            this.DarkModeCheckBox.Location = new System.Drawing.Point(962, 235);
             this.DarkModeCheckBox.Name = "DarkModeCheckBox";
             this.DarkModeCheckBox.Size = new System.Drawing.Size(151, 37);
             this.DarkModeCheckBox.TabIndex = 27;
@@ -273,6 +278,36 @@ namespace IMBD_adopse
             this.panel4.Size = new System.Drawing.Size(1189, 45);
             this.panel4.TabIndex = 27;
             // 
+            // userIconBox
+            // 
+            this.userIconBox.Image = global::IMBD_adopse.Properties.Resources.user_iconArtboard_2_2x1;
+            this.userIconBox.Location = new System.Drawing.Point(11, 16);
+            this.userIconBox.Name = "userIconBox";
+            this.userIconBox.Size = new System.Drawing.Size(173, 179);
+            this.userIconBox.TabIndex = 29;
+            this.userIconBox.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.userIconBox);
+            this.panel5.Location = new System.Drawing.Point(46, 42);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(198, 259);
+            this.panel5.TabIndex = 30;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.label5.Location = new System.Drawing.Point(25, 215);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(148, 32);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Username";
+            // 
             // UserPageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -295,9 +330,10 @@ namespace IMBD_adopse
             this.Controls.Add(this.email);
             this.Controls.Add(this.surname);
             this.Controls.Add(this.name);
+            this.Controls.Add(this.panel5);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "UserPageForm";
-            this.Text = "Actor Page";
+            this.Text = "User Page";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.passwordBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).EndInit();
@@ -312,6 +348,9 @@ namespace IMBD_adopse
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.userIconBox)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,5 +378,8 @@ namespace IMBD_adopse
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox userIconBox;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label5;
     }
 }

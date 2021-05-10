@@ -273,6 +273,26 @@ namespace IMBD_adopse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap user_iconArtboard_2_2x {
+            get {
+                object obj = ResourceManager.GetObject("user-iconArtboard 2@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_iconArtboard_2_2x1 {
+            get {
+                object obj = ResourceManager.GetObject("user-iconArtboard 2@2x1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap userArtboard_2 {
             get {
                 object obj = ResourceManager.GetObject("userArtboard 2", resourceCulture);
