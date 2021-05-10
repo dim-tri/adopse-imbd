@@ -222,7 +222,7 @@ namespace IMBD_adopse
             this.panel2.Location = new System.Drawing.Point(283, 131);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(696, 32);
+            this.panel2.Size = new System.Drawing.Size(675, 32);
             this.panel2.TabIndex = 20;
             // 
             // label7
@@ -245,7 +245,7 @@ namespace IMBD_adopse
             this.panel4.Location = new System.Drawing.Point(280, 405);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(699, 33);
+            this.panel4.Size = new System.Drawing.Size(678, 33);
             this.panel4.TabIndex = 24;
             // 
             // textBoxReview
