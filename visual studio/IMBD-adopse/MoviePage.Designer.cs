@@ -65,6 +65,7 @@ namespace IMBD_adopse
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@ namespace IMBD_adopse
             // 
             this.MovieImage.ImageLocation = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlY" +
     "WMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg";
-            this.MovieImage.Location = new System.Drawing.Point(14, 16);
+            this.MovieImage.Location = new System.Drawing.Point(19, 9);
             this.MovieImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieImage.Name = "MovieImage";
             this.MovieImage.Size = new System.Drawing.Size(182, 268);
@@ -94,14 +95,14 @@ namespace IMBD_adopse
             // 
             // MovieDesc
             // 
-            this.MovieDesc.BackColor = System.Drawing.SystemColors.Menu;
+            this.MovieDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.MovieDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieDesc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MovieDesc.Location = new System.Drawing.Point(290, 187);
+            this.MovieDesc.Location = new System.Drawing.Point(283, 187);
             this.MovieDesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieDesc.Name = "MovieDesc";
             this.MovieDesc.ReadOnly = true;
-            this.MovieDesc.Size = new System.Drawing.Size(680, 195);
+            this.MovieDesc.Size = new System.Drawing.Size(696, 195);
             this.MovieDesc.TabIndex = 7;
             this.MovieDesc.Text = "Desc";
             // 
@@ -109,7 +110,8 @@ namespace IMBD_adopse
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(15, 298);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.label1.Location = new System.Drawing.Point(12, 292);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 28);
             this.label1.TabIndex = 8;
@@ -119,7 +121,8 @@ namespace IMBD_adopse
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(35, 331);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.label2.Location = new System.Drawing.Point(32, 329);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 28);
             this.label2.TabIndex = 9;
@@ -149,7 +152,8 @@ namespace IMBD_adopse
             // 
             this.labelCategory.AutoSize = true;
             this.labelCategory.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelCategory.Location = new System.Drawing.Point(116, 298);
+            this.labelCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.labelCategory.Location = new System.Drawing.Point(114, 292);
             this.labelCategory.Name = "labelCategory";
             this.labelCategory.Size = new System.Drawing.Size(41, 28);
             this.labelCategory.TabIndex = 13;
@@ -159,7 +163,8 @@ namespace IMBD_adopse
             // 
             this.labelLength.AutoSize = true;
             this.labelLength.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelLength.Location = new System.Drawing.Point(116, 331);
+            this.labelLength.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.labelLength.Location = new System.Drawing.Point(114, 329);
             this.labelLength.Name = "labelLength";
             this.labelLength.Size = new System.Drawing.Size(42, 28);
             this.labelLength.TabIndex = 14;
@@ -188,8 +193,9 @@ namespace IMBD_adopse
             // labelStar
             // 
             this.labelStar.AutoSize = true;
+            this.labelStar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.labelStar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelStar.Location = new System.Drawing.Point(26, 489);
+            this.labelStar.Location = new System.Drawing.Point(26, 479);
             this.labelStar.Name = "labelStar";
             this.labelStar.Size = new System.Drawing.Size(41, 28);
             this.labelStar.TabIndex = 17;
@@ -239,18 +245,19 @@ namespace IMBD_adopse
             this.panel4.Location = new System.Drawing.Point(280, 405);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(696, 33);
+            this.panel4.Size = new System.Drawing.Size(699, 33);
             this.panel4.TabIndex = 24;
             // 
             // textBoxReview
             // 
+            this.textBoxReview.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.textBoxReview.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBoxReview.Location = new System.Drawing.Point(283, 499);
             this.textBoxReview.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxReview.MaxLength = 400;
             this.textBoxReview.Multiline = true;
             this.textBoxReview.Name = "textBoxReview";
-            this.textBoxReview.Size = new System.Drawing.Size(687, 172);
+            this.textBoxReview.Size = new System.Drawing.Size(696, 172);
             this.textBoxReview.TabIndex = 25;
             // 
             // buttonSubmit
@@ -278,7 +285,7 @@ namespace IMBD_adopse
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.label9.Location = new System.Drawing.Point(12, 0);
+            this.label9.Location = new System.Drawing.Point(12, 7);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 32);
             this.label9.TabIndex = 31;
@@ -288,10 +295,10 @@ namespace IMBD_adopse
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Location = new System.Drawing.Point(1099, 38);
+            this.panel6.Location = new System.Drawing.Point(1099, 25);
             this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(458, 33);
+            this.panel6.Size = new System.Drawing.Size(458, 46);
             this.panel6.TabIndex = 32;
             // 
             // movieRating
@@ -325,13 +332,14 @@ namespace IMBD_adopse
             // 
             // actorsList
             // 
+            this.actorsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.actorsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ListViewItem});
             this.actorsList.HideSelection = false;
             this.actorsList.Location = new System.Drawing.Point(14, 467);
             this.actorsList.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.actorsList.Name = "actorsList";
-            this.actorsList.Size = new System.Drawing.Size(207, 313);
+            this.actorsList.Size = new System.Drawing.Size(219, 313);
             this.actorsList.TabIndex = 36;
             this.actorsList.UseCompatibleStateImageBehavior = false;
             // 
@@ -382,9 +390,14 @@ namespace IMBD_adopse
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.panel1.Location = new System.Drawing.Point(14, 284);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.labelCategory);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.labelLength);
+            this.panel1.Controls.Add(this.MovieImage);
+            this.panel1.Location = new System.Drawing.Point(14, 16);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(182, 108);
+            this.panel1.Size = new System.Drawing.Size(219, 376);
             this.panel1.TabIndex = 40;
             // 
             // panel3
@@ -401,7 +414,8 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1921, 1055);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
+            this.ClientSize = new System.Drawing.Size(1963, 1055);
             this.ControlBox = false;
             this.Controls.Add(this.label10);
             this.Controls.Add(this.labelComments);
@@ -419,14 +433,9 @@ namespace IMBD_adopse
             this.Controls.Add(this.labelStar);
             this.Controls.Add(this.labelRating);
             this.Controls.Add(this.labelDate);
-            this.Controls.Add(this.labelLength);
-            this.Controls.Add(this.labelCategory);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.MovieDesc);
-            this.Controls.Add(this.MovieImage);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.actorsList);
@@ -442,6 +451,8 @@ namespace IMBD_adopse
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
