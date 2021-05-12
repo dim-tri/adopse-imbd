@@ -46,7 +46,7 @@ namespace IMBD_adopse
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Goldenrod;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.labelExit);
             this.panel1.Controls.Add(this.labelTitle);
             this.panel1.Location = new System.Drawing.Point(0, 1);
@@ -103,7 +103,7 @@ namespace IMBD_adopse
             // 
             // buttonLogin
             // 
-            this.buttonLogin.BackColor = System.Drawing.Color.Maroon;
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonLogin.Location = new System.Drawing.Point(125, 242);
@@ -148,9 +148,10 @@ namespace IMBD_adopse
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.buttonLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(546, 374);
             this.Controls.Add(this.labelfalse);
             this.Controls.Add(this.pictureBox2);

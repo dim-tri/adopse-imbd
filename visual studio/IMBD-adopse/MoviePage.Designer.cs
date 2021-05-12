@@ -89,7 +89,7 @@ namespace IMBD_adopse
             // 
             // MovieDesc
             // 
-            this.MovieDesc.BackColor = System.Drawing.SystemColors.Menu;
+            this.MovieDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.MovieDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieDesc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MovieDesc.Location = new System.Drawing.Point(314, 350);
@@ -211,13 +211,11 @@ namespace IMBD_adopse
             // 
             // panel2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.Goldenrod;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(245, 297);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(609, 25);
+            this.panel2.Size = new System.Drawing.Size(719, 25);
             this.panel2.TabIndex = 20;
             // 
             // label7
@@ -232,13 +230,11 @@ namespace IMBD_adopse
             // 
             // panel4
             // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.Goldenrod;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.panel4.Controls.Add(this.label7);
             this.panel4.Location = new System.Drawing.Point(245, 557);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(609, 25);
+            this.panel4.Size = new System.Drawing.Size(719, 25);
             this.panel4.TabIndex = 24;
             // 
             // textBoxReview
@@ -281,7 +277,7 @@ namespace IMBD_adopse
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.Goldenrod;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.panel6.Controls.Add(this.label9);
             this.panel6.Location = new System.Drawing.Point(962, 40);
             this.panel6.Name = "panel6";
@@ -319,6 +315,7 @@ namespace IMBD_adopse
             // 
             // actorsList
             // 
+            this.actorsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.actorsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ListViewItem});
             this.actorsList.HideSelection = false;
@@ -376,7 +373,8 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1607, 791);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
+            this.ClientSize = new System.Drawing.Size(1403, 788);
             this.ControlBox = false;
             this.Controls.Add(this.label10);
             this.Controls.Add(this.labelComments);

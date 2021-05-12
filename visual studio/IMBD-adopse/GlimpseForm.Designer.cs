@@ -36,9 +36,9 @@ namespace IMBD_adopse
             this.MovieDesc = new System.Windows.Forms.RichTextBox();
             this.MovieTitle = new System.Windows.Forms.RichTextBox();
             this.AddBtn = new System.Windows.Forms.Button();
-            this.ExitButton = new System.Windows.Forms.Button();
             this.MoreButton = new System.Windows.Forms.Button();
             this.RemoveBtn = new System.Windows.Forms.Button();
+            this.labelExit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +82,7 @@ namespace IMBD_adopse
             // 
             // MovieDesc
             // 
-            this.MovieDesc.BackColor = System.Drawing.SystemColors.Menu;
+            this.MovieDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.MovieDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieDesc.Location = new System.Drawing.Point(200, 106);
             this.MovieDesc.Name = "MovieDesc";
@@ -93,7 +93,7 @@ namespace IMBD_adopse
             // 
             // MovieTitle
             // 
-            this.MovieTitle.BackColor = System.Drawing.SystemColors.Menu;
+            this.MovieTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.MovieTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MovieTitle.Location = new System.Drawing.Point(200, 16);
@@ -107,67 +107,74 @@ namespace IMBD_adopse
             // 
             this.AddBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AddBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.AddBtn.Enabled = false;
-            this.AddBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddBtn.Location = new System.Drawing.Point(488, 241);
+            this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AddBtn.Location = new System.Drawing.Point(483, 240);
             this.AddBtn.Margin = new System.Windows.Forms.Padding(0);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(116, 37);
+            this.AddBtn.Size = new System.Drawing.Size(121, 37);
             this.AddBtn.TabIndex = 8;
             this.AddBtn.Text = "+ Watchlist";
-            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.UseVisualStyleBackColor = false;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
-            // 
-            // ExitButton
-            // 
-            this.ExitButton.BackColor = System.Drawing.SystemColors.Control;
-            this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ExitButton.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
-            this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExitButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ExitButton.Location = new System.Drawing.Point(585, 0);
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(30, 31);
-            this.ExitButton.TabIndex = 9;
-            this.ExitButton.Text = "X";
-            this.ExitButton.UseVisualStyleBackColor = false;
-            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // MoreButton
             // 
             this.MoreButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.MoreButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.MoreButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MoreButton.Location = new System.Drawing.Point(232, 241);
+            this.MoreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.MoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MoreButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MoreButton.Location = new System.Drawing.Point(200, 240);
             this.MoreButton.Margin = new System.Windows.Forms.Padding(0);
             this.MoreButton.Name = "MoreButton";
-            this.MoreButton.Size = new System.Drawing.Size(116, 37);
+            this.MoreButton.Size = new System.Drawing.Size(121, 37);
             this.MoreButton.TabIndex = 10;
             this.MoreButton.Text = "View More";
-            this.MoreButton.UseVisualStyleBackColor = true;
+            this.MoreButton.UseVisualStyleBackColor = false;
             this.MoreButton.Click += new System.EventHandler(this.MoreButton_Click);
             // 
             // RemoveBtn
             // 
+            this.RemoveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.RemoveBtn.Enabled = false;
-            this.RemoveBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RemoveBtn.Location = new System.Drawing.Point(369, 241);
+            this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RemoveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RemoveBtn.Location = new System.Drawing.Point(343, 240);
             this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(116, 37);
+            this.RemoveBtn.Size = new System.Drawing.Size(121, 37);
             this.RemoveBtn.TabIndex = 11;
             this.RemoveBtn.Text = "- Watchlist";
-            this.RemoveBtn.UseVisualStyleBackColor = true;
+            this.RemoveBtn.UseVisualStyleBackColor = false;
             this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
+            // 
+            // labelExit
+            // 
+            this.labelExit.AutoSize = true;
+            this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelExit.ForeColor = System.Drawing.Color.White;
+            this.labelExit.Location = new System.Drawing.Point(593, 0);
+            this.labelExit.Name = "labelExit";
+            this.labelExit.Size = new System.Drawing.Size(24, 24);
+            this.labelExit.TabIndex = 12;
+            this.labelExit.Text = "X";
+            this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
+            this.labelExit.MouseEnter += new System.EventHandler(this.labelExit_MouseEnter);
+            this.labelExit.MouseLeave += new System.EventHandler(this.labelExit_MouseLeave);
             // 
             // GlimpseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(616, 298);
             this.ControlBox = false;
+            this.Controls.Add(this.labelExit);
             this.Controls.Add(this.RemoveBtn);
             this.Controls.Add(this.MoreButton);
-            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.MovieTitle);
             this.Controls.Add(this.MovieDesc);
@@ -194,10 +201,10 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label MovieRating;
         private System.Windows.Forms.RichTextBox MovieDesc;
         private System.Windows.Forms.RichTextBox MovieTitle;
-        private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.Button MoreButton;
         public System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button RemoveBtn;
+        private System.Windows.Forms.Label labelExit;
     }
 
 }
