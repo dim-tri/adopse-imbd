@@ -41,9 +41,9 @@ namespace IMBD_adopse
             // 
             this.flowPanelNewReleases.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowPanelNewReleases.Location = new System.Drawing.Point(30, 67);
+            this.flowPanelNewReleases.Location = new System.Drawing.Point(31, 67);
             this.flowPanelNewReleases.Name = "flowPanelNewReleases";
-            this.flowPanelNewReleases.Size = new System.Drawing.Size(964, 293);
+            this.flowPanelNewReleases.Size = new System.Drawing.Size(1235, 293);
             this.flowPanelNewReleases.TabIndex = 5;
             // 
             // flowPanelTopMovies
@@ -52,7 +52,7 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowPanelTopMovies.Location = new System.Drawing.Point(31, 408);
             this.flowPanelTopMovies.Name = "flowPanelTopMovies";
-            this.flowPanelTopMovies.Size = new System.Drawing.Size(963, 293);
+            this.flowPanelTopMovies.Size = new System.Drawing.Size(1235, 293);
             this.flowPanelTopMovies.TabIndex = 6;
             // 
             // label1
@@ -100,7 +100,7 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowPanelRecommended.Location = new System.Drawing.Point(31, 750);
             this.flowPanelRecommended.Name = "flowPanelRecommended";
-            this.flowPanelRecommended.Size = new System.Drawing.Size(963, 293);
+            this.flowPanelRecommended.Size = new System.Drawing.Size(1235, 293);
             this.flowPanelRecommended.TabIndex = 9;
             // 
             // HomeForm
