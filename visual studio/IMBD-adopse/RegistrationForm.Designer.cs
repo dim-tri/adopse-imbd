@@ -30,288 +30,238 @@ namespace IMBD_adopse
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
-            this.name = new System.Windows.Forms.TextBox();
-            this.surname = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.username = new System.Windows.Forms.TextBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.nameBox = new System.Windows.Forms.PictureBox();
-            this.surnameBox = new System.Windows.Forms.PictureBox();
-            this.emailBox = new System.Windows.Forms.PictureBox();
-            this.usernameBox = new System.Windows.Forms.PictureBox();
-            this.passwordBox = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelExit = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.textBoxUsername = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.registerBtn = new System.Windows.Forms.Button();
-            this.correctIcon = new System.Windows.Forms.PictureBox();
-            this.RegisterForm = new System.Windows.Forms.Label();
-            this.wrongIcon = new System.Windows.Forms.PictureBox();
-            this.registerIcon = new System.Windows.Forms.PictureBox();
-            this.lineBox2 = new System.Windows.Forms.PictureBox();
-            this.lineBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.nameBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.surnameBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emailBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.passwordBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.correctIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wrongIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.registerIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // name
+            // panel1
             // 
-            this.name.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.name.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.name.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.name.Location = new System.Drawing.Point(121, 182);
-            this.name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.name.Multiline = true;
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(309, 29);
-            this.name.TabIndex = 0;
-            this.name.Text = " name";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.labelExit);
+            this.panel1.Controls.Add(this.labelTitle);
+            this.panel1.Location = new System.Drawing.Point(1, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(548, 68);
+            this.panel1.TabIndex = 18;
             // 
-            // surname
+            // labelExit
             // 
-            this.surname.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.surname.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.surname.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.surname.Location = new System.Drawing.Point(121, 225);
-            this.surname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.surname.Multiline = true;
-            this.surname.Name = "surname";
-            this.surname.Size = new System.Drawing.Size(309, 29);
-            this.surname.TabIndex = 1;
-            this.surname.Text = " surname";
+            this.labelExit.AutoSize = true;
+            this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelExit.ForeColor = System.Drawing.Color.White;
+            this.labelExit.Location = new System.Drawing.Point(528, 0);
+            this.labelExit.Name = "labelExit";
+            this.labelExit.Size = new System.Drawing.Size(24, 24);
+            this.labelExit.TabIndex = 1;
+            this.labelExit.Text = "X";
+            this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
+            this.labelExit.MouseEnter += new System.EventHandler(this.labelExit_MouseEnter);
+            this.labelExit.MouseLeave += new System.EventHandler(this.labelExit_MouseLeave);
             // 
-            // email
+            // labelTitle
             // 
-            this.email.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.email.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.email.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.email.Location = new System.Drawing.Point(121, 268);
-            this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.email.Multiline = true;
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(309, 29);
-            this.email.TabIndex = 2;
-            this.email.Text = " email";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTitle.Location = new System.Drawing.Point(205, 22);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(124, 32);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "REGISTER";
             // 
-            // username
+            // textBoxName
             // 
-            this.username.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.username.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.username.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.username.Location = new System.Drawing.Point(121, 310);
-            this.username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.username.Multiline = true;
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(309, 29);
-            this.username.TabIndex = 3;
-            this.username.Text = " username";
+            this.textBoxName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxName.Location = new System.Drawing.Point(154, 107);
+            this.textBoxName.MaxLength = 20;
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(289, 33);
+            this.textBoxName.TabIndex = 19;
+            this.textBoxName.Tag = "";
+            this.textBoxName.Text = "Name";
             // 
-            // password
+            // pictureBox2
             // 
-            this.password.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.password.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.password.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.password.Location = new System.Drawing.Point(121, 353);
-            this.password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.password.Multiline = true;
-            this.password.Name = "password";
-            this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(309, 29);
-            this.password.TabIndex = 4;
-            this.password.Text = " password";
+            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.icons8_name_26;
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(106, 107);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(42, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
             // 
-            // nameBox
+            // pictureBox3
             // 
-            this.nameBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.nameBox.Location = new System.Drawing.Point(90, 182);
-            this.nameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(32, 28);
-            this.nameBox.TabIndex = 5;
-            this.nameBox.TabStop = false;
-            this.nameBox.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox3.Image = global::IMBD_adopse.Properties.Resources.icons8_name_26;
+            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(106, 156);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 33);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
             // 
-            // surnameBox
+            // pictureBox1
             // 
-            this.surnameBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.surnameBox.Location = new System.Drawing.Point(90, 225);
-            this.surnameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.surnameBox.Name = "surnameBox";
-            this.surnameBox.Size = new System.Drawing.Size(32, 28);
-            this.surnameBox.TabIndex = 6;
-            this.surnameBox.TabStop = false;
+            this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.icons8_lock_26;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(106, 305);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(42, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
             // 
-            // emailBox
+            // pictureBox4
             // 
-            this.emailBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.emailBox.Location = new System.Drawing.Point(90, 268);
-            this.emailBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(32, 28);
-            this.emailBox.TabIndex = 7;
-            this.emailBox.TabStop = false;
+            this.pictureBox4.Image = global::IMBD_adopse.Properties.Resources.icons8_user_locked_64;
+            this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
+            this.pictureBox4.Location = new System.Drawing.Point(106, 255);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(42, 33);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 23;
+            this.pictureBox4.TabStop = false;
             // 
-            // usernameBox
+            // pictureBox5
             // 
-            this.usernameBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.usernameBox.Location = new System.Drawing.Point(90, 310);
-            this.usernameBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.usernameBox.Name = "usernameBox";
-            this.usernameBox.Size = new System.Drawing.Size(32, 28);
-            this.usernameBox.TabIndex = 8;
-            this.usernameBox.TabStop = false;
+            this.pictureBox5.Image = global::IMBD_adopse.Properties.Resources.icons8_email_26;
+            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
+            this.pictureBox5.Location = new System.Drawing.Point(106, 205);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(42, 33);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 24;
+            this.pictureBox5.TabStop = false;
             // 
-            // passwordBox
+            // textBoxSurname
             // 
-            this.passwordBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.passwordBox.Location = new System.Drawing.Point(90, 353);
-            this.passwordBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.passwordBox.Name = "passwordBox";
-            this.passwordBox.Size = new System.Drawing.Size(32, 28);
-            this.passwordBox.TabIndex = 9;
-            this.passwordBox.TabStop = false;
+            this.textBoxSurname.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxSurname.Location = new System.Drawing.Point(154, 156);
+            this.textBoxSurname.MaxLength = 20;
+            this.textBoxSurname.Name = "textBoxSurname";
+            this.textBoxSurname.Size = new System.Drawing.Size(289, 33);
+            this.textBoxSurname.TabIndex = 25;
+            this.textBoxSurname.Tag = "";
+            this.textBoxSurname.Text = "Surname";
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxEmail.Location = new System.Drawing.Point(154, 205);
+            this.textBoxEmail.MaxLength = 20;
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(289, 33);
+            this.textBoxEmail.TabIndex = 26;
+            this.textBoxEmail.Tag = "";
+            this.textBoxEmail.Text = "Email";
+            // 
+            // textBoxUsername
+            // 
+            this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxUsername.Location = new System.Drawing.Point(154, 255);
+            this.textBoxUsername.MaxLength = 20;
+            this.textBoxUsername.Name = "textBoxUsername";
+            this.textBoxUsername.Size = new System.Drawing.Size(289, 33);
+            this.textBoxUsername.TabIndex = 27;
+            this.textBoxUsername.Tag = "";
+            this.textBoxUsername.Text = "Username";
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxPassword.Location = new System.Drawing.Point(154, 305);
+            this.textBoxPassword.MaxLength = 20;
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(289, 33);
+            this.textBoxPassword.TabIndex = 28;
+            this.textBoxPassword.Tag = "";
+            this.textBoxPassword.Text = "Password";
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // registerBtn
             // 
-            this.registerBtn.BackColor = System.Drawing.Color.Gold;
-            this.registerBtn.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.registerBtn.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.registerBtn.Location = new System.Drawing.Point(90, 400);
-            this.registerBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.registerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.registerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registerBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.registerBtn.Location = new System.Drawing.Point(84, 381);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(340, 28);
-            this.registerBtn.TabIndex = 10;
-            this.registerBtn.Text = "Register";
+            this.registerBtn.Size = new System.Drawing.Size(359, 40);
+            this.registerBtn.TabIndex = 29;
+            this.registerBtn.Text = "REGISTER";
             this.registerBtn.UseVisualStyleBackColor = false;
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
-            // 
-            // correctIcon
-            // 
-            this.correctIcon.Location = new System.Drawing.Point(435, 182);
-            this.correctIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.correctIcon.Name = "correctIcon";
-            this.correctIcon.Size = new System.Drawing.Size(33, 28);
-            this.correctIcon.TabIndex = 11;
-            this.correctIcon.TabStop = false;
-            // 
-            // RegisterForm
-            // 
-            this.RegisterForm.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.RegisterForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.RegisterForm.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.RegisterForm.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.RegisterForm.Location = new System.Drawing.Point(90, 40);
-            this.RegisterForm.Name = "RegisterForm";
-            this.RegisterForm.Size = new System.Drawing.Size(340, 42);
-            this.RegisterForm.TabIndex = 12;
-            this.RegisterForm.Text = "Registration Form";
-            this.RegisterForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // wrongIcon
-            // 
-            this.wrongIcon.Location = new System.Drawing.Point(435, 225);
-            this.wrongIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.wrongIcon.Name = "wrongIcon";
-            this.wrongIcon.Size = new System.Drawing.Size(33, 28);
-            this.wrongIcon.TabIndex = 13;
-            this.wrongIcon.TabStop = false;
-            // 
-            // registerIcon
-            // 
-            this.registerIcon.Image = ((System.Drawing.Image)(resources.GetObject("registerIcon.Image")));
-            this.registerIcon.Location = new System.Drawing.Point(232, 93);
-            this.registerIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.registerIcon.Name = "registerIcon";
-            this.registerIcon.Size = new System.Drawing.Size(57, 76);
-            this.registerIcon.TabIndex = 14;
-            this.registerIcon.TabStop = false;
-            // 
-            // lineBox2
-            // 
-            this.lineBox2.Image = ((System.Drawing.Image)(resources.GetObject("lineBox2.Image")));
-            this.lineBox2.Location = new System.Drawing.Point(313, 128);
-            this.lineBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lineBox2.Name = "lineBox2";
-            this.lineBox2.Size = new System.Drawing.Size(116, 9);
-            this.lineBox2.TabIndex = 15;
-            this.lineBox2.TabStop = false;
-            // 
-            // lineBox1
-            // 
-            this.lineBox1.Image = ((System.Drawing.Image)(resources.GetObject("lineBox1.Image")));
-            this.lineBox1.Location = new System.Drawing.Point(90, 128);
-            this.lineBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lineBox1.Name = "lineBox1";
-            this.lineBox1.Size = new System.Drawing.Size(116, 9);
-            this.lineBox1.TabIndex = 16;
-            this.lineBox1.TabStop = false;
             // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(530, 471);
-            this.Controls.Add(this.lineBox1);
-            this.Controls.Add(this.lineBox2);
-            this.Controls.Add(this.registerIcon);
-            this.Controls.Add(this.wrongIcon);
-            this.Controls.Add(this.RegisterForm);
-            this.Controls.Add(this.correctIcon);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
+            this.ClientSize = new System.Drawing.Size(550, 471);
             this.Controls.Add(this.registerBtn);
-            this.Controls.Add(this.passwordBox);
-            this.Controls.Add(this.usernameBox);
-            this.Controls.Add(this.emailBox);
-            this.Controls.Add(this.surnameBox);
-            this.Controls.Add(this.nameBox);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.username);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.surname);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUsername);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxSurname);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration Form";
-            ((System.ComponentModel.ISupportInitialize)(this.nameBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.surnameBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emailBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.passwordBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.correctIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wrongIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.registerIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lineBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox name;
-        private System.Windows.Forms.TextBox surname;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.PictureBox nameBox;
-        private System.Windows.Forms.PictureBox surnameBox;
-        private System.Windows.Forms.PictureBox emailBox;
-        private System.Windows.Forms.PictureBox usernameBox;
-        private System.Windows.Forms.PictureBox passwordBox;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelExit;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox textBoxSurname;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button registerBtn;
-        private System.Windows.Forms.PictureBox correctIcon;
-        private System.Windows.Forms.Label RegisterForm;
-        private System.Windows.Forms.PictureBox wrongIcon;
-        private System.Windows.Forms.PictureBox registerIcon;
-        private System.Windows.Forms.PictureBox lineBox2;
-        private System.Windows.Forms.PictureBox lineBox1;
+        private System.Windows.Forms.TextBox textBoxPassword;
     }
 }
