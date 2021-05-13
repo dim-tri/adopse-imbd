@@ -10,8 +10,9 @@
 
 namespace IMBD_adopse.Properties {
     using System;
-    
-    
+    using System.Drawing;
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,7 +24,8 @@ namespace IMBD_adopse.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+        internal static Image icons8_name_26;
+        internal static Image info_icon_regmodeArtboard_11_2x;
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
@@ -103,6 +105,16 @@ namespace IMBD_adopse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heartSmall1 {
+            get {
+                object obj = ResourceManager.GetObject("heartSmall1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_search_172546__1_ {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_search_172546 (1)", resourceCulture);
@@ -133,29 +145,9 @@ namespace IMBD_adopse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_name_26 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-name-26", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_locked_64 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-locked-64", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap info_icon_regmodeArtboard_11_2x {
-            get {
-                object obj = ResourceManager.GetObject("info-icon-regmodeArtboard 11@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

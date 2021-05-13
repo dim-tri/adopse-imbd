@@ -131,5 +131,10 @@ namespace IMBD_adopse
         {
             labelExit.ForeColor = Color.White;
         }
+
+        private void MovieTitle_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
