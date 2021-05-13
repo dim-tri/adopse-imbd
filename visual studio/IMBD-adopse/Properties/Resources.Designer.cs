@@ -273,6 +273,76 @@ namespace IMBD_adopse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap starArtboard_16 {
+            get {
+                object obj = ResourceManager.GetObject("starArtboard 16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starArtboard_161 {
+            get {
+                object obj = ResourceManager.GetObject("starArtboard 161", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starArtboard_162 {
+            get {
+                object obj = ResourceManager.GetObject("starArtboard 162", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starArtboard_163 {
+            get {
+                object obj = ResourceManager.GetObject("starArtboard 163", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starArtboard_164 {
+            get {
+                object obj = ResourceManager.GetObject("starArtboard 164", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starArtboard_165 {
+            get {
+                object obj = ResourceManager.GetObject("starArtboard 165", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starArtboard_166 {
+            get {
+                object obj = ResourceManager.GetObject("starArtboard 166", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap thin_line_user_icon {
             get {
                 object obj = ResourceManager.GetObject("thin-line-user-icon", resourceCulture);
@@ -286,6 +356,26 @@ namespace IMBD_adopse.Properties {
         internal static System.Drawing.Bitmap thin_line_user_icon1 {
             get {
                 object obj = ResourceManager.GetObject("thin-line-user-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_iconArtboard_2_2x {
+            get {
+                object obj = ResourceManager.GetObject("user-iconArtboard 2@2x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_iconArtboard_2_2x1 {
+            get {
+                object obj = ResourceManager.GetObject("user-iconArtboard 2@2x1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

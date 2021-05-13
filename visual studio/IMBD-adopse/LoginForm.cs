@@ -79,8 +79,9 @@ namespace IMBD_adopse
             
         }
 
-   
+        private void textBoxUsername_TextChanged(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

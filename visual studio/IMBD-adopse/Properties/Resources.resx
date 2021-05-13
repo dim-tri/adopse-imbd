@@ -118,79 +118,100 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="line133-10Artboard 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\line133-10Artboard 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="starArtboard 165" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="registerArtboard 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\registerArtboard 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thin-line-user-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thin-line-user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="list-64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\list-64x64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lockArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lockArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="userArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\userArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo-colorArtboard_32x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-colorArtboard_32x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="star_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\star_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="iconfinder_search_172546 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_search_172546 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="heartSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\heartSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-user-locked-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-user-locked-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="profileArtboard 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\profileArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="info-icon-regmodeArtboard 11@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info-icon-regmodeArtboard 11@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="wrongArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wrongArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="line133-10Artboard 41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\line133-10Artboard 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thin-line-user-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thin-line-user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo-colorArtboard_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo-colorArtboard_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-lock-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-lock-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="starArtboard 16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="correct-icon38" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\correct-icon38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-iconArtboard 2@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-iconArtboard 2@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thin-line-user-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thin-line-user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-colorArtboard_32x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-colorArtboard_32x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="line133-10Artboard 41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line133-10Artboard 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lockArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lockArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="starArtboard 164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="star_24px_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_24px_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="profileArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="star_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-iconArtboard 2@2x1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-iconArtboard 2@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="correct-icon38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\correct-icon38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list-64x64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list-64x64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrongArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrongArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profileArtboard 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profileArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-email-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-email-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="registerArtboard 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registerArtboard 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-lock-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-lock-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="emailArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\emailArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-name-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-name-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="starArtboard 161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thin-line-user-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thin-line-user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="starArtboard 162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo-colorArtboard_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo-colorArtboard_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="userArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="line133-10Artboard 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line133-10Artboard 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-user-locked-64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-user-locked-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heartSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heartSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="profileArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profileArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconfinder_search_172546 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconfinder_search_172546 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="starArtboard 163" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-email-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-email-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="starArtboard 166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -29,194 +29,188 @@ namespace IMBD_adopse
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelExit = new System.Windows.Forms.Label();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.textBoxName = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBoxSurname = new System.Windows.Forms.TextBox();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.textBoxUsername = new System.Windows.Forms.TextBox();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
+            this.surname = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.PictureBox();
+            this.surnameBox = new System.Windows.Forms.PictureBox();
+            this.emailBox = new System.Windows.Forms.PictureBox();
+            this.usernameBox = new System.Windows.Forms.PictureBox();
+            this.passwordBox = new System.Windows.Forms.PictureBox();
             this.registerBtn = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.correctIcon = new System.Windows.Forms.PictureBox();
+            this.RegisterForm = new System.Windows.Forms.Label();
+            this.wrongIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.nameBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.surnameBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emailBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.correctIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wrongIcon)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // name
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.panel1.Controls.Add(this.labelExit);
-            this.panel1.Controls.Add(this.labelTitle);
-            this.panel1.Location = new System.Drawing.Point(1, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(548, 68);
-            this.panel1.TabIndex = 18;
+            this.name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.name.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.name.Location = new System.Drawing.Point(138, 188);
+            this.name.Multiline = true;
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(353, 37);
+            this.name.TabIndex = 0;
+            this.name.Text = " name";
             // 
-            // labelExit
+            // surname
             // 
-            this.labelExit.AutoSize = true;
-            this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelExit.ForeColor = System.Drawing.Color.White;
-            this.labelExit.Location = new System.Drawing.Point(528, 0);
-            this.labelExit.Name = "labelExit";
-            this.labelExit.Size = new System.Drawing.Size(24, 24);
-            this.labelExit.TabIndex = 1;
-            this.labelExit.Text = "X";
-            this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
-            this.labelExit.MouseEnter += new System.EventHandler(this.labelExit_MouseEnter);
-            this.labelExit.MouseLeave += new System.EventHandler(this.labelExit_MouseLeave);
+            this.surname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.surname.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.surname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.surname.Location = new System.Drawing.Point(138, 245);
+            this.surname.Multiline = true;
+            this.surname.Name = "surname";
+            this.surname.Size = new System.Drawing.Size(353, 37);
+            this.surname.TabIndex = 1;
+            this.surname.Text = " surname";
             // 
-            // labelTitle
+            // email
             // 
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelTitle.Location = new System.Drawing.Point(205, 22);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(124, 32);
-            this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "REGISTER";
+            this.email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.email.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.email.Location = new System.Drawing.Point(138, 302);
+            this.email.Multiline = true;
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(353, 37);
+            this.email.TabIndex = 2;
+            this.email.Text = " email";
             // 
-            // textBoxName
+            // username
             // 
-            this.textBoxName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxName.Location = new System.Drawing.Point(154, 107);
-            this.textBoxName.MaxLength = 20;
-            this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(289, 33);
-            this.textBoxName.TabIndex = 19;
-            this.textBoxName.Tag = "";
-            this.textBoxName.Text = "Name";
+            this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.username.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.username.Location = new System.Drawing.Point(138, 358);
+            this.username.Multiline = true;
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(353, 37);
+            this.username.TabIndex = 3;
+            this.username.Text = " username";
             // 
-            // pictureBox2
+            // password
             // 
-            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.icons8_name_26;
-            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(106, 107);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
+            this.password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.password.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.password.Location = new System.Drawing.Point(138, 416);
+            this.password.Multiline = true;
+            this.password.Name = "password";
+            this.password.PasswordChar = '*';
+            this.password.Size = new System.Drawing.Size(353, 37);
+            this.password.TabIndex = 4;
+            this.password.Text = " password";
             // 
-            // pictureBox3
+            // nameBox
             // 
-            this.pictureBox3.Image = global::IMBD_adopse.Properties.Resources.icons8_name_26;
-            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(106, 156);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 33);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 21;
-            this.pictureBox3.TabStop = false;
+            this.nameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(220)))));
+            this.nameBox.Location = new System.Drawing.Point(103, 188);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(37, 37);
+            this.nameBox.TabIndex = 5;
+            this.nameBox.TabStop = false;
+            this.nameBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox1
+            // surnameBox
             // 
-            this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.icons8_lock_26;
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(106, 305);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
+            this.surnameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(220)))));
+            this.surnameBox.Location = new System.Drawing.Point(103, 245);
+            this.surnameBox.Name = "surnameBox";
+            this.surnameBox.Size = new System.Drawing.Size(37, 37);
+            this.surnameBox.TabIndex = 6;
+            this.surnameBox.TabStop = false;
             // 
-            // pictureBox4
+            // emailBox
             // 
-            this.pictureBox4.Image = global::IMBD_adopse.Properties.Resources.icons8_user_locked_64;
-            this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(106, 255);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 33);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 23;
-            this.pictureBox4.TabStop = false;
+            this.emailBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(220)))));
+            this.emailBox.Location = new System.Drawing.Point(103, 302);
+            this.emailBox.Name = "emailBox";
+            this.emailBox.Size = new System.Drawing.Size(37, 37);
+            this.emailBox.TabIndex = 7;
+            this.emailBox.TabStop = false;
             // 
-            // pictureBox5
+            // usernameBox
             // 
-            this.pictureBox5.Image = global::IMBD_adopse.Properties.Resources.icons8_email_26;
-            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(106, 205);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 33);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 24;
-            this.pictureBox5.TabStop = false;
+            this.usernameBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(220)))));
+            this.usernameBox.Location = new System.Drawing.Point(103, 358);
+            this.usernameBox.Name = "usernameBox";
+            this.usernameBox.Size = new System.Drawing.Size(37, 37);
+            this.usernameBox.TabIndex = 8;
+            this.usernameBox.TabStop = false;
             // 
-            // textBoxSurname
+            // passwordBox
             // 
-            this.textBoxSurname.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxSurname.Location = new System.Drawing.Point(154, 156);
-            this.textBoxSurname.MaxLength = 20;
-            this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(289, 33);
-            this.textBoxSurname.TabIndex = 25;
-            this.textBoxSurname.Tag = "";
-            this.textBoxSurname.Text = "Surname";
-            // 
-            // textBoxEmail
-            // 
-            this.textBoxEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxEmail.Location = new System.Drawing.Point(154, 205);
-            this.textBoxEmail.MaxLength = 20;
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(289, 33);
-            this.textBoxEmail.TabIndex = 26;
-            this.textBoxEmail.Tag = "";
-            this.textBoxEmail.Text = "Email";
-            // 
-            // textBoxUsername
-            // 
-            this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxUsername.Location = new System.Drawing.Point(154, 255);
-            this.textBoxUsername.MaxLength = 20;
-            this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(289, 33);
-            this.textBoxUsername.TabIndex = 27;
-            this.textBoxUsername.Tag = "";
-            this.textBoxUsername.Text = "Username";
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxPassword.Location = new System.Drawing.Point(154, 305);
-            this.textBoxPassword.MaxLength = 20;
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(289, 33);
-            this.textBoxPassword.TabIndex = 28;
-            this.textBoxPassword.Tag = "";
-            this.textBoxPassword.Text = "Password";
-            this.textBoxPassword.UseSystemPasswordChar = true;
+            this.passwordBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(220)))));
+            this.passwordBox.Location = new System.Drawing.Point(103, 416);
+            this.passwordBox.Name = "passwordBox";
+            this.passwordBox.Size = new System.Drawing.Size(37, 37);
+            this.passwordBox.TabIndex = 9;
+            this.passwordBox.TabStop = false;
             // 
             // registerBtn
             // 
-            this.registerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.registerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registerBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.registerBtn.Location = new System.Drawing.Point(84, 381);
+            this.registerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.registerBtn.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.registerBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.registerBtn.Location = new System.Drawing.Point(103, 478);
             this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(359, 40);
-            this.registerBtn.TabIndex = 29;
-            this.registerBtn.Text = "REGISTER";
+            this.registerBtn.Size = new System.Drawing.Size(389, 37);
+            this.registerBtn.TabIndex = 10;
+            this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = false;
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
+            // correctIcon
+            // 
+            this.correctIcon.Location = new System.Drawing.Point(497, 188);
+            this.correctIcon.Name = "correctIcon";
+            this.correctIcon.Size = new System.Drawing.Size(38, 37);
+            this.correctIcon.TabIndex = 11;
+            this.correctIcon.TabStop = false;
+            // 
+            // RegisterForm
+            // 
+            this.RegisterForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.RegisterForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.RegisterForm.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RegisterForm.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.RegisterForm.Location = new System.Drawing.Point(103, 91);
+            this.RegisterForm.Name = "RegisterForm";
+            this.RegisterForm.Size = new System.Drawing.Size(388, 55);
+            this.RegisterForm.TabIndex = 12;
+            this.RegisterForm.Text = "Registration Form";
+            this.RegisterForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RegisterForm.Click += new System.EventHandler(this.RegisterForm_Click);
+            // 
+            // wrongIcon
+            // 
+            this.wrongIcon.Location = new System.Drawing.Point(497, 245);
+            this.wrongIcon.Name = "wrongIcon";
+            this.wrongIcon.Size = new System.Drawing.Size(38, 37);
+            this.wrongIcon.TabIndex = 13;
+            this.wrongIcon.TabStop = false;
+            // 
             // RegistrationForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(550, 471);
+            this.ClientSize = new System.Drawing.Size(591, 628);
+            this.Controls.Add(this.wrongIcon);
+            this.Controls.Add(this.RegisterForm);
+            this.Controls.Add(this.correctIcon);
             this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUsername);
@@ -231,20 +225,18 @@ namespace IMBD_adopse
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration Form";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nameBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.surnameBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.emailBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.passwordBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.correctIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wrongIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -262,6 +254,8 @@ namespace IMBD_adopse
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button registerBtn;
-        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.PictureBox correctIcon;
+        private System.Windows.Forms.Label RegisterForm;
+        private System.Windows.Forms.PictureBox wrongIcon;
     }
 }
