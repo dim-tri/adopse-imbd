@@ -39,7 +39,6 @@ namespace IMBD_adopse
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.labelfalse = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -50,9 +49,10 @@ namespace IMBD_adopse
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.panel1.Controls.Add(this.labelExit);
             this.panel1.Controls.Add(this.labelTitle);
-            this.panel1.Location = new System.Drawing.Point(113, 60);
+            this.panel1.Location = new System.Drawing.Point(129, 80);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(309, 46);
+            this.panel1.Size = new System.Drawing.Size(353, 61);
             this.panel1.TabIndex = 0;
             // 
             // labelExit
@@ -61,9 +61,9 @@ namespace IMBD_adopse
             this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelExit.ForeColor = System.Drawing.Color.White;
-            this.labelExit.Location = new System.Drawing.Point(528, 0);
+            this.labelExit.Location = new System.Drawing.Point(603, 0);
             this.labelExit.Name = "labelExit";
-            this.labelExit.Size = new System.Drawing.Size(24, 24);
+            this.labelExit.Size = new System.Drawing.Size(30, 29);
             this.labelExit.TabIndex = 1;
             this.labelExit.Text = "X";
             this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
@@ -75,9 +75,9 @@ namespace IMBD_adopse
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.labelTitle.Location = new System.Drawing.Point(77, 12);
+            this.labelTitle.Location = new System.Drawing.Point(88, 16);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(123, 26);
+            this.labelTitle.Size = new System.Drawing.Size(161, 33);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "User Login";
             // 
@@ -86,10 +86,11 @@ namespace IMBD_adopse
             this.textBoxUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.textBoxUsername.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.textBoxUsername.Location = new System.Drawing.Point(163, 149);
+            this.textBoxUsername.Location = new System.Drawing.Point(186, 199);
+            this.textBoxUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxUsername.MaxLength = 20;
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(260, 28);
+            this.textBoxUsername.Size = new System.Drawing.Size(296, 33);
             this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.Tag = "";
             this.textBoxUsername.Text = "Username";
@@ -100,22 +101,24 @@ namespace IMBD_adopse
             this.textBoxPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.textBoxPassword.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.textBoxPassword.Location = new System.Drawing.Point(162, 202);
+            this.textBoxPassword.Location = new System.Drawing.Point(185, 269);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBoxPassword.MaxLength = 20;
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(260, 28);
+            this.textBoxPassword.Size = new System.Drawing.Size(296, 33);
             this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.Text = "Password";
             this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // buttonLogin
             // 
-            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonLogin.Location = new System.Drawing.Point(112, 254);
+            this.buttonLogin.Location = new System.Drawing.Point(128, 339);
+            this.buttonLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(309, 40);
+            this.buttonLogin.Size = new System.Drawing.Size(353, 53);
             this.buttonLogin.TabIndex = 5;
             this.buttonLogin.Text = "LOGIN";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -125,9 +128,10 @@ namespace IMBD_adopse
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(117, 135);
+            this.pictureBox1.Location = new System.Drawing.Point(134, 180);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(29, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(33, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -136,9 +140,10 @@ namespace IMBD_adopse
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(117, 193);
+            this.pictureBox2.Location = new System.Drawing.Point(134, 257);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(29, 34);
+            this.pictureBox2.Size = new System.Drawing.Size(33, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -148,34 +153,17 @@ namespace IMBD_adopse
             this.labelfalse.AutoSize = true;
             this.labelfalse.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelfalse.ForeColor = System.Drawing.Color.OrangeRed;
-            this.labelfalse.Location = new System.Drawing.Point(162, 234);
+            this.labelfalse.Location = new System.Drawing.Point(185, 312);
             this.labelfalse.Name = "labelfalse";
-            this.labelfalse.Size = new System.Drawing.Size(0, 18);
+            this.labelfalse.Size = new System.Drawing.Size(0, 23);
             this.labelfalse.TabIndex = 9;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(513, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 25);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "X";
-            this.label1.Click += new System.EventHandler(this.labelExit_Click);
-            this.label1.MouseEnter += new System.EventHandler(this.labelExit_MouseEnter);
-            this.label1.MouseLeave += new System.EventHandler(this.labelExit_MouseLeave);
-            // 
             // LoginForm
-            // 
-            this.AcceptButton = this.buttonLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            //
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(533, 374);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(609, 499);
             this.Controls.Add(this.labelfalse);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -184,6 +172,7 @@ namespace IMBD_adopse
             this.Controls.Add(this.textBoxUsername);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -207,6 +196,5 @@ namespace IMBD_adopse
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label labelfalse;
-        private System.Windows.Forms.Label label1;
     }
 }
