@@ -35,11 +35,11 @@ namespace IMBD_adopse
             this.emailBox = new System.Windows.Forms.PictureBox();
             this.surnameBox = new System.Windows.Forms.PictureBox();
             this.nameBox = new System.Windows.Forms.PictureBox();
-            this.password = new System.Windows.Forms.TextBox();
-            this.username = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.surname = new System.Windows.Forms.TextBox();
-            this.name = new System.Windows.Forms.TextBox();
+            this.passwordUser = new System.Windows.Forms.TextBox();
+            this.usernameUser = new System.Windows.Forms.TextBox();
+            this.emailUser = new System.Windows.Forms.TextBox();
+            this.surnameUser = new System.Windows.Forms.TextBox();
+            this.nameUser = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -127,66 +127,66 @@ namespace IMBD_adopse
             this.nameBox.TabIndex = 19;
             this.nameBox.TabStop = false;
             // 
-            // password
+            // passwordUser
             // 
-            this.password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.password.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.password.Location = new System.Drawing.Point(760, 179);
-            this.password.Multiline = true;
-            this.password.Name = "password";
-            this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(353, 37);
-            this.password.TabIndex = 18;
-            this.password.Text = " password";
+            this.passwordUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.passwordUser.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.passwordUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.passwordUser.Location = new System.Drawing.Point(760, 179);
+            this.passwordUser.Multiline = true;
+            this.passwordUser.Name = "passwordUser";
+            this.passwordUser.PasswordChar = '*';
+            this.passwordUser.Size = new System.Drawing.Size(353, 37);
+            this.passwordUser.TabIndex = 18;
+            this.passwordUser.Text = " password";
             // 
-            // username
+            // usernameUser
             // 
-            this.username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.username.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.username.Location = new System.Drawing.Point(760, 121);
-            this.username.Multiline = true;
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(353, 37);
-            this.username.TabIndex = 17;
-            this.username.Text = " username";
+            this.usernameUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.usernameUser.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.usernameUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.usernameUser.Location = new System.Drawing.Point(760, 121);
+            this.usernameUser.Multiline = true;
+            this.usernameUser.Name = "usernameUser";
+            this.usernameUser.Size = new System.Drawing.Size(353, 37);
+            this.usernameUser.TabIndex = 17;
+            this.usernameUser.Text = " username";
             // 
-            // email
+            // emailUser
             // 
-            this.email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.email.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.email.Location = new System.Drawing.Point(314, 235);
-            this.email.Multiline = true;
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(353, 37);
-            this.email.TabIndex = 16;
-            this.email.Text = " email";
+            this.emailUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.emailUser.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.emailUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.emailUser.Location = new System.Drawing.Point(314, 235);
+            this.emailUser.Multiline = true;
+            this.emailUser.Name = "emailUser";
+            this.emailUser.Size = new System.Drawing.Size(353, 37);
+            this.emailUser.TabIndex = 16;
+            this.emailUser.Text = " email";
             // 
-            // surname
+            // surnameUser
             // 
-            this.surname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.surname.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.surname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.surname.Location = new System.Drawing.Point(314, 178);
-            this.surname.Multiline = true;
-            this.surname.Name = "surname";
-            this.surname.Size = new System.Drawing.Size(353, 37);
-            this.surname.TabIndex = 15;
-            this.surname.Text = " surname";
+            this.surnameUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.surnameUser.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.surnameUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.surnameUser.Location = new System.Drawing.Point(314, 178);
+            this.surnameUser.Multiline = true;
+            this.surnameUser.Name = "surnameUser";
+            this.surnameUser.Size = new System.Drawing.Size(353, 37);
+            this.surnameUser.TabIndex = 15;
+            this.surnameUser.Text = " surname";
             // 
-            // name
+            // nameUser
             // 
-            this.name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.name.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.name.Location = new System.Drawing.Point(314, 121);
-            this.name.Multiline = true;
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(353, 37);
-            this.name.TabIndex = 14;
-            this.name.Text = " name";
+            this.nameUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.nameUser.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nameUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.nameUser.Location = new System.Drawing.Point(314, 121);
+            this.nameUser.Multiline = true;
+            this.nameUser.Name = "nameUser";
+            this.nameUser.Size = new System.Drawing.Size(353, 37);
+            this.nameUser.TabIndex = 14;
+            this.nameUser.Text = " name";
             // 
             // panel1
             // 
@@ -334,7 +334,7 @@ namespace IMBD_adopse
             // 
             this.flowPanelUserPageReview.Location = new System.Drawing.Point(46, 512);
             this.flowPanelUserPageReview.Name = "flowPanelUserPageReview";
-            this.flowPanelUserPageReview.Size = new System.Drawing.Size(1188, 447);
+            this.flowPanelUserPageReview.Size = new System.Drawing.Size(1188, 500);
             this.flowPanelUserPageReview.TabIndex = 33;
             this.flowPanelUserPageReview.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -343,7 +343,7 @@ namespace IMBD_adopse
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(1368, 971);
+            this.ClientSize = new System.Drawing.Size(1368, 1055);
             this.Controls.Add(this.flowPanelUserPageReview);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -355,11 +355,11 @@ namespace IMBD_adopse
             this.Controls.Add(this.emailBox);
             this.Controls.Add(this.surnameBox);
             this.Controls.Add(this.nameBox);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.username);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.surname);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.passwordUser);
+            this.Controls.Add(this.usernameUser);
+            this.Controls.Add(this.emailUser);
+            this.Controls.Add(this.surnameUser);
+            this.Controls.Add(this.nameUser);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pictureBox1);
@@ -398,11 +398,11 @@ namespace IMBD_adopse
         private System.Windows.Forms.PictureBox emailBox;
         private System.Windows.Forms.PictureBox surnameBox;
         private System.Windows.Forms.PictureBox nameBox;
-        private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox surname;
-        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.TextBox passwordUser;
+        private System.Windows.Forms.TextBox usernameUser;
+        private System.Windows.Forms.TextBox emailUser;
+        private System.Windows.Forms.TextBox surnameUser;
+        private System.Windows.Forms.TextBox nameUser;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
