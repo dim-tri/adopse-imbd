@@ -55,7 +55,7 @@ namespace IMBD_adopse
             this.label1.Text = "Rating:";
             // 
             // pictureBox5
-            // 
+            //
             this.pictureBox5.Image = global::IMBD_adopse.Properties.Resources.starArtboard_164;
             this.pictureBox5.Location = new System.Drawing.Point(171, 4);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);

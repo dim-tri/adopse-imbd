@@ -40,91 +40,106 @@ namespace IMBD_adopse
 
         private void pictureBox3_MouseEnter(object sender, EventArgs e)
         {
-            if (star1_filled && !star2_filled && !star4_filled && !star5_filled)
-            {
+                pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
                 pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                star1_filled = true;
                 star2_filled = true;
-            }
-           
         }
 
         private void pictureBox2_MouseEnter(object sender, EventArgs e)
         {
-            if (star1_filled && star2_filled && !star4_filled && !star5_filled) 
-            {
+                pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
                 pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+                star1_filled = true;
+                star2_filled = true;
                 star3_filled = true;
-            }
+            
               
         }
 
         private void pictureBox5_MouseEnter(object sender, EventArgs e)
         {
-            if (star1_filled && star3_filled && star2_filled && !star5_filled) 
-            {
-                pictureBox5.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
-                star4_filled = true;
-            }
-                
+            pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            pictureBox5.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            star1_filled = true;
+            star2_filled = true;
+            star3_filled = true;
+            star4_filled = true;      
         }
 
         private void pictureBox4_MouseEnter(object sender, EventArgs e)
         {
-            if (star1_filled && star3_filled && star2_filled && star4_filled) 
-            {
-                pictureBox4.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
-                star5_filled = true;
-            }
-               
+            pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            pictureBox5.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            pictureBox4.Image = IMBD_adopse.Properties.Resources.star_24px_filled;
+            star1_filled = true;
+            star2_filled = true;
+            star3_filled = true;
+            star4_filled = true;
+            star5_filled = true;
         }
 
         private void pictureBox4_MouseLeave(object sender, EventArgs e)
         {
-           /* if (star1_filled && star2_filled && star3_filled && star4_filled)
-            {
-                pictureBox4.Image = WindowsFormsApp1.Properties.Resources.star_24px;
-                star5_filled = false;
-            }*/
-                
+            pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox5.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox4.Image = IMBD_adopse.Properties.Resources.star_24px;
+            star1_filled = false;
+            star2_filled = false;
+            star3_filled = false;
+            star4_filled = false;
+            star5_filled = false;
         }
 
         private void pictureBox5_MouseLeave(object sender, EventArgs e)
         {
-          /*  if (star1_filled && star2_filled && star3_filled && !star5_filled)
-            {
-                pictureBox5.Image = WindowsFormsApp1.Properties.Resources.star_24px;
-                star4_filled = false;
-            }*/
-           
+            pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox5.Image = IMBD_adopse.Properties.Resources.star_24px;
+            star1_filled = false;
+            star2_filled = false;
+            star3_filled = false;
+            star4_filled = false;
         }
 
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
         {
-         /*   if (star1_filled && star2_filled && !star4_filled && !star5_filled)
-            {
-                pictureBox2.Image = WindowsFormsApp1.Properties.Resources.star_24px;
-                star3_filled = false;
-            }*/
+
+            pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px;
+            pictureBox2.Image = IMBD_adopse.Properties.Resources.star_24px;
+            star1_filled = false;
+            star2_filled = false;
+            star3_filled = false;
+            
             
         }
 
         private void pictureBox3_MouseLeave(object sender, EventArgs e)
         {
-         /*   if (star1_filled && !star3_filled && !star4_filled && !star5_filled)
-            {
-                pictureBox3.Image = WindowsFormsApp1.Properties.Resources.star_24px;
-                star2_filled = false;
-            }*/
+
+            pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px;    
+            pictureBox3.Image = IMBD_adopse.Properties.Resources.star_24px;
+            star1_filled = false;    
+            star2_filled = false;
+            
            
         }
 
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
-            //if (!star2_filled && !star3_filled && !star4_filled && !star5_filled)
-          //  {
-              //  pictureBox1.Image = WindowsFormsApp1.Properties.Resources.star_24px;
-            //    star1_filled = false;
-          //  }
+            
+                pictureBox1.Image = IMBD_adopse.Properties.Resources.star_24px;
+                star1_filled = false;
+         
             
         }
 

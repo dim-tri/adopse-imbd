@@ -94,7 +94,7 @@ namespace IMBD_adopse
             this.MovieTitle.Click += new System.EventHandler(this.MovieTitle_Click);
             // 
             // MovieDesc
-            // 
+            //
             this.MovieDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.MovieDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieDesc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -214,7 +214,7 @@ namespace IMBD_adopse
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel2
-            // 
+            //
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
@@ -237,7 +237,7 @@ namespace IMBD_adopse
             this.label7.Text = "Review";
             // 
             // panel4
-            // 
+            //
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
@@ -331,7 +331,7 @@ namespace IMBD_adopse
             this.userRateLabel.Text = "8.0";
             // 
             // actorsList
-            // 
+            //
             this.actorsList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.actorsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.ListViewItem});
@@ -415,7 +415,7 @@ namespace IMBD_adopse
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(1963, 1055);
+            this.ClientSize = new System.Drawing.Size(1403, 788);
             this.ControlBox = false;
             this.Controls.Add(this.label10);
             this.Controls.Add(this.labelComments);

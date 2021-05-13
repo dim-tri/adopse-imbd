@@ -212,16 +212,17 @@ namespace IMBD_adopse
             this.Controls.Add(this.RegisterForm);
             this.Controls.Add(this.correctIcon);
             this.Controls.Add(this.registerBtn);
-            this.Controls.Add(this.passwordBox);
-            this.Controls.Add(this.usernameBox);
-            this.Controls.Add(this.emailBox);
-            this.Controls.Add(this.surnameBox);
-            this.Controls.Add(this.nameBox);
-            this.Controls.Add(this.password);
-            this.Controls.Add(this.username);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.surname);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxUsername);
+            this.Controls.Add(this.textBoxEmail);
+            this.Controls.Add(this.textBoxSurname);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RegistrationForm";
@@ -236,21 +237,22 @@ namespace IMBD_adopse
             ((System.ComponentModel.ISupportInitialize)(this.wrongIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox name;
-        private System.Windows.Forms.TextBox surname;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.PictureBox nameBox;
-        private System.Windows.Forms.PictureBox surnameBox;
-        private System.Windows.Forms.PictureBox emailBox;
-        private System.Windows.Forms.PictureBox usernameBox;
-        private System.Windows.Forms.PictureBox passwordBox;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelExit;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox textBoxSurname;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.TextBox textBoxUsername;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.PictureBox correctIcon;
         private System.Windows.Forms.Label RegisterForm;

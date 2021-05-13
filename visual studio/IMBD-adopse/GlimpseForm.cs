@@ -116,5 +116,20 @@ namespace IMBD_adopse
             WishlistMovie wishlist = new WishlistMovie();
             if (wishlist.Remove(userID, this.Movie.Id)) { MessageBox.Show("Successfully removed movie from wishlist.", "Wishlist"); }
         }
+
+        private void labelExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void labelExit_MouseEnter(object sender, EventArgs e)
+        {
+            labelExit.ForeColor = Color.Black;
+        }
+
+        private void labelExit_MouseLeave(object sender, EventArgs e)
+        {
+            labelExit.ForeColor = Color.White;
+        }
     }
 }
