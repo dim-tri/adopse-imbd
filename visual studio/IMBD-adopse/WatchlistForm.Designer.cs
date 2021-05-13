@@ -35,6 +35,10 @@ namespace IMBD_adopse
             // 
             // flowWatchlist
             // 
+            this.flowWatchlist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowWatchlist.AutoScroll = true;
             this.flowWatchlist.Location = new System.Drawing.Point(12, 35);
             this.flowWatchlist.Name = "flowWatchlist";
             this.flowWatchlist.Size = new System.Drawing.Size(1002, 429);
@@ -61,7 +65,6 @@ namespace IMBD_adopse
             this.Controls.Add(this.flowWatchlist);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "WatchlistForm";
-
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();

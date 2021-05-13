@@ -48,28 +48,34 @@ namespace IMBD_adopse
             List<Movie> test;
             foreach (WishlistMovie wish in obj)
             {
-                // Debug.WriteLine("\n ID: " + wish.Id + " Movie_ID: " + wish.Movie_id + " User_ID: " + wish.User_id);
-                //Debug.WriteLine(movie.getMovies(wish.Id));
-                test = movie.getMovies(wish.Movie_id);
-                // Debug.WriteLine(test[0].Name);
+               test = movie.getMovies(wish.Movie_id);
+               WatchlistContainer container = new WatchlistContainer(test[0]) { TopLevel = false, TopMost = true };                               
+               flowWatchlist.Controls.Add(container);
+                    container.Show();
+                    // Debug.WriteLine("\n ID: " + wish.Id + " Movie_ID: " + wish.Movie_id + " User_ID: " + wish.User_id);
+                    //Debug.WriteLine(movie.getMovies(wish.Id));
+                    
+                    // Debug.WriteLine(test[0].Name);
 
-                PictureBox movieImage = new PictureBox();
-                movieImage.ImageLocation = test[0].Photo;
-                // movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
-                movieImage.Size = new System.Drawing.Size(180, 210);
-                movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
-                movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                    /*PictureBox movieImage = new PictureBox();
+                    movieImage.ImageLocation = test[0].Photo;
+                    // movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
+                    movieImage.Size = new System.Drawing.Size(180, 210);
+                    movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
+                    movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
 
-                    /*  movieImage.Click += (sender, e) =>
-                      {
-                          GlimpseForm glimpseForm = new GlimpseForm(null,test[0].Id);
-                          glimpseForm.setUserId(userID);
-                          glimpseForm.Show();
-                      };*/
-                    flowWatchlist.Controls.Add(movieImage);
+                        /*  movieImage.Click += (sender, e) =>
+                          {
+                              GlimpseForm glimpseForm = new GlimpseForm(null,test[0].Id);
+                              glimpseForm.setUserId(userID);
+                              glimpseForm.Show();
+                          };
+                        flowWatchlist.Controls.Add(movieImage); 
+                        */
+                }
+
             }
-
-        }catch(Exception ex)
+            catch(Exception ex)
             {
                 Debug.WriteLine(ex.Message);
             }
