@@ -14,7 +14,7 @@ namespace IMBD_adopse
 {
     public partial class LoginForm : Form
     {
-    
+
         public LoginForm()
         {
             InitializeComponent();
@@ -22,12 +22,12 @@ namespace IMBD_adopse
 
         private void labelExit_MouseEnter(object sender, EventArgs e)
         {
-            labelExit.ForeColor = Color.Black;
+            label1.ForeColor = Color.Black;
         }
 
         private void labelExit_MouseLeave(object sender, EventArgs e)
         {
-            labelExit.ForeColor = Color.White;
+            label1.ForeColor = Color.White;
         }
 
         private void labelExit_Click(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace IMBD_adopse
             string pass = textBoxPassword.Text;
             if (string.IsNullOrWhiteSpace(user))
             {
-                labelfalse.Text = "Wrong Username or Password"; 
+                labelfalse.Text = "Wrong Username or Password";
             }
 
             if (string.IsNullOrWhiteSpace(pass))
@@ -49,39 +49,40 @@ namespace IMBD_adopse
                 labelfalse.Text = "Wrong Username or Password";
             }
 
-                //Attempt to login
-                Users newLogin = new Users();
-                if(newLogin.Auth(user, pass))
-                {
-                    MessageBox.Show("Authentication Success.", "Authentication");
-                    obj2.loginState.Text = "Logged in as: " + newLogin.Name;
-                    obj2.LoginMenuItem.Text= "Logout";
-                    obj2.setUserID(newLogin.Id);       
-                    //obj2.watchlistBtn.Enabled = true;
-                    obj2.watchlistBtn.Visible = true;
-                    this.Dispose();
-                    return;
-                }
-                else
-                {
+            //Attempt to login
+            Users newLogin = new Users();
+            if (newLogin.Auth(user, pass))
+            {
+                MessageBox.Show("Authentication Success.", "Authentication");
+                obj2.loginState.Text = "Logged in as: " + newLogin.Name;
+                obj2.LoginMenuItem.Text = "Logout";
+                obj2.setUserID(newLogin.Id);
+                //obj2.watchlistBtn.Enabled = true;
+                obj2.watchlistBtn.Visible = true;
+                this.Dispose();
+                return;
+            }
+            else
+            {
                 labelfalse.Text = "Wrong Username or Password";
-                }
-            
-          
+            }
+
+
         }
 
-   
+
         public MainWindowForm obj2;
 
         public void MainWindowForm(MainWindowForm obj)
         {
             obj2 = obj;
-            
+
         }
 
         private void textBoxUsername_TextChanged(object sender, EventArgs e)
         {
 
         }
+
     }
 }
