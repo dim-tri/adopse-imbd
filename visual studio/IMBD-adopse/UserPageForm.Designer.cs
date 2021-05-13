@@ -54,6 +54,7 @@ namespace IMBD_adopse
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.flowPanelUserPageReview = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.passwordBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailBox)).BeginInit();
@@ -329,12 +330,21 @@ namespace IMBD_adopse
             this.pictureBox1.TabIndex = 32;
             this.pictureBox1.TabStop = false;
             // 
+            // flowPanelUserPageReview
+            // 
+            this.flowPanelUserPageReview.Location = new System.Drawing.Point(46, 512);
+            this.flowPanelUserPageReview.Name = "flowPanelUserPageReview";
+            this.flowPanelUserPageReview.Size = new System.Drawing.Size(1188, 447);
+            this.flowPanelUserPageReview.TabIndex = 33;
+            this.flowPanelUserPageReview.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
             // UserPageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(1368, 861);
+            this.ClientSize = new System.Drawing.Size(1368, 971);
+            this.Controls.Add(this.flowPanelUserPageReview);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
@@ -407,5 +417,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowPanelUserPageReview;
     }
 }
