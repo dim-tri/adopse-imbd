@@ -39,14 +39,17 @@ namespace IMBD_adopse
             this.MoreButton = new System.Windows.Forms.Button();
             this.RemoveBtn = new System.Windows.Forms.Button();
             this.labelExit = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MovieImage
             // 
             this.MovieImage.ImageLocation = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlY" +
     "WMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg";
-            this.MovieImage.Location = new System.Drawing.Point(12, 12);
+            this.MovieImage.Location = new System.Drawing.Point(12, 16);
+            this.MovieImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieImage.Name = "MovieImage";
             this.MovieImage.Size = new System.Drawing.Size(182, 268);
             this.MovieImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -56,27 +59,27 @@ namespace IMBD_adopse
             // MovieYear
             // 
             this.MovieYear.AutoSize = true;
-            this.MovieYear.Location = new System.Drawing.Point(200, 79);
+            this.MovieYear.Location = new System.Drawing.Point(202, 105);
             this.MovieYear.Name = "MovieYear";
-            this.MovieYear.Size = new System.Drawing.Size(29, 15);
+            this.MovieYear.Size = new System.Drawing.Size(37, 20);
             this.MovieYear.TabIndex = 3;
             this.MovieYear.Text = "Year";
             // 
             // MovieRuntime
             // 
             this.MovieRuntime.AutoSize = true;
-            this.MovieRuntime.Location = new System.Drawing.Point(296, 79);
+            this.MovieRuntime.Location = new System.Drawing.Point(329, 105);
             this.MovieRuntime.Name = "MovieRuntime";
-            this.MovieRuntime.Size = new System.Drawing.Size(52, 15);
+            this.MovieRuntime.Size = new System.Drawing.Size(64, 20);
             this.MovieRuntime.TabIndex = 4;
             this.MovieRuntime.Text = "Runtime";
             // 
             // MovieRating
             // 
             this.MovieRating.AutoSize = true;
-            this.MovieRating.Location = new System.Drawing.Point(423, 79);
+            this.MovieRating.Location = new System.Drawing.Point(483, 105);
             this.MovieRating.Name = "MovieRating";
-            this.MovieRating.Size = new System.Drawing.Size(41, 15);
+            this.MovieRating.Size = new System.Drawing.Size(52, 20);
             this.MovieRating.TabIndex = 5;
             this.MovieRating.Text = "Rating";
             // 
@@ -84,39 +87,46 @@ namespace IMBD_adopse
             // 
             this.MovieDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.MovieDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MovieDesc.Location = new System.Drawing.Point(200, 106);
+            this.MovieDesc.Location = new System.Drawing.Point(202, 141);
+            this.MovieDesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieDesc.Name = "MovieDesc";
             this.MovieDesc.ReadOnly = true;
-            this.MovieDesc.Size = new System.Drawing.Size(404, 60);
+            this.MovieDesc.Size = new System.Drawing.Size(470, 80);
             this.MovieDesc.TabIndex = 6;
             this.MovieDesc.Text = "Desc";
             // 
             // MovieTitle
             // 
-            this.MovieTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
+            this.MovieTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.MovieTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MovieTitle.Location = new System.Drawing.Point(200, 16);
+            this.MovieTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.MovieTitle.Location = new System.Drawing.Point(8, 1);
+            this.MovieTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieTitle.Name = "MovieTitle";
             this.MovieTitle.ReadOnly = true;
-            this.MovieTitle.Size = new System.Drawing.Size(404, 65);
+            this.MovieTitle.Size = new System.Drawing.Size(462, 47);
             this.MovieTitle.TabIndex = 7;
             this.MovieTitle.Text = "Title Title";
+            this.MovieTitle.TextChanged += new System.EventHandler(this.MovieTitle_TextChanged);
             // 
             // AddBtn
             // 
             this.AddBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.AddBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.AddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.AddBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.AddBtn.Enabled = false;
             this.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddBtn.Location = new System.Drawing.Point(483, 240);
+            this.AddBtn.Image = global::IMBD_adopse.Properties.Resources.heartSmall1;
+            this.AddBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AddBtn.Location = new System.Drawing.Point(539, 320);
             this.AddBtn.Margin = new System.Windows.Forms.Padding(0);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(121, 37);
+            this.AddBtn.Size = new System.Drawing.Size(140, 49);
             this.AddBtn.TabIndex = 8;
-            this.AddBtn.Text = "+ Watchlist";
+            this.AddBtn.Text = "Add to";
+            this.AddBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddBtn.UseVisualStyleBackColor = false;
             this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
@@ -124,13 +134,14 @@ namespace IMBD_adopse
             // 
             this.MoreButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.MoreButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.MoreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.MoreButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.MoreButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MoreButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MoreButton.Location = new System.Drawing.Point(200, 240);
+            this.MoreButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.MoreButton.Location = new System.Drawing.Point(232, 320);
             this.MoreButton.Margin = new System.Windows.Forms.Padding(0);
             this.MoreButton.Name = "MoreButton";
-            this.MoreButton.Size = new System.Drawing.Size(121, 37);
+            this.MoreButton.Size = new System.Drawing.Size(138, 49);
             this.MoreButton.TabIndex = 10;
             this.MoreButton.Text = "View More";
             this.MoreButton.UseVisualStyleBackColor = false;
@@ -138,15 +149,19 @@ namespace IMBD_adopse
             // 
             // RemoveBtn
             // 
-            this.RemoveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.RemoveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.RemoveBtn.Enabled = false;
             this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.RemoveBtn.Location = new System.Drawing.Point(343, 240);
+            this.RemoveBtn.Image = global::IMBD_adopse.Properties.Resources.heartSmall1;
+            this.RemoveBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RemoveBtn.Location = new System.Drawing.Point(385, 320);
+            this.RemoveBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.RemoveBtn.Name = "RemoveBtn";
-            this.RemoveBtn.Size = new System.Drawing.Size(121, 37);
+            this.RemoveBtn.Size = new System.Drawing.Size(139, 49);
             this.RemoveBtn.TabIndex = 11;
-            this.RemoveBtn.Text = "- Watchlist";
+            this.RemoveBtn.Text = "Out of";
+            this.RemoveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.RemoveBtn.UseVisualStyleBackColor = false;
             this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
@@ -156,38 +171,49 @@ namespace IMBD_adopse
             this.labelExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelExit.ForeColor = System.Drawing.Color.White;
-            this.labelExit.Location = new System.Drawing.Point(593, 0);
+            this.labelExit.Location = new System.Drawing.Point(678, 0);
             this.labelExit.Name = "labelExit";
-            this.labelExit.Size = new System.Drawing.Size(24, 24);
+            this.labelExit.Size = new System.Drawing.Size(30, 29);
             this.labelExit.TabIndex = 12;
             this.labelExit.Text = "X";
             this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
             this.labelExit.MouseEnter += new System.EventHandler(this.labelExit_MouseEnter);
             this.labelExit.MouseLeave += new System.EventHandler(this.labelExit_MouseLeave);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.MovieTitle);
+            this.panel1.Location = new System.Drawing.Point(202, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(478, 49);
+            this.panel1.TabIndex = 13;
+            // 
             // GlimpseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(616, 298);
+            this.ClientSize = new System.Drawing.Size(704, 397);
             this.ControlBox = false;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelExit);
             this.Controls.Add(this.RemoveBtn);
             this.Controls.Add(this.MoreButton);
             this.Controls.Add(this.AddBtn);
-            this.Controls.Add(this.MovieTitle);
             this.Controls.Add(this.MovieDesc);
             this.Controls.Add(this.MovieRating);
             this.Controls.Add(this.MovieRuntime);
             this.Controls.Add(this.MovieYear);
             this.Controls.Add(this.MovieImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GlimpseForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.GlimpseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,6 +231,7 @@ namespace IMBD_adopse
         public System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button RemoveBtn;
         private System.Windows.Forms.Label labelExit;
+        private System.Windows.Forms.Panel panel1;
     }
 
 }

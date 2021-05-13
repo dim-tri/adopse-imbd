@@ -127,6 +127,9 @@
   <data name="heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-email-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-email-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user-iconArtboard 2@2x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user-iconArtboard 2@2x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,9 +139,6 @@
   <data name="logo-colorArtboard_32x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-colorArtboard_32x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="line133-10Artboard 41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\line133-10Artboard 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="lockArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lockArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,6 +147,9 @@
   </data>
   <data name="star_24px_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_24px_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="starArtboard 166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="star_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,10 +211,10 @@
   <data name="starArtboard 163" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-email-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-email-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="line133-10Artboard 41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line133-10Artboard 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="starArtboard 166" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="heartSmall1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\heartSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
