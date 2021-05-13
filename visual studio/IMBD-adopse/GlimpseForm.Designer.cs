@@ -48,7 +48,7 @@ namespace IMBD_adopse
             // 
             this.MovieImage.ImageLocation = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlY" +
     "WMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg";
-            this.MovieImage.Location = new System.Drawing.Point(14, 16);
+            this.MovieImage.Location = new System.Drawing.Point(12, 16);
             this.MovieImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieImage.Name = "MovieImage";
             this.MovieImage.Size = new System.Drawing.Size(182, 268);
@@ -101,7 +101,7 @@ namespace IMBD_adopse
             this.MovieTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.MovieTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.MovieTitle.Location = new System.Drawing.Point(8, 0);
+            this.MovieTitle.Location = new System.Drawing.Point(8, 1);
             this.MovieTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieTitle.Name = "MovieTitle";
             this.MovieTitle.ReadOnly = true;
