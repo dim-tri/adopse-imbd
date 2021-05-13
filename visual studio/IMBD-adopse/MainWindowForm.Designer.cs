@@ -56,7 +56,7 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MainPanel.AutoScroll = true;
-            this.MainPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.MainPanel.Location = new System.Drawing.Point(0, 67);
             this.MainPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MainPanel.Name = "MainPanel";
