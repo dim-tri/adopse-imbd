@@ -34,14 +34,12 @@ namespace IMBD_adopse
             this.MovieRuntime = new System.Windows.Forms.Label();
             this.MovieRating = new System.Windows.Forms.Label();
             this.MovieDesc = new System.Windows.Forms.RichTextBox();
-            this.MovieTitle = new System.Windows.Forms.RichTextBox();
             this.AddBtn = new System.Windows.Forms.Button();
             this.MoreButton = new System.Windows.Forms.Button();
             this.RemoveBtn = new System.Windows.Forms.Button();
             this.labelExit = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.MovieTitle = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MovieImage
@@ -59,27 +57,30 @@ namespace IMBD_adopse
             // MovieYear
             // 
             this.MovieYear.AutoSize = true;
+            this.MovieYear.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MovieYear.Location = new System.Drawing.Point(202, 105);
             this.MovieYear.Name = "MovieYear";
-            this.MovieYear.Size = new System.Drawing.Size(37, 20);
+            this.MovieYear.Size = new System.Drawing.Size(42, 23);
             this.MovieYear.TabIndex = 3;
             this.MovieYear.Text = "Year";
             // 
             // MovieRuntime
             // 
             this.MovieRuntime.AutoSize = true;
+            this.MovieRuntime.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MovieRuntime.Location = new System.Drawing.Point(329, 105);
             this.MovieRuntime.Name = "MovieRuntime";
-            this.MovieRuntime.Size = new System.Drawing.Size(64, 20);
+            this.MovieRuntime.Size = new System.Drawing.Size(74, 23);
             this.MovieRuntime.TabIndex = 4;
             this.MovieRuntime.Text = "Runtime";
             // 
             // MovieRating
             // 
             this.MovieRating.AutoSize = true;
+            this.MovieRating.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MovieRating.Location = new System.Drawing.Point(483, 105);
             this.MovieRating.Name = "MovieRating";
-            this.MovieRating.Size = new System.Drawing.Size(52, 20);
+            this.MovieRating.Size = new System.Drawing.Size(59, 23);
             this.MovieRating.TabIndex = 5;
             this.MovieRating.Text = "Rating";
             // 
@@ -87,28 +88,14 @@ namespace IMBD_adopse
             // 
             this.MovieDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.MovieDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MovieDesc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MovieDesc.Location = new System.Drawing.Point(202, 141);
             this.MovieDesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieDesc.Name = "MovieDesc";
             this.MovieDesc.ReadOnly = true;
-            this.MovieDesc.Size = new System.Drawing.Size(470, 80);
+            this.MovieDesc.Size = new System.Drawing.Size(470, 143);
             this.MovieDesc.TabIndex = 6;
             this.MovieDesc.Text = "Desc";
-            // 
-            // MovieTitle
-            // 
-            this.MovieTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.MovieTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MovieTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MovieTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.MovieTitle.Location = new System.Drawing.Point(8, 1);
-            this.MovieTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MovieTitle.Name = "MovieTitle";
-            this.MovieTitle.ReadOnly = true;
-            this.MovieTitle.Size = new System.Drawing.Size(462, 47);
-            this.MovieTitle.TabIndex = 7;
-            this.MovieTitle.Text = "Title Title";
-            this.MovieTitle.TextChanged += new System.EventHandler(this.MovieTitle_TextChanged);
             // 
             // AddBtn
             // 
@@ -180,14 +167,20 @@ namespace IMBD_adopse
             this.labelExit.MouseEnter += new System.EventHandler(this.labelExit_MouseEnter);
             this.labelExit.MouseLeave += new System.EventHandler(this.labelExit_MouseLeave);
             // 
-            // panel1
+            // MovieTitle
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.panel1.Controls.Add(this.MovieTitle);
-            this.panel1.Location = new System.Drawing.Point(202, 16);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(478, 49);
-            this.panel1.TabIndex = 13;
+            this.MovieTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.MovieTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MovieTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MovieTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.MovieTitle.Location = new System.Drawing.Point(202, 16);
+            this.MovieTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MovieTitle.Name = "MovieTitle";
+            this.MovieTitle.ReadOnly = true;
+            this.MovieTitle.Size = new System.Drawing.Size(477, 48);
+            this.MovieTitle.TabIndex = 7;
+            this.MovieTitle.Text = "Title Title";
+            this.MovieTitle.TextChanged += new System.EventHandler(this.MovieTitle_TextChanged);
             // 
             // GlimpseForm
             // 
@@ -196,7 +189,7 @@ namespace IMBD_adopse
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(704, 397);
             this.ControlBox = false;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.MovieTitle);
             this.Controls.Add(this.labelExit);
             this.Controls.Add(this.RemoveBtn);
             this.Controls.Add(this.MoreButton);
@@ -213,7 +206,6 @@ namespace IMBD_adopse
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.GlimpseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,12 +218,11 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label MovieRuntime;
         private System.Windows.Forms.Label MovieRating;
         private System.Windows.Forms.RichTextBox MovieDesc;
-        private System.Windows.Forms.RichTextBox MovieTitle;
         private System.Windows.Forms.Button MoreButton;
         public System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Button RemoveBtn;
         private System.Windows.Forms.Label labelExit;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RichTextBox MovieTitle;
     }
 
 }
