@@ -54,7 +54,24 @@ namespace IMBD_adopse
             this.MainPanel.Controls.Add(watchlistPage);
             watchlistPage.Show();
         }
+        
+        //Clear Main Window and Load User Profile Page
+        public void LoadUserPage()
+        {
+            if (userID == 0)
+            {
+                MessageBox.Show("You are not logged in!", "Login Status");
+            }
+            else {
+                this.MainPanel.Controls.Clear(); //Clear Panel
+                UserPageForm userPage = new UserPageForm(userID) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                this.MainPanel.Controls.Add(userPage);
+                userPage.Show();
+            }
+            
+        }
 
+        //Profile drop-down menu
         private void ProfilePictureBox_Click(object sender, EventArgs e)
         {
             PictureBox btnSender = (PictureBox)sender;
@@ -91,11 +108,10 @@ namespace IMBD_adopse
             registration.Show();
         }
 
-        public void SettingsMenuItem_Click(object sender, EventArgs e)
+        public void ProfileMenuItem_Click(object sender, EventArgs e)
         {
 
-            SettingsForm settings = new SettingsForm();
-            settings.Show();
+            this.LoadUserPage();
         }
 
         //public static int userID;
@@ -144,6 +160,7 @@ namespace IMBD_adopse
 
         }
 
+        //Wathlist button
         private void button1_Click(object sender, EventArgs e)
         {
             //WatchlistForm wish = new WatchlistForm();

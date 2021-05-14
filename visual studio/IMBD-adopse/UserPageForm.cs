@@ -12,9 +12,13 @@ namespace IMBD_adopse
 {
     public partial class UserPageForm : Form
     {
-        public UserPageForm()
+        //Id of current logged in user
+        private int userID;
+
+        public UserPageForm(int userid)
         {
             InitializeComponent();
+            this.userID = userid;
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
