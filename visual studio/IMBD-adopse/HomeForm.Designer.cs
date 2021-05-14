@@ -43,7 +43,7 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowPanelNewReleases.Location = new System.Drawing.Point(31, 67);
             this.flowPanelNewReleases.Name = "flowPanelNewReleases";
-            this.flowPanelNewReleases.Size = new System.Drawing.Size(1235, 293);
+            this.flowPanelNewReleases.Size = new System.Drawing.Size(1294, 293);
             this.flowPanelNewReleases.TabIndex = 5;
             // 
             // flowPanelTopMovies
@@ -52,7 +52,7 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowPanelTopMovies.Location = new System.Drawing.Point(31, 408);
             this.flowPanelTopMovies.Name = "flowPanelTopMovies";
-            this.flowPanelTopMovies.Size = new System.Drawing.Size(1235, 293);
+            this.flowPanelTopMovies.Size = new System.Drawing.Size(1294, 293);
             this.flowPanelTopMovies.TabIndex = 6;
             // 
             // label1
@@ -100,7 +100,7 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowPanelRecommended.Location = new System.Drawing.Point(31, 750);
             this.flowPanelRecommended.Name = "flowPanelRecommended";
-            this.flowPanelRecommended.Size = new System.Drawing.Size(1235, 293);
+            this.flowPanelRecommended.Size = new System.Drawing.Size(1294, 293);
             this.flowPanelRecommended.TabIndex = 9;
             // 
             // HomeForm
@@ -109,7 +109,7 @@ namespace IMBD_adopse
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(1608, 591);
+            this.ClientSize = new System.Drawing.Size(1403, 591);
             this.ControlBox = false;
             this.Controls.Add(this.recommendedLabel);
             this.Controls.Add(this.flowPanelRecommended);
