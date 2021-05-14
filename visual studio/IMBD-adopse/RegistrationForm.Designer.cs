@@ -99,6 +99,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.icons8_male_user_100;
             this.pictureBox2.InitialImage = null;
             this.pictureBox2.Location = new System.Drawing.Point(106, 107);
             this.pictureBox2.Name = "pictureBox2";
@@ -109,6 +110,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = global::IMBD_adopse.Properties.Resources.icons8_male_user_100;
             this.pictureBox3.InitialImage = null;
             this.pictureBox3.Location = new System.Drawing.Point(106, 156);
             this.pictureBox3.Name = "pictureBox3";
