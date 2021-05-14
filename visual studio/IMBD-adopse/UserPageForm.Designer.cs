@@ -72,9 +72,9 @@ namespace IMBD_adopse
             // 
             // registerBtn
             // 
-            this.registerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(203)))), ((int)(((byte)(5)))));
+            this.registerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(57)))), ((int)(((byte)(70)))));
             this.registerBtn.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.registerBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.registerBtn.ForeColor = System.Drawing.Color.White;
             this.registerBtn.Location = new System.Drawing.Point(444, 224);
             this.registerBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.registerBtn.Name = "registerBtn";
@@ -301,10 +301,11 @@ namespace IMBD_adopse
             // userIconBox
             // 
             this.userIconBox.Image = global::IMBD_adopse.Properties.Resources.user_iconArtboard_2_2x1;
-            this.userIconBox.Location = new System.Drawing.Point(10, 12);
+            this.userIconBox.Location = new System.Drawing.Point(10, 13);
             this.userIconBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userIconBox.Name = "userIconBox";
-            this.userIconBox.Size = new System.Drawing.Size(151, 134);
+            this.userIconBox.Size = new System.Drawing.Size(139, 134);
+            this.userIconBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.userIconBox.TabIndex = 29;
             this.userIconBox.TabStop = false;
             // 
