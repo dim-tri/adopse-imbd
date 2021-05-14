@@ -30,6 +30,8 @@ namespace IMBD_adopse
         {
             this.MainPanel.Controls.Clear();
             HomeForm homeForm = new HomeForm(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            homeForm.setUserID(userID);
+            homeForm.loadRecommended();
             this.MainPanel.Controls.Add(homeForm);
             homeForm.Show();
 

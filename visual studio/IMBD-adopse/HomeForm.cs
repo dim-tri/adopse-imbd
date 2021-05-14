@@ -39,18 +39,33 @@ namespace IMBD_adopse
                 flowPanelNewReleases.Controls.Add(movieContainer);
                 movieContainer.Show();
             }
-           
-            //Load Recommended
-            Movie obj3 = new Movie();
-            List<Movie> recMovies = obj3.getTopMovies();
-            foreach (Movie movie in recMovies) {
-                SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, movie) {TopLevel = false, TopMost = true };
-                flowPanelRecommended.Controls.Add(movieContainer);
-                movieContainer.Show();
-            }
 
-
+        
         }
+        
+        //Load Recommended}
+        public void loadRecommended()
+        {
+            
+            if (userID == 0)//Guest
+            {
+                recommendedLabel.Text = "Featured Movies";
+                //load 10 movies
+                Movie obj = new Movie();
+                List<Movie> newMovies = obj.getMovies(20, "desc");
+                for (int i=10; i<20; i++)
+                {
+                    SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, newMovies[i]) { TopLevel = false, TopMost = true };
+                    flowPanelRecommended.Controls.Add(movieContainer);
+                    movieContainer.Show();
+                }
+            }
+            else //User logged in
+            {
+                recommendedLabel.Text = "Recommended For You";
+            }
+        }
+
 
         public int userID;
        

@@ -33,7 +33,7 @@ namespace IMBD_adopse
             this.flowPanelTopMovies = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.recommendedLabel = new System.Windows.Forms.Label();
             this.flowPanelRecommended = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
@@ -81,18 +81,18 @@ namespace IMBD_adopse
             this.label2.TabIndex = 8;
             this.label2.Text = "Top Movies";
             // 
-            // label3
+            // recommendedLabel
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.recommendedLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(31, 717);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 30);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Recommended for You";
+            this.recommendedLabel.AutoSize = true;
+            this.recommendedLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.recommendedLabel.ForeColor = System.Drawing.Color.White;
+            this.recommendedLabel.Location = new System.Drawing.Point(31, 717);
+            this.recommendedLabel.Name = "recommendedLabel";
+            this.recommendedLabel.Size = new System.Drawing.Size(237, 30);
+            this.recommendedLabel.TabIndex = 10;
+            this.recommendedLabel.Text = "Recommended for You";
             // 
             // flowPanelRecommended
             // 
@@ -109,9 +109,9 @@ namespace IMBD_adopse
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(1438, 591);
+            this.ClientSize = new System.Drawing.Size(1608, 591);
             this.ControlBox = false;
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.recommendedLabel);
             this.Controls.Add(this.flowPanelRecommended);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -132,7 +132,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.FlowLayoutPanel flowPanelTopMovies;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label recommendedLabel;
         private System.Windows.Forms.FlowLayoutPanel flowPanelRecommended;
     }
 }
