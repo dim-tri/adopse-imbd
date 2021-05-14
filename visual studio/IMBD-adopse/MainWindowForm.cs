@@ -16,6 +16,7 @@ namespace IMBD_adopse
     public partial class MainWindowForm : Form
     {
         public static int userID;
+        public static String userGenre;
         
 
         public MainWindowForm()
@@ -172,10 +173,54 @@ namespace IMBD_adopse
             this.LoadWatchlistPage();
         }
 
+        //Find Users Preferred Genre
+        public void FindPreferredGenre(int uid) 
+        {
+            WishlistMovie wishlist = new WishlistMovie();
+            List<WishlistMovie> obj = wishlist.get(uid);
+            //Find the most frequent genre in user watchlist
+            if (obj != null)
+            {
+                Movie movie = new Movie();
+                List<Movie> movieList;
 
+                var genres = new List<string>();
+                foreach (WishlistMovie wish in obj)
+                {
+
+                    movieList = movie.getMovies(wish.Movie_id);
+                    genres.Add(movieList[0].Gentre);
+
+                }
+                foreach (string gnr in genres)
+                {
+                    Debug.WriteLine(gnr);
+                }
+
+                var mostCommonValue = genres.GroupBy(v => v)
+                                .OrderByDescending(g => g.Count())
+                                .Select(g => g.Key)
+                                .FirstOrDefault();
+                Debug.WriteLine("Most Frequent: " + mostCommonValue);
+                userGenre = mostCommonValue;
+            }
+            else
+            {
+                //Randome Genre if watchlist is empty
+                string[] rGenres = { "Action", "Crime", "Drama", "Comedy", "Documentary", "Thriller" };
+                Random random = new Random();
+                int randGenre = random.Next(0, rGenres.Length);
+                userGenre = rGenres[randGenre];
+            }
+        }
+        
         public static int getUserID()
         {
             return userID;
+        }
+        public string getUserGenre()
+        {
+            return userGenre;
         }
     }
 }

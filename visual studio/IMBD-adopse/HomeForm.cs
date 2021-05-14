@@ -62,7 +62,7 @@ namespace IMBD_adopse
             }
             else //User logged in
             {
-                recommendedLabel.Text = "Recommended For You";
+                recommendedLabel.Text = "Recommended For You - " + MainWindow.getUserGenre();
             }
         }
 

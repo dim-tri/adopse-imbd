@@ -38,7 +38,8 @@ namespace IMBD_adopse
 
         public void loadWatchlist(int uid)
         {
-            try { 
+            try 
+            { 
            // Debug.WriteLine("test: " + uid);
             WishlistMovie wishlist = new WishlistMovie();
             List<WishlistMovie> obj = wishlist.get(uid);
@@ -51,28 +52,12 @@ namespace IMBD_adopse
                test = movie.getMovies(wish.Movie_id);
                WatchlistContainer container = new WatchlistContainer(test[0]) { TopLevel = false, TopMost = true };                               
                flowWatchlist.Controls.Add(container);
-                    container.Show();
-                    // Debug.WriteLine("\n ID: " + wish.Id + " Movie_ID: " + wish.Movie_id + " User_ID: " + wish.User_id);
-                    //Debug.WriteLine(movie.getMovies(wish.Id));
+               container.Show();
+               // Debug.WriteLine("\n ID: " + wish.Id + " Movie_ID: " + wish.Movie_id + " User_ID: " + wish.User_id);
+               //Debug.WriteLine(movie.getMovies(wish.Id));
                     
-                    // Debug.WriteLine(test[0].Name);
-
-                    /*PictureBox movieImage = new PictureBox();
-                    movieImage.ImageLocation = test[0].Photo;
-                    // movieImage.SizeMode = PictureBoxSizeMode.AutoSize;
-                    movieImage.Size = new System.Drawing.Size(180, 210);
-                    movieImage.SizeMode = PictureBoxSizeMode.CenterImage;
-                    movieImage.SizeMode = PictureBoxSizeMode.StretchImage;
-
-                        /*  movieImage.Click += (sender, e) =>
-                          {
-                              GlimpseForm glimpseForm = new GlimpseForm(null,test[0].Id);
-                              glimpseForm.setUserId(userID);
-                              glimpseForm.Show();
-                          };
-                        flowWatchlist.Controls.Add(movieImage); 
-                        */
-                }
+               // Debug.WriteLine(test[0].Name);                   
+            }
 
             }
             catch(Exception ex)
