@@ -99,7 +99,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.icons8_name_26;
+            //this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.icons8_name_26;
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
             this.pictureBox2.Location = new System.Drawing.Point(106, 107);
             this.pictureBox2.Name = "pictureBox2";
@@ -110,7 +110,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::IMBD_adopse.Properties.Resources.icons8_name_26;
+            //this.pictureBox3.Image = global::IMBD_adopse.Properties.Resources.icons8_name_26;
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
             this.pictureBox3.Location = new System.Drawing.Point(106, 156);
             this.pictureBox3.Name = "pictureBox3";
