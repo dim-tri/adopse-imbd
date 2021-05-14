@@ -10,9 +10,8 @@
 
 namespace IMBD_adopse.Properties {
     using System;
-    using System.Drawing;
-
-
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -24,8 +23,7 @@ namespace IMBD_adopse.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        internal static Image icons8_name_26;
-        internal static Image info_icon_regmodeArtboard_11_2x;
+        
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
@@ -78,6 +76,16 @@ namespace IMBD_adopse.Properties {
         internal static System.Drawing.Bitmap emailArtboard_2 {
             get {
                 object obj = ResourceManager.GetObject("emailArtboard 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap glimpse_icon {
+            get {
+                object obj = ResourceManager.GetObject("glimpse-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -208,6 +216,16 @@ namespace IMBD_adopse.Properties {
         internal static System.Drawing.Bitmap logo_colorArtboard_32x {
             get {
                 object obj = ResourceManager.GetObject("logo-colorArtboard_32x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap preview_see_seen_view_icon_1320168711570288480_64 {
+            get {
+                object obj = ResourceManager.GetObject("preview+see+seen+view+icon-1320168711570288480_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

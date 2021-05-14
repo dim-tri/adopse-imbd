@@ -32,11 +32,9 @@ namespace IMBD_adopse
             this.MoviePicture = new System.Windows.Forms.PictureBox();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.GlimpseButton = new System.Windows.Forms.PictureBox();
-            this.WatchlistButton = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GlimpseButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WatchlistButton)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +62,7 @@ namespace IMBD_adopse
             // 
             // GlimpseButton
             // 
-            this.GlimpseButton.Image = global::IMBD_adopse.Properties.Resources.info_icon_regmodeArtboard_11_2x;
+            this.GlimpseButton.Image = global::IMBD_adopse.Properties.Resources.glimpse_icon;
             this.GlimpseButton.Location = new System.Drawing.Point(144, 251);
             this.GlimpseButton.Name = "GlimpseButton";
             this.GlimpseButton.Size = new System.Drawing.Size(39, 36);
@@ -73,22 +71,9 @@ namespace IMBD_adopse
             this.GlimpseButton.TabStop = false;
             this.GlimpseButton.Click += new System.EventHandler(this.GlimpseButton_Click);
             // 
-            // WatchlistButton
-            // 
-            this.WatchlistButton.BackColor = System.Drawing.Color.Transparent;
-            this.WatchlistButton.Image = global::IMBD_adopse.Properties.Resources.heart;
-            this.WatchlistButton.Location = new System.Drawing.Point(0, 0);
-            this.WatchlistButton.Name = "WatchlistButton";
-            this.WatchlistButton.Size = new System.Drawing.Size(31, 31);
-            this.WatchlistButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.WatchlistButton.TabIndex = 5;
-            this.WatchlistButton.TabStop = false;
-            this.WatchlistButton.Click += new System.EventHandler(this.WatchlistButton_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.panel1.Controls.Add(this.WatchlistButton);
             this.panel1.Controls.Add(this.GlimpseButton);
             this.panel1.Controls.Add(this.MoviePicture);
             this.panel1.Controls.Add(this.TitleLabel);
@@ -109,7 +94,6 @@ namespace IMBD_adopse
             this.Text = "SingleMovieContainer";
             ((System.ComponentModel.ISupportInitialize)(this.MoviePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GlimpseButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.WatchlistButton)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -121,7 +105,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.Button InfoButton;
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.PictureBox GlimpseButton;
-        private System.Windows.Forms.PictureBox WatchlistButton;
         private System.Windows.Forms.Panel panel1;
     }
 }

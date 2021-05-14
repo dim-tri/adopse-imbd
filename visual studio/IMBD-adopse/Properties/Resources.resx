@@ -139,6 +139,12 @@
   <data name="logo-colorArtboard_32x" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-colorArtboard_32x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="registerArtboard 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\registerArtboard 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="line133-10Artboard 41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\line133-10Artboard 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lockArtboard 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lockArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -147,9 +153,6 @@
   </data>
   <data name="star_24px_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_24px_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="starArtboard 166" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="star_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +172,8 @@
   <data name="profileArtboard 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profileArtboard 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="registerArtboard 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\registerArtboard 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="starArtboard 166" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-lock-26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-lock-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -186,6 +189,9 @@
   </data>
   <data name="starArtboard 162" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preview+see+seen+view+icon-1320168711570288480_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preview+see+seen+view+icon-1320168711570288480_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo-colorArtboard_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo-colorArtboard_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,10 +217,10 @@
   <data name="starArtboard 163" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\starArtboard 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="line133-10Artboard 41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\line133-10Artboard 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="heartSmall1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\heartSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="glimpse-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glimpse-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
