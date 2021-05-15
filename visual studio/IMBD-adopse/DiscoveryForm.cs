@@ -19,21 +19,18 @@ namespace IMBD_adopse
             LoadAllMovies();
         }
 
-        private void LoadAllMovies() {
+        private void LoadAllMovies() 
+        {
+            MovieTeiApiAllMovies allMovies = new MovieTeiApiAllMovies(2);
+            IEnumerable<Movie> movies = allMovies.GetMovies();
 
-            //load Top Movies
-            Movie obj = new Movie();
-            List<Movie> topMovies = obj.getTopMovies();
-            foreach (Movie movie in topMovies)
+            for (int i = 0; i < movies.Count() - 1; i++) 
             {
-                //SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, movie) { TopLevel = false, TopMost = true };
-                //flowPanelTopMovies.Controls.Add(movieContainer);
-               // movieContainer.Show();
-
-                MovieContainer movieContainer = new MovieContainer(movie) { TopLevel = false, TopMost = true };
+                MovieContainer movieContainer = new MovieContainer(movies.ElementAt(i)) { TopLevel = false, TopMost = true };
                 flowAllMovies.Controls.Add(movieContainer);
                 movieContainer.Show();
             }
+
         }
     }
 }

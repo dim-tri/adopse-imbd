@@ -38,6 +38,7 @@ namespace IMBD_adopse
             MovieRuntime.Text = Movie.Duration;
             MovieYear.Text = Movie.Year.ToString();
             MovieRating.Text = Movie.Rank.ToString();
+            MovieGenre.Text = Movie.Gentre;
 
         }
     }
