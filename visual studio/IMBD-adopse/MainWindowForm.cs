@@ -154,7 +154,13 @@ namespace IMBD_adopse
                 catch (Exception ex)
                 {
                     Debug.WriteLine("Error: " + ex.Message);
-                    MessageBox.Show("Not found results", "Search Results");
+                    // MessageBox.Show("Not found results", "Search Results");
+                    SearchFormResults.searchQuery = searchBox.Text;
+                    this.MainPanel.Controls.Clear();
+                    SearchFormResults searchForm = new SearchFormResults(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                    searchForm.loadSearch2();
+                    this.MainPanel.Controls.Add(searchForm);
+                    searchForm.Show();
                 }
             }
             else { MessageBox.Show("Not found results", "Search Results"); }

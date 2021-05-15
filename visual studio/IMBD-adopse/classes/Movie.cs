@@ -438,7 +438,53 @@ namespace IMBD_adopse.classes
 
 
 
+        public List<Movie> omdbApiSearch(string query)
+        {
+            ApiClient api = new ApiClient("http://www.omdbapi.com/", "?apikey=9d652152&type=movie&t=" + query);
+            ApiClient obj = api.getData();
+        /*    DbConnection db = new DbConnection();
+            MySqlConnection conn = db.Conn;
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn;
+            MySqlDataReader reader;*/
+            if (obj.Response == "True")
+            {
+                List<Movie> movies2 = new List<Movie>();
+                //movies2.Add(new Movie { Id = 1, Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars =obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
+                Movie mov = new Movie();
+                mov.Category_id = 1;
+                mov.Gentre = obj.Genre;
+                mov.Name = obj.Title;
+                mov.Year = Int32.Parse(obj.Year);
+                // mov.Rank = Convert.ToDouble(obj.imdbRating);
+                // Debug.WriteLine("Prin to convert: " + obj.imdbRating);
+                //  Debug.WriteLine("Meta to convert: " + Double.Parse(obj.imdbRating));
+                obj.imdbRating = obj.imdbRating.Replace('.', ',');
+                mov.Rank = Double.Parse(obj.imdbRating);
+                mov.Release = obj.Released;
+                mov.Director = obj.Director;
+                mov.Stars = obj.Actors;
+                mov.Duration = obj.Runtime;
+                mov.Plot = obj.Plot;
+                mov.Photo = obj.Poster;
+                long newID = setNewMovie(mov);
+                Debug.WriteLine(newID);
+                movies2.Add(new Movie { Id = Convert.ToInt32(newID), Gentre = obj.Genre, Name = obj.Title, Year = Int32.Parse(obj.Year), Rank = Convert.ToDouble(obj.imdbRating), Release = obj.Released, Director = obj.Director, Stars = obj.Actors, Duration = obj.Runtime, Plot = obj.Plot, Photo = obj.Poster });
+             //   reader.Close();
+             //   db.connectionClose();
+                string[] actors_arr = mov.Stars.Split(',');
+                foreach (var act in actors_arr)
+                {
+                    Actor actor = new Actor();
+                    actor.Movie_id = (int)newID;
+                    actor.Name = act;
+                    actor.setNewActor(actor);
+                }
+                return movies2;
+            }
 
+            return null;
+        }
 
 
 
