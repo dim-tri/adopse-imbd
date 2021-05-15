@@ -222,5 +222,10 @@ namespace IMBD_adopse
         {
             return userGenre;
         }
+
+        private void DiscoverButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
