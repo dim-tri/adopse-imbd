@@ -239,6 +239,11 @@ namespace IMBD_adopse
         }
 
 
+        private void DiscoverButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public void getReccomendations(int uid)
         {
            

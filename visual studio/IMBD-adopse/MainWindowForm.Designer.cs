@@ -33,6 +33,7 @@ namespace IMBD_adopse
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindowForm));
             this.MainPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DiscoverButton = new System.Windows.Forms.PictureBox();
             this.watchlistBtn = new System.Windows.Forms.Button();
             this.loginState = new System.Windows.Forms.Label();
             this.ProfilePictureBox = new System.Windows.Forms.PictureBox();
@@ -44,6 +45,7 @@ namespace IMBD_adopse
             this.searchBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DiscoverButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).BeginInit();
             this.LoginMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -68,6 +70,7 @@ namespace IMBD_adopse
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
+            this.panel1.Controls.Add(this.DiscoverButton);
             this.panel1.Controls.Add(this.watchlistBtn);
             this.panel1.Controls.Add(this.loginState);
             this.panel1.Controls.Add(this.ProfilePictureBox);
@@ -79,6 +82,19 @@ namespace IMBD_adopse
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1566, 71);
             this.panel1.TabIndex = 2;
+            // 
+            // DiscoverButton
+            // 
+            this.DiscoverButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.DiscoverButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DiscoverButton.Image = global::IMBD_adopse.Properties.Resources.discover_icon;
+            this.DiscoverButton.Location = new System.Drawing.Point(216, 10);
+            this.DiscoverButton.Name = "DiscoverButton";
+            this.DiscoverButton.Size = new System.Drawing.Size(39, 37);
+            this.DiscoverButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DiscoverButton.TabIndex = 9;
+            this.DiscoverButton.TabStop = false;
+            this.DiscoverButton.Click += new System.EventHandler(this.DiscoverButton_Click);
             // 
             // watchlistBtn
             // 
@@ -166,6 +182,7 @@ namespace IMBD_adopse
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+
             this.pictureBox2.Location = new System.Drawing.Point(936, 20);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
@@ -179,11 +196,17 @@ namespace IMBD_adopse
             // 
             this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.searchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+
+            this.searchBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.searchBox.Location = new System.Drawing.Point(281, 14);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(601, 33);
             this.searchBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.searchBox.Location = new System.Drawing.Point(242, 20);
             this.searchBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(686, 34);
+
             this.searchBox.TabIndex = 1;
             // 
             // pictureBox1
@@ -214,6 +237,7 @@ namespace IMBD_adopse
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DiscoverButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProfilePictureBox)).EndInit();
             this.LoginMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -239,5 +263,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.ToolStripMenuItem ProfileMenuItem;
         public System.Windows.Forms.Label loginState;
         public System.Windows.Forms.Button watchlistBtn;
+        private System.Windows.Forms.PictureBox DiscoverButton;
     }
 }

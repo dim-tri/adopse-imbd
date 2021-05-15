@@ -73,6 +73,16 @@ namespace IMBD_adopse.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap discover_icon {
+            get {
+                object obj = ResourceManager.GetObject("discover-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap emailArtboard_2 {
             get {
                 object obj = ResourceManager.GetObject("emailArtboard 2", resourceCulture);
@@ -226,6 +236,16 @@ namespace IMBD_adopse.Properties {
         internal static System.Drawing.Bitmap logo_colorArtboard_32x {
             get {
                 object obj = ResourceManager.GetObject("logo-colorArtboard_32x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Maps_Compass_icon {
+            get {
+                object obj = ResourceManager.GetObject("Maps-Compass-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
