@@ -38,5 +38,10 @@ namespace IMBD_adopse
             MovieRating.Text = Movie.Rank.ToString();
 
         }
+
+        private void RemoveBtn_Click(object sender, EventArgs e)
+        {
+            //Remove from watchlist
+        }
     }
 }
