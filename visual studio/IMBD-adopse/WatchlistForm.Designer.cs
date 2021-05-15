@@ -39,9 +39,9 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowWatchlist.AutoScroll = true;
-            this.flowWatchlist.Location = new System.Drawing.Point(12, 35);
+            this.flowWatchlist.Location = new System.Drawing.Point(184, 35);
             this.flowWatchlist.Name = "flowWatchlist";
-            this.flowWatchlist.Size = new System.Drawing.Size(1002, 429);
+            this.flowWatchlist.Size = new System.Drawing.Size(830, 429);
             this.flowWatchlist.TabIndex = 0;
             // 
             // label1
@@ -60,6 +60,7 @@ namespace IMBD_adopse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
             this.ClientSize = new System.Drawing.Size(1026, 476);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowWatchlist);
