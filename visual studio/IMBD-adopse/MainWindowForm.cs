@@ -139,6 +139,7 @@ namespace IMBD_adopse
 
         }
 
+        //Search Button
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(searchBox.Text))
@@ -178,6 +179,7 @@ namespace IMBD_adopse
 
         }
 
+        //Logo Click
         private void HomeButton_Click(object sender, EventArgs e)
         {
 
