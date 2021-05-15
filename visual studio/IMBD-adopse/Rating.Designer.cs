@@ -45,17 +45,18 @@ namespace IMBD_adopse
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(5, 6);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.label1.Location = new System.Drawing.Point(3, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.label1.Size = new System.Drawing.Size(69, 28);
+            this.label1.Size = new System.Drawing.Size(74, 30);
             this.label1.TabIndex = 6;
             this.label1.Text = "Rating:";
             // 
             // pictureBox5
-            //
+            // 
             this.pictureBox5.Image = global::IMBD_adopse.Properties.Resources.starArtboard_164;
             this.pictureBox5.Location = new System.Drawing.Point(171, 4);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
