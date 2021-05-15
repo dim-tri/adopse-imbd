@@ -137,11 +137,19 @@ namespace IMBD_adopse
                 try
                 {
 
-                    Movie movie = new Movie();
-                    List<Movie> search = movie.DynamicSearch(searchBox.Text);
-                    if (search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
-                    if (search[0].Id == 0) { MessageBox.Show("Not found results", "Search Results"); return; }
-                    LoadMoviePage(search[0].Id);
+                    //  Movie movie = new Movie();
+                    //  List<Movie> search = movie.DynamicSearch(searchBox.Text);
+                    //   if (search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
+                    //    if (search[0].Id == 0) { MessageBox.Show("Not found results", "Search Results"); return; }
+                    //    LoadMoviePage(search[0].Id);
+
+                    SearchFormResults.searchQuery = searchBox.Text;
+                    this.MainPanel.Controls.Clear();
+                    SearchFormResults searchForm = new SearchFormResults(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                    searchForm.loadSearch();
+                    this.MainPanel.Controls.Add(searchForm);
+                    searchForm.Show();
+
                 }
                 catch (Exception ex)
                 {
