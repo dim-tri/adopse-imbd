@@ -55,6 +55,7 @@ namespace IMBD_adopse
             this.Close();
         }
 
+        //Add to Watchlist Button
         private void AddBtn_Click(object sender, EventArgs e)
         {
             WishlistMovie wishlist = new WishlistMovie();
@@ -132,9 +133,5 @@ namespace IMBD_adopse
             labelExit.ForeColor = Color.White;
         }
 
-        private void MovieTitle_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

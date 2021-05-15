@@ -14,8 +14,11 @@ namespace IMBD_adopse
     public partial class WatchlistContainer : Form
     {
         private Movie Movie;
-        public WatchlistContainer(Movie movie)
+        private MainWindowForm MainForm;
+
+        public WatchlistContainer(MainWindowForm mainForm, Movie movie)
         {
+            this.MainForm = mainForm;
             this.Movie = movie;
             InitializeComponent();
             GlimpseForm_Load();
@@ -41,7 +44,9 @@ namespace IMBD_adopse
 
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
-            //Remove from watchlist
+            WishlistMovie wishlist = new WishlistMovie();
+            if (wishlist.Remove(MainWindowForm.getUserID(), this.Movie.Id)) { MessageBox.Show("Successfully removed movie from wishlist.", "Wishlist"); }
+            MainForm.LoadWatchlistPage();
         }
     }
 }

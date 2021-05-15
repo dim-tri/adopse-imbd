@@ -53,7 +53,7 @@ namespace IMBD_adopse
         public void LoadWatchlistPage()
         {
             this.MainPanel.Controls.Clear(); //Clear Panel
-            WatchlistForm watchlistPage = new WatchlistForm(userID) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            WatchlistForm watchlistPage = new WatchlistForm(this, userID) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.MainPanel.Controls.Add(watchlistPage);
             watchlistPage.Show();
         }
@@ -62,7 +62,7 @@ namespace IMBD_adopse
         public void LoadDiscoverytPage()
         {
             this.MainPanel.Controls.Clear(); //Clear Panel
-            DiscoveryForm discoveryForm = new DiscoveryForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            DiscoveryForm discoveryForm = new DiscoveryForm(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             this.MainPanel.Controls.Add(discoveryForm);
             discoveryForm.Show();
         }

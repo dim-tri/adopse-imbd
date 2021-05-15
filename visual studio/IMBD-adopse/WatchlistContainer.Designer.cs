@@ -121,7 +121,6 @@ namespace IMBD_adopse
             // RemoveBtn
             // 
             this.RemoveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.RemoveBtn.Enabled = false;
             this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.RemoveBtn.Image = global::IMBD_adopse.Properties.Resources.heartSmall1;

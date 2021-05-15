@@ -183,7 +183,6 @@ namespace IMBD_adopse
             this.MovieTitle.Size = new System.Drawing.Size(400, 68);
             this.MovieTitle.TabIndex = 7;
             this.MovieTitle.Text = "Titlfgdhdhhdhdshgshjdsjdsgjdfsdhfdhdhfd";
-            this.MovieTitle.TextChanged += new System.EventHandler(this.MovieTitle_TextChanged);
             // 
             // panel1
             // 

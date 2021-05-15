@@ -36,11 +36,14 @@ namespace IMBD_adopse
             this.MovieDesc = new System.Windows.Forms.RichTextBox();
             this.MovieTitle = new System.Windows.Forms.RichTextBox();
             this.MovieGenre = new System.Windows.Forms.Label();
+            this.GlimpseButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GlimpseButton)).BeginInit();
             this.SuspendLayout();
             // 
             // MovieImage
             // 
+            this.MovieImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MovieImage.ImageLocation = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlY" +
     "WMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg";
             this.MovieImage.Location = new System.Drawing.Point(12, 12);
@@ -49,6 +52,7 @@ namespace IMBD_adopse
             this.MovieImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.MovieImage.TabIndex = 2;
             this.MovieImage.TabStop = false;
+            this.MovieImage.Click += new System.EventHandler(this.MovieImage_Click);
             // 
             // MovieRating
             // 
@@ -92,7 +96,7 @@ namespace IMBD_adopse
             this.MovieDesc.Location = new System.Drawing.Point(211, 150);
             this.MovieDesc.Name = "MovieDesc";
             this.MovieDesc.ReadOnly = true;
-            this.MovieDesc.Size = new System.Drawing.Size(366, 130);
+            this.MovieDesc.Size = new System.Drawing.Size(366, 99);
             this.MovieDesc.TabIndex = 14;
             this.MovieDesc.Text = "Desc";
             // 
@@ -122,12 +126,25 @@ namespace IMBD_adopse
             this.MovieGenre.TabIndex = 18;
             this.MovieGenre.Text = "Genre";
             // 
+            // GlimpseButton
+            // 
+            this.GlimpseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GlimpseButton.Image = global::IMBD_adopse.Properties.Resources.glimpse_icon;
+            this.GlimpseButton.Location = new System.Drawing.Point(538, 246);
+            this.GlimpseButton.Name = "GlimpseButton";
+            this.GlimpseButton.Size = new System.Drawing.Size(39, 36);
+            this.GlimpseButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GlimpseButton.TabIndex = 19;
+            this.GlimpseButton.TabStop = false;
+            this.GlimpseButton.Click += new System.EventHandler(this.GlimpseButton_Click);
+            // 
             // MovieContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.ClientSize = new System.Drawing.Size(589, 294);
+            this.Controls.Add(this.GlimpseButton);
             this.Controls.Add(this.MovieGenre);
             this.Controls.Add(this.MovieRating);
             this.Controls.Add(this.MovieRuntime);
@@ -140,6 +157,7 @@ namespace IMBD_adopse
             this.Name = "MovieContainer";
             this.Text = "MovieContainer";
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GlimpseButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +172,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.RichTextBox MovieDesc;
         private System.Windows.Forms.RichTextBox MovieTitle;
         private System.Windows.Forms.Label MovieGenre;
+        private System.Windows.Forms.PictureBox GlimpseButton;
     }
 }

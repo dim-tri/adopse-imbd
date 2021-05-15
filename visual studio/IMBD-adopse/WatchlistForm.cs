@@ -15,9 +15,11 @@ namespace IMBD_adopse
     public partial class WatchlistForm : Form
     {
         private int userID;
+        private MainWindowForm MainForm;
 
-        public WatchlistForm(int userid)
+        public WatchlistForm(MainWindowForm mainForm, int userid)
         {
+            this.MainForm = mainForm;
             InitializeComponent();
             sendObjHome(userid);
         }
@@ -50,7 +52,7 @@ namespace IMBD_adopse
             foreach (WishlistMovie wish in obj)
             {
                test = movie.getMovies(wish.Movie_id);
-               WatchlistContainer container = new WatchlistContainer(test[0]) { TopLevel = false, TopMost = true };                               
+               WatchlistContainer container = new WatchlistContainer(MainForm,test[0]) { TopLevel = false, TopMost = true };                               
                flowWatchlist.Controls.Add(container);
                container.Show();
                // Debug.WriteLine("\n ID: " + wish.Id + " Movie_ID: " + wish.Movie_id + " User_ID: " + wish.User_id);

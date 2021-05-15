@@ -13,11 +13,14 @@ namespace IMBD_adopse
 {
     public partial class DiscoveryForm : Form
     {
+        private MainWindowForm MainForm;
+
         private int Page = 1;
         private int LastPage = 29;
 
-        public DiscoveryForm()
+        public DiscoveryForm(MainWindowForm mainForm)
         {
+            MainForm = mainForm;
             InitializeComponent();
             LoadAllMovies();
         }
@@ -33,7 +36,7 @@ namespace IMBD_adopse
             //Create Contrainer for returned movies
             for (int i = 0; i < movies.Count() - 1; i++) 
             {
-                MovieContainer movieContainer = new MovieContainer(movies.ElementAt(i)) { TopLevel = false, TopMost = true };
+                MovieContainer movieContainer = new MovieContainer(MainForm, movies.ElementAt(i)) { TopLevel = false, TopMost = true };
                 flowAllMovies.Controls.Add(movieContainer);
                 movieContainer.Show();
 

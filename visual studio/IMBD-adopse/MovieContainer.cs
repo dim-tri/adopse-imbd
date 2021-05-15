@@ -15,9 +15,11 @@ namespace IMBD_adopse
     {
         //Movie to display
         private Movie Movie;
-       
-        public MovieContainer(Movie movie)
+        private MainWindowForm MainForm;
+
+        public MovieContainer(MainWindowForm mainForm, Movie movie)
         {
+            this.MainForm = mainForm;
             this.Movie = movie;
             InitializeComponent();
             LoadMovieInfo();
@@ -40,6 +42,17 @@ namespace IMBD_adopse
             MovieRating.Text = Movie.Rank.ToString();
             MovieGenre.Text = Movie.Gentre;
 
+        }
+
+        private void GlimpseButton_Click(object sender, EventArgs e)
+        {
+            GlimpseForm glimpse = new GlimpseForm(MainForm, Movie);
+            glimpse.Show();
+        }
+
+        private void MovieImage_Click(object sender, EventArgs e)
+        {
+            MainForm.LoadMoviePage(Movie.Id);
         }
     }
 }
