@@ -1,4 +1,4 @@
-# ADOPSE MOVIECLUB PROJECT
+# ADOPSE - MOVIECLUB PROJECT
 An IMBD-like desktop application.
 
 Μία Desktop εφαρμογή στα πλαίσια του μαθήματος Ανάπτυξη Ολοκληρωμένων Πληροφοριακών Συστημάτων.
