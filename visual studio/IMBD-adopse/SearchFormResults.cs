@@ -29,11 +29,19 @@ namespace IMBD_adopse
 
             MovieTeiApiSearch obj = new MovieTeiApiSearch(searchQuery);
             IEnumerable<Movie> movies = obj.Search();
-            foreach(Movie m in movies)
+         /*   foreach(Movie m in movies)
             {
                 SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, m) { TopLevel = false, TopMost = true };
                 searchFlowPanel.Controls.Add(movieContainer);
                 movieContainer.Show();
+            }*/
+
+            for(int i = 0; i < movies.Count()-1; i++)
+            {
+                SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, movies.ElementAt(i)) { TopLevel = false, TopMost = true };
+                searchFlowPanel.Controls.Add(movieContainer);
+                movieContainer.Show();
+
             }
 
 
