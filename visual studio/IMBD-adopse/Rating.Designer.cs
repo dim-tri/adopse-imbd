@@ -58,7 +58,7 @@ namespace IMBD_adopse
             // pictureBox5
             // 
             this.pictureBox5.Image = global::IMBD_adopse.Properties.Resources.starArtboard_164;
-            this.pictureBox5.Location = new System.Drawing.Point(171, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(172, 4);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
@@ -88,7 +88,7 @@ namespace IMBD_adopse
             // pictureBox3
             // 
             this.pictureBox3.Image = global::IMBD_adopse.Properties.Resources.starArtboard_162;
-            this.pictureBox3.Location = new System.Drawing.Point(107, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(110, 4);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
@@ -103,7 +103,7 @@ namespace IMBD_adopse
             // pictureBox2
             // 
             this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.starArtboard_163;
-            this.pictureBox2.Location = new System.Drawing.Point(139, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(141, 4);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
@@ -118,7 +118,7 @@ namespace IMBD_adopse
             // pictureBox1
             // 
             this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.starArtboard_161;
-            this.pictureBox1.Location = new System.Drawing.Point(75, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 4);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
@@ -142,7 +142,7 @@ namespace IMBD_adopse
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Rating";
-            this.Size = new System.Drawing.Size(238, 46);
+            this.Size = new System.Drawing.Size(233, 45);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Rating_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -21,5 +21,10 @@ namespace IMBD_adopse
         {
 
         }
+
+        private void rating1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
