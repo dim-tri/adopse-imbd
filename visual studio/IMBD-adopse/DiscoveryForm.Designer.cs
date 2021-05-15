@@ -84,6 +84,7 @@ namespace IMBD_adopse
             this.NextButton.TabIndex = 6;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = false;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // PrevButton
             // 
@@ -98,6 +99,7 @@ namespace IMBD_adopse
             this.PrevButton.TabIndex = 7;
             this.PrevButton.Text = "Previous";
             this.PrevButton.UseVisualStyleBackColor = false;
+            this.PrevButton.Click += new System.EventHandler(this.PrevButton_Click);
             // 
             // DiscoveryForm
             // 
