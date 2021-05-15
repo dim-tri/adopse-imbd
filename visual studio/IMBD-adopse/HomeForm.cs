@@ -95,16 +95,24 @@ namespace IMBD_adopse
             }
             else //User logged in
             {
-                 recommendedLabel.Text = "Recommended For You ";
-                 MovieTeiApiRecommends obj = new MovieTeiApiRecommends(userID);
-                 IEnumerable<Movie> mov = obj.recommends();
-                 foreach(Movie m in mov)
-                 {
-                    SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow,m) { TopLevel = false, TopMost = true };
-                    flowPanelRecommended.Controls.Add(movieContainer);
-                    movieContainer.Show();
-                }
+                try
+                {
 
+
+                    recommendedLabel.Text = "Recommended For You ";
+                    MovieTeiApiRecommends obj = new MovieTeiApiRecommends(userID);
+                    IEnumerable<Movie> mov = obj.recommends();
+                    if(mov == null) { return; }
+                    foreach (Movie m in mov)
+                    {
+                        SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, m) { TopLevel = false, TopMost = true };
+                        flowPanelRecommended.Controls.Add(movieContainer);
+                        movieContainer.Show();
+                    }
+                }catch(Exception e)
+                {
+                    Debug.WriteLine(e.Message);
+                }
 
             }
         }
