@@ -1,5 +1,7 @@
-# ADOPSE IMBD Project
+# ADOPSE MOVIECLUB PROJECT
 An IMBD-like desktop application.
+
+Μία Desktop εφαρμογή στα πλαίσια του μαθήματος Ανάπτυξη Ολοκληρωμένων Πληροφοριακών Συστημάτων.
 
 # Members
 - [Τριανταφυλλίδης Δημήτρης](https://github.com/dim-tri) 
