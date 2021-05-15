@@ -36,7 +36,7 @@ namespace IMBD_adopse
             this.MovieRuntime = new System.Windows.Forms.Label();
             this.MovieRating = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.RemoveButton = new System.Windows.Forms.Button();
+            this.RemoveBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,14 +118,22 @@ namespace IMBD_adopse
             this.panel1.Size = new System.Drawing.Size(177, 285);
             this.panel1.TabIndex = 13;
             // 
-            // RemoveButton
+            // RemoveBtn
             // 
-            this.RemoveButton.Location = new System.Drawing.Point(350, 243);
-            this.RemoveButton.Name = "RemoveButton";
-            this.RemoveButton.Size = new System.Drawing.Size(75, 23);
-            this.RemoveButton.TabIndex = 14;
-            this.RemoveButton.Text = "Remove";
-            this.RemoveButton.UseVisualStyleBackColor = true;
+            this.RemoveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.RemoveBtn.Enabled = false;
+            this.RemoveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RemoveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.RemoveBtn.Image = global::IMBD_adopse.Properties.Resources.heartSmall1;
+            this.RemoveBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.RemoveBtn.Location = new System.Drawing.Point(231, 236);
+            this.RemoveBtn.Name = "RemoveBtn";
+            this.RemoveBtn.Size = new System.Drawing.Size(122, 37);
+            this.RemoveBtn.TabIndex = 15;
+            this.RemoveBtn.Text = "Out of";
+            this.RemoveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RemoveBtn.UseVisualStyleBackColor = false;
+            this.RemoveBtn.Click += new System.EventHandler(this.RemoveBtn_Click);
             // 
             // WatchlistContainer
             // 
@@ -133,7 +141,7 @@ namespace IMBD_adopse
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.ClientSize = new System.Drawing.Size(683, 278);
-            this.Controls.Add(this.RemoveButton);
+            this.Controls.Add(this.RemoveBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MovieRating);
             this.Controls.Add(this.MovieRuntime);
@@ -159,6 +167,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label MovieRuntime;
         private System.Windows.Forms.Label MovieRating;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button RemoveButton;
+        private System.Windows.Forms.Button RemoveBtn;
     }
 }

@@ -35,7 +35,7 @@ namespace IMBD_adopse
             this.MovieYear = new System.Windows.Forms.Label();
             this.MovieDesc = new System.Windows.Forms.RichTextBox();
             this.MovieTitle = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.MovieGenre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,7 +92,7 @@ namespace IMBD_adopse
             this.MovieDesc.Location = new System.Drawing.Point(211, 150);
             this.MovieDesc.Name = "MovieDesc";
             this.MovieDesc.ReadOnly = true;
-            this.MovieDesc.Size = new System.Drawing.Size(404, 60);
+            this.MovieDesc.Size = new System.Drawing.Size(366, 130);
             this.MovieDesc.TabIndex = 14;
             this.MovieDesc.Text = "Desc";
             // 
@@ -109,26 +109,26 @@ namespace IMBD_adopse
             this.MovieTitle.TabIndex = 13;
             this.MovieTitle.Text = "Title Title";
             // 
-            // label1
+            // MovieGenre
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(518, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 23);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Genre";
+            this.MovieGenre.AutoSize = true;
+            this.MovieGenre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MovieGenre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MovieGenre.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MovieGenre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.MovieGenre.Location = new System.Drawing.Point(472, 87);
+            this.MovieGenre.Name = "MovieGenre";
+            this.MovieGenre.Size = new System.Drawing.Size(54, 23);
+            this.MovieGenre.TabIndex = 18;
+            this.MovieGenre.Text = "Genre";
             // 
             // MovieContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.ClientSize = new System.Drawing.Size(637, 294);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(589, 294);
+            this.Controls.Add(this.MovieGenre);
             this.Controls.Add(this.MovieRating);
             this.Controls.Add(this.MovieRuntime);
             this.Controls.Add(this.MovieYear);
@@ -153,6 +153,6 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label MovieYear;
         private System.Windows.Forms.RichTextBox MovieDesc;
         private System.Windows.Forms.RichTextBox MovieTitle;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label MovieGenre;
     }
 }

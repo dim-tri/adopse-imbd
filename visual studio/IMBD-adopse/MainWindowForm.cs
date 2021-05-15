@@ -62,9 +62,9 @@ namespace IMBD_adopse
         public void LoadDiscoverytPage()
         {
             this.MainPanel.Controls.Clear(); //Clear Panel
-            WatchlistForm watchlistPage = new WatchlistForm(userID) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            this.MainPanel.Controls.Add(watchlistPage);
-            watchlistPage.Show();
+            DiscoveryForm discoveryForm = new DiscoveryForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.MainPanel.Controls.Add(discoveryForm);
+            discoveryForm.Show();
         }
 
         //Clear Main Window and Load User Profile Page
@@ -197,6 +197,12 @@ namespace IMBD_adopse
             this.LoadWatchlistPage();
         }
 
+        //Discovery Button
+        private void DiscoverButton_Click(object sender, EventArgs e)
+        {
+            LoadDiscoverytPage();
+        }
+
         //Find Users Preferred Genre
         public void FindPreferredGenre(int uid) 
         {
@@ -245,12 +251,6 @@ namespace IMBD_adopse
         public string getUserGenre()
         {
             return userGenre;
-        }
-
-
-        private void DiscoverButton_Click(object sender, EventArgs e)
-        {
-
         }
 
         public void getReccomendations(int uid)

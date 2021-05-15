@@ -1,5 +1,5 @@
 ﻿
-namespace IMBD_adopse.Resources
+namespace IMBD_adopse
 {
     partial class DiscoveryForm
     {
@@ -35,8 +35,8 @@ namespace IMBD_adopse.Resources
             // 
             // flowAllMovies
             // 
-            this.flowAllMovies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.flowAllMovies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flowAllMovies.AutoScroll = true;
             this.flowAllMovies.Location = new System.Drawing.Point(12, 37);
