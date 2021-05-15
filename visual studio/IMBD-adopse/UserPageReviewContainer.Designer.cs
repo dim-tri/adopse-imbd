@@ -30,22 +30,13 @@ namespace IMBD_adopse
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.readmorelink = new System.Windows.Forms.Label();
             this.txtReview = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtMovieName = new System.Windows.Forms.Label();
-            this.readmorelink = new System.Windows.Forms.Label();
+            this.rating1 = new IMBD_adopse.Rating();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -57,6 +48,15 @@ namespace IMBD_adopse
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(376, 193);
             this.panel1.TabIndex = 0;
+            // 
+            // readmorelink
+            // 
+            this.readmorelink.AutoSize = true;
+            this.readmorelink.Location = new System.Drawing.Point(278, 159);
+            this.readmorelink.Name = "readmorelink";
+            this.readmorelink.Size = new System.Drawing.Size(82, 20);
+            this.readmorelink.TabIndex = 1;
+            this.readmorelink.Text = "Read more";
             // 
             // txtReview
             // 
@@ -71,76 +71,12 @@ namespace IMBD_adopse
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.rating1);
             this.panel2.Controls.Add(this.txtMovieName);
             this.panel2.Location = new System.Drawing.Point(9, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(376, 42);
             this.panel2.TabIndex = 1;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::IMBD_adopse.Properties.Resources.starArtboard_164;
-            this.pictureBox5.Location = new System.Drawing.Point(314, 3);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.pictureBox5.Size = new System.Drawing.Size(27, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::IMBD_adopse.Properties.Resources.starArtboard_166;
-            this.pictureBox4.Location = new System.Drawing.Point(344, 3);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.pictureBox4.Size = new System.Drawing.Size(27, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 15;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::IMBD_adopse.Properties.Resources.starArtboard_162;
-            this.pictureBox3.Location = new System.Drawing.Point(254, 3);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.pictureBox3.Size = new System.Drawing.Size(27, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::IMBD_adopse.Properties.Resources.starArtboard_163;
-            this.pictureBox2.Location = new System.Drawing.Point(284, 3);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.pictureBox2.Size = new System.Drawing.Size(27, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::IMBD_adopse.Properties.Resources.starArtboard_161;
-            this.pictureBox1.Location = new System.Drawing.Point(224, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
-            this.pictureBox1.Size = new System.Drawing.Size(27, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // txtMovieName
             // 
@@ -153,14 +89,14 @@ namespace IMBD_adopse
             this.txtMovieName.TabIndex = 0;
             this.txtMovieName.Text = "Movie Title";
             // 
-            // readmorelink
+            // rating1
             // 
-            this.readmorelink.AutoSize = true;
-            this.readmorelink.Location = new System.Drawing.Point(278, 159);
-            this.readmorelink.Name = "readmorelink";
-            this.readmorelink.Size = new System.Drawing.Size(82, 20);
-            this.readmorelink.TabIndex = 1;
-            this.readmorelink.Text = "Read more";
+            this.rating1.Location = new System.Drawing.Point(141, -2);
+            this.rating1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.rating1.Name = "rating1";
+            this.rating1.Size = new System.Drawing.Size(238, 34);
+            this.rating1.TabIndex = 2;
+            this.rating1.Load += new System.EventHandler(this.rating1_Load);
             // 
             // UserPageReviewContainer
             // 
@@ -174,11 +110,6 @@ namespace IMBD_adopse
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -189,11 +120,7 @@ namespace IMBD_adopse
         private System.Windows.Forms.Label txtReview;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label txtMovieName;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label readmorelink;
+        private Rating rating1;
     }
 }
