@@ -57,7 +57,16 @@ namespace IMBD_adopse
             this.MainPanel.Controls.Add(watchlistPage);
             watchlistPage.Show();
         }
-        
+
+        //Clear Main Window and Load Watchlist Page
+        public void LoadDiscoverytPage()
+        {
+            this.MainPanel.Controls.Clear(); //Clear Panel
+            WatchlistForm watchlistPage = new WatchlistForm(userID) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            this.MainPanel.Controls.Add(watchlistPage);
+            watchlistPage.Show();
+        }
+
         //Clear Main Window and Load User Profile Page
         public void LoadUserPage()
         {

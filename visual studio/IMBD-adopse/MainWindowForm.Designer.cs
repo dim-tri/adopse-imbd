@@ -59,10 +59,9 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MainPanel.AutoScroll = true;
             this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.MainPanel.Location = new System.Drawing.Point(0, 67);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MainPanel.Location = new System.Drawing.Point(0, 50);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1566, 929);
+            this.MainPanel.Size = new System.Drawing.Size(1370, 697);
             this.MainPanel.TabIndex = 1;
             // 
             // panel1
@@ -78,9 +77,8 @@ namespace IMBD_adopse
             this.panel1.Controls.Add(this.searchBox);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1566, 71);
+            this.panel1.Size = new System.Drawing.Size(1370, 53);
             this.panel1.TabIndex = 2;
             // 
             // DiscoverButton
@@ -88,9 +86,10 @@ namespace IMBD_adopse
             this.DiscoverButton.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.DiscoverButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DiscoverButton.Image = global::IMBD_adopse.Properties.Resources.discover_icon;
-            this.DiscoverButton.Location = new System.Drawing.Point(216, 10);
+            this.DiscoverButton.Location = new System.Drawing.Point(243, 5);
+            this.DiscoverButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DiscoverButton.Name = "DiscoverButton";
-            this.DiscoverButton.Size = new System.Drawing.Size(39, 37);
+            this.DiscoverButton.Size = new System.Drawing.Size(42, 42);
             this.DiscoverButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.DiscoverButton.TabIndex = 9;
             this.DiscoverButton.TabStop = false;
@@ -107,10 +106,9 @@ namespace IMBD_adopse
             this.watchlistBtn.ForeColor = System.Drawing.Color.White;
             this.watchlistBtn.Image = ((System.Drawing.Image)(resources.GetObject("watchlistBtn.Image")));
             this.watchlistBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.watchlistBtn.Location = new System.Drawing.Point(1117, 9);
-            this.watchlistBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.watchlistBtn.Location = new System.Drawing.Point(976, 5);
             this.watchlistBtn.Name = "watchlistBtn";
-            this.watchlistBtn.Size = new System.Drawing.Size(177, 53);
+            this.watchlistBtn.Size = new System.Drawing.Size(155, 40);
             this.watchlistBtn.TabIndex = 7;
             this.watchlistBtn.Text = "Watchlist";
             this.watchlistBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -122,9 +120,9 @@ namespace IMBD_adopse
             // 
             this.loginState.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.loginState.ForeColor = System.Drawing.Color.White;
-            this.loginState.Location = new System.Drawing.Point(1282, 21);
+            this.loginState.Location = new System.Drawing.Point(1122, 16);
             this.loginState.Name = "loginState";
-            this.loginState.Size = new System.Drawing.Size(195, 31);
+            this.loginState.Size = new System.Drawing.Size(171, 23);
             this.loginState.TabIndex = 6;
             this.loginState.Text = "Guest";
             this.loginState.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,10 +133,9 @@ namespace IMBD_adopse
             this.ProfilePictureBox.ContextMenuStrip = this.LoginMenuStrip;
             this.ProfilePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ProfilePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ProfilePictureBox.Image")));
-            this.ProfilePictureBox.Location = new System.Drawing.Point(1498, 16);
-            this.ProfilePictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ProfilePictureBox.Location = new System.Drawing.Point(1311, 12);
             this.ProfilePictureBox.Name = "ProfilePictureBox";
-            this.ProfilePictureBox.Size = new System.Drawing.Size(38, 39);
+            this.ProfilePictureBox.Size = new System.Drawing.Size(33, 29);
             this.ProfilePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ProfilePictureBox.TabIndex = 5;
             this.ProfilePictureBox.TabStop = false;
@@ -153,26 +150,26 @@ namespace IMBD_adopse
             this.ProfileMenuItem});
             this.LoginMenuStrip.Name = "contextMenuStrip1";
             this.LoginMenuStrip.ShowImageMargin = false;
-            this.LoginMenuStrip.Size = new System.Drawing.Size(108, 76);
+            this.LoginMenuStrip.Size = new System.Drawing.Size(92, 70);
             // 
             // LoginMenuItem
             // 
             this.LoginMenuItem.Name = "LoginMenuItem";
-            this.LoginMenuItem.Size = new System.Drawing.Size(107, 24);
+            this.LoginMenuItem.Size = new System.Drawing.Size(91, 22);
             this.LoginMenuItem.Text = "Login";
             this.LoginMenuItem.Click += new System.EventHandler(this.LoginMenuItem_Click);
             // 
             // RegisterMenuItem
             // 
             this.RegisterMenuItem.Name = "RegisterMenuItem";
-            this.RegisterMenuItem.Size = new System.Drawing.Size(107, 24);
+            this.RegisterMenuItem.Size = new System.Drawing.Size(91, 22);
             this.RegisterMenuItem.Text = "Register";
             this.RegisterMenuItem.Click += new System.EventHandler(this.RegisterMenuItem_Click);
             // 
             // ProfileMenuItem
             // 
             this.ProfileMenuItem.Name = "ProfileMenuItem";
-            this.ProfileMenuItem.Size = new System.Drawing.Size(107, 24);
+            this.ProfileMenuItem.Size = new System.Drawing.Size(91, 22);
             this.ProfileMenuItem.Text = "Profile";
             this.ProfileMenuItem.Click += new System.EventHandler(this.ProfileMenuItem_Click);
             // 
@@ -182,11 +179,9 @@ namespace IMBD_adopse
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-
-            this.pictureBox2.Location = new System.Drawing.Point(936, 20);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(933, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 39);
+            this.pictureBox2.Size = new System.Drawing.Size(42, 42);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -196,17 +191,10 @@ namespace IMBD_adopse
             // 
             this.searchBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.searchBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-
             this.searchBox.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.searchBox.Location = new System.Drawing.Point(281, 14);
+            this.searchBox.Location = new System.Drawing.Point(326, 12);
             this.searchBox.Name = "searchBox";
             this.searchBox.Size = new System.Drawing.Size(601, 33);
-            this.searchBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.searchBox.Location = new System.Drawing.Point(242, 20);
-            this.searchBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(686, 34);
-
             this.searchBox.TabIndex = 1;
             // 
             // pictureBox1
@@ -215,8 +203,7 @@ namespace IMBD_adopse
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(22, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(19, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(186, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -226,12 +213,11 @@ namespace IMBD_adopse
             // 
             // MainWindowForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1566, 999);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainPanel);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainWindowForm";
             this.Text = "MOVIECLUB PROJECT";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
