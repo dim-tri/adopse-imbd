@@ -29,11 +29,19 @@ namespace IMBD_adopse
 
             MovieTeiApiSearch obj = new MovieTeiApiSearch(searchQuery);
             IEnumerable<Movie> movies = obj.Search();
-         /*   foreach(Movie m in movies)
+            if(movies == null) { return; }
+           /* if(movies == null)
             {
-                SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, m) { TopLevel = false, TopMost = true };
-                searchFlowPanel.Controls.Add(movieContainer);
-                movieContainer.Show();
+                Movie obj2 = new Movie();
+                List <Movie> mylist = obj2.omdbApiSearch(searchQuery);
+                if(mylist == null) { return; }
+                foreach(Movie m in mylist)
+                {
+                    SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, m) { TopLevel = false, TopMost = true };
+                    searchFlowPanel.Controls.Add(movieContainer);
+                    movieContainer.Show();
+                }
+                return;
             }*/
 
             for(int i = 0; i < movies.Count()-1; i++)
@@ -47,6 +55,20 @@ namespace IMBD_adopse
 
         }
 
+
+        public void loadSearch2()
+        {
+            Movie obj2 = new Movie();
+            List<Movie> mylist = obj2.omdbApiSearch(searchQuery);
+            if (mylist == null) { return; }
+            foreach (Movie m in mylist)
+            {
+                SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, m) { TopLevel = false, TopMost = true };
+                searchFlowPanel.Controls.Add(movieContainer);
+                movieContainer.Show();
+            }
+
+        }
 
 
     }
