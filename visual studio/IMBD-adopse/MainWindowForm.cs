@@ -32,7 +32,7 @@ namespace IMBD_adopse
             this.MainPanel.Controls.Clear();
             HomeForm homeForm = new HomeForm(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             homeForm.setUserID(userID);
-            homeForm.loadRecommended();
+            homeForm.Recommendations();
             this.MainPanel.Controls.Add(homeForm);
             homeForm.Show();
 
@@ -96,6 +96,7 @@ namespace IMBD_adopse
                     MessageBox.Show("You are now logged out.", "Login Status");
                     //watchlistBtn.Enabled = false;
                     watchlistBtn.Visible = false;
+                    this.LoadHomePage();
                     return;
                 }
             }
@@ -222,5 +223,20 @@ namespace IMBD_adopse
         {
             return userGenre;
         }
+
+
+        public void getReccomendations(int uid)
+        {
+           
+            userID = uid;
+
+        }
+
+
+
+
+
+
+
     }
 }
