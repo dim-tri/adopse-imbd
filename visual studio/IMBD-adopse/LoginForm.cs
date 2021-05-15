@@ -59,7 +59,8 @@ namespace IMBD_adopse
                     obj2.setUserID(newLogin.Id);       
                     //obj2.watchlistBtn.Enabled = true;
                     obj2.watchlistBtn.Visible = true;
-                    obj2.FindPreferredGenre(newLogin.Id);
+                // obj2.FindPreferredGenre(newLogin.Id);
+                    obj2.getReccomendations(newLogin.Id);
                     obj2.LoadHomePage();                    
                     this.Dispose();
                     
