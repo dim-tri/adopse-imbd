@@ -1,7 +1,7 @@
 ﻿
 namespace IMBD_adopse
 {
-    partial class WatchlistForm
+    partial class SearchFormResults
     {
         /// <summary>
         /// Required designer variable.
@@ -29,47 +29,41 @@ namespace IMBD_adopse
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowWatchlist = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.searchFlowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
-            // 
-            // flowWatchlist
-            // 
-            this.flowWatchlist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowWatchlist.AutoScroll = true;
-            this.flowWatchlist.Location = new System.Drawing.Point(210, 47);
-            this.flowWatchlist.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.flowWatchlist.Name = "flowWatchlist";
-            this.flowWatchlist.Size = new System.Drawing.Size(949, 572);
-            this.flowWatchlist.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
-            this.label1.Location = new System.Drawing.Point(499, 3);
+            this.label1.Location = new System.Drawing.Point(14, 12);
             this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
-            this.label1.Size = new System.Drawing.Size(119, 39);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Watchlist";
+            this.label1.Size = new System.Drawing.Size(200, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Search Results";
             // 
-            // WatchlistForm
+            // searchFlowPanel
+            // 
+            this.searchFlowPanel.Location = new System.Drawing.Point(14, 56);
+            this.searchFlowPanel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.searchFlowPanel.Name = "searchFlowPanel";
+            this.searchFlowPanel.Size = new System.Drawing.Size(1344, 735);
+            this.searchFlowPanel.TabIndex = 1;
+            // 
+            // SearchFormResults
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.ClientSize = new System.Drawing.Size(1173, 635);
+            this.ClientSize = new System.Drawing.Size(1371, 807);
+            this.Controls.Add(this.searchFlowPanel);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.flowWatchlist);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "WatchlistForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "SearchFormResults";
+            this.Text = "Search";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -77,7 +71,7 @@ namespace IMBD_adopse
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowWatchlist;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel searchFlowPanel;
     }
 }

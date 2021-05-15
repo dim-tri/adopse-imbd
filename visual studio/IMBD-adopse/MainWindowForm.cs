@@ -32,7 +32,7 @@ namespace IMBD_adopse
             this.MainPanel.Controls.Clear();
             HomeForm homeForm = new HomeForm(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             homeForm.setUserID(userID);
-            homeForm.loadRecommended();
+            homeForm.Recommendations();
             this.MainPanel.Controls.Add(homeForm);
             homeForm.Show();
 
@@ -96,6 +96,7 @@ namespace IMBD_adopse
                     MessageBox.Show("You are now logged out.", "Login Status");
                     //watchlistBtn.Enabled = false;
                     watchlistBtn.Visible = false;
+                    this.LoadHomePage();
                     return;
                 }
             }
@@ -136,16 +137,30 @@ namespace IMBD_adopse
                 try
                 {
 
-                    Movie movie = new Movie();
-                    List<Movie> search = movie.DynamicSearch(searchBox.Text);
-                    if (search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
-                    if (search[0].Id == 0) { MessageBox.Show("Not found results", "Search Results"); return; }
-                    LoadMoviePage(search[0].Id);
+                    //  Movie movie = new Movie();
+                    //  List<Movie> search = movie.DynamicSearch(searchBox.Text);
+                    //   if (search == null) { MessageBox.Show("Not found results", "Search Results"); return; }
+                    //    if (search[0].Id == 0) { MessageBox.Show("Not found results", "Search Results"); return; }
+                    //    LoadMoviePage(search[0].Id);
+
+                    SearchFormResults.searchQuery = searchBox.Text;
+                    this.MainPanel.Controls.Clear();
+                    SearchFormResults searchForm = new SearchFormResults(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                    searchForm.loadSearch();
+                    this.MainPanel.Controls.Add(searchForm);
+                    searchForm.Show();
+
                 }
                 catch (Exception ex)
                 {
                     Debug.WriteLine("Error: " + ex.Message);
-                    MessageBox.Show("Not found results", "Search Results");
+                    // MessageBox.Show("Not found results", "Search Results");
+                    SearchFormResults.searchQuery = searchBox.Text;
+                    this.MainPanel.Controls.Clear();
+                    SearchFormResults searchForm = new SearchFormResults(this) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+                    searchForm.loadSearch2();
+                    this.MainPanel.Controls.Add(searchForm);
+                    searchForm.Show();
                 }
             }
             else { MessageBox.Show("Not found results", "Search Results"); }
@@ -223,9 +238,24 @@ namespace IMBD_adopse
             return userGenre;
         }
 
+
         private void DiscoverButton_Click(object sender, EventArgs e)
         {
 
         }
+
+        public void getReccomendations(int uid)
+        {
+           
+            userID = uid;
+
+        }
+
+
+
+
+
+
+
     }
 }

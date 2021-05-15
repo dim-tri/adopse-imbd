@@ -21,7 +21,7 @@ namespace IMBD_adopse
             MoviePage_Load();
             checkUser();
             refreshRate();
-            getActors(movieId);
+            
         }
 
         //Load Movie Information
@@ -134,24 +134,7 @@ namespace IMBD_adopse
         }
 
 
-        private void getActors(int movieId)
-        {
-           /* ListViewItem  = new ColumnHeader();
-            this.Text = "Actors";
-            actorsList.Columns.Add(ListViewItem);*/
-            actorsList.Items.Clear();
-            actorsList.View = View.Details;
-            Actor actor = new Actor();
-            List<Actor> actors = actor.getActorsSpecificMovies(movieId);
-
-            foreach (Actor act in actors)
-            {
-                actorsList.Items.Add(act.Name);
-            }
-
-
-
-        }
+        
 
         private void label10_Click(object sender, EventArgs e)
         {

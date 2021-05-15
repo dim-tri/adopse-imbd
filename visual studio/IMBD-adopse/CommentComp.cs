@@ -27,5 +27,10 @@ namespace IMBD_adopse
             num.Text = number.ToString();
             commtext.Text = comment;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

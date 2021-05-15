@@ -43,7 +43,8 @@ namespace IMBD_adopse
             // 
             this.MovieImage.ImageLocation = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlY" +
     "WMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg";
-            this.MovieImage.Location = new System.Drawing.Point(1, 5);
+            this.MovieImage.Location = new System.Drawing.Point(9, 7);
+            this.MovieImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieImage.Name = "MovieImage";
             this.MovieImage.Size = new System.Drawing.Size(182, 268);
             this.MovieImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -52,14 +53,15 @@ namespace IMBD_adopse
             // 
             // MovieTitle
             // 
-            this.MovieTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(100)))));
+            this.MovieTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.MovieTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MovieTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MovieTitle.ForeColor = System.Drawing.SystemColors.Window;
-            this.MovieTitle.Location = new System.Drawing.Point(189, 12);
+            this.MovieTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.MovieTitle.Location = new System.Drawing.Point(216, 7);
+            this.MovieTitle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieTitle.Name = "MovieTitle";
             this.MovieTitle.ReadOnly = true;
-            this.MovieTitle.Size = new System.Drawing.Size(404, 65);
+            this.MovieTitle.Size = new System.Drawing.Size(462, 87);
             this.MovieTitle.TabIndex = 8;
             this.MovieTitle.Text = "Title Title";
             // 
@@ -67,58 +69,64 @@ namespace IMBD_adopse
             // 
             this.MovieDesc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
             this.MovieDesc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MovieDesc.ForeColor = System.Drawing.Color.White;
-            this.MovieDesc.Location = new System.Drawing.Point(189, 143);
+            this.MovieDesc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MovieDesc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.MovieDesc.Location = new System.Drawing.Point(216, 191);
+            this.MovieDesc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MovieDesc.Name = "MovieDesc";
             this.MovieDesc.ReadOnly = true;
-            this.MovieDesc.Size = new System.Drawing.Size(404, 60);
+            this.MovieDesc.Size = new System.Drawing.Size(462, 80);
             this.MovieDesc.TabIndex = 9;
             this.MovieDesc.Text = "Desc";
             // 
             // MovieYear
             // 
             this.MovieYear.AutoSize = true;
-            this.MovieYear.ForeColor = System.Drawing.Color.White;
-            this.MovieYear.Location = new System.Drawing.Point(189, 80);
+            this.MovieYear.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MovieYear.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.MovieYear.Location = new System.Drawing.Point(216, 107);
             this.MovieYear.Name = "MovieYear";
-            this.MovieYear.Size = new System.Drawing.Size(29, 15);
+            this.MovieYear.Size = new System.Drawing.Size(42, 23);
             this.MovieYear.TabIndex = 10;
             this.MovieYear.Text = "Year";
             // 
             // MovieRuntime
             // 
             this.MovieRuntime.AutoSize = true;
-            this.MovieRuntime.ForeColor = System.Drawing.Color.White;
-            this.MovieRuntime.Location = new System.Drawing.Point(248, 80);
+            this.MovieRuntime.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MovieRuntime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.MovieRuntime.Location = new System.Drawing.Point(283, 107);
             this.MovieRuntime.Name = "MovieRuntime";
-            this.MovieRuntime.Size = new System.Drawing.Size(52, 15);
+            this.MovieRuntime.Size = new System.Drawing.Size(74, 23);
             this.MovieRuntime.TabIndex = 11;
             this.MovieRuntime.Text = "Runtime";
             // 
             // MovieRating
             // 
             this.MovieRating.AutoSize = true;
-            this.MovieRating.ForeColor = System.Drawing.Color.White;
-            this.MovieRating.Location = new System.Drawing.Point(334, 80);
+            this.MovieRating.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MovieRating.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
+            this.MovieRating.Location = new System.Drawing.Point(382, 107);
             this.MovieRating.Name = "MovieRating";
-            this.MovieRating.Size = new System.Drawing.Size(41, 15);
+            this.MovieRating.Size = new System.Drawing.Size(59, 23);
             this.MovieRating.TabIndex = 12;
             this.MovieRating.Text = "Rating";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(123)))), ((int)(((byte)(156)))));
-            this.panel1.Location = new System.Drawing.Point(589, -2);
+            this.panel1.Location = new System.Drawing.Point(689, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(177, 285);
+            this.panel1.Size = new System.Drawing.Size(202, 380);
             this.panel1.TabIndex = 13;
             // 
             // WatchlistContainer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(53)))), ((int)(((byte)(87)))));
-            this.ClientSize = new System.Drawing.Size(756, 278);
+            this.ClientSize = new System.Drawing.Size(781, 371);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MovieRating);
             this.Controls.Add(this.MovieRuntime);
@@ -127,6 +135,7 @@ namespace IMBD_adopse
             this.Controls.Add(this.MovieTitle);
             this.Controls.Add(this.MovieImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "WatchlistContainer";
             this.Text = "WatchlistContainer";
             ((System.ComponentModel.ISupportInitialize)(this.MovieImage)).EndInit();

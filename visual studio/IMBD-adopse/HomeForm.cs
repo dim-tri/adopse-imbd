@@ -76,5 +76,45 @@ namespace IMBD_adopse
             userID = id;
         }
 
+
+        public void Recommendations()
+        {
+
+            if (userID == 0)//Guest
+            {
+                recommendedLabel.Text = "Featured Movies";
+                //load 10 movies
+                Movie obj = new Movie();
+                List<Movie> newMovies = obj.getMovies(20, "desc");
+                for (int i = 10; i < 20; i++)
+                {
+                    SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, newMovies[i]) { TopLevel = false, TopMost = true };
+                    flowPanelRecommended.Controls.Add(movieContainer);
+                    movieContainer.Show();
+                }
+            }
+            else //User logged in
+            {
+                try
+                {
+
+
+                    recommendedLabel.Text = "Recommended For You ";
+                    MovieTeiApiRecommends obj = new MovieTeiApiRecommends(userID);
+                    IEnumerable<Movie> mov = obj.recommends();
+                    if(mov == null) { return; }
+                    foreach (Movie m in mov)
+                    {
+                        SingleMovieContainer movieContainer = new SingleMovieContainer(MainWindow, m) { TopLevel = false, TopMost = true };
+                        flowPanelRecommended.Controls.Add(movieContainer);
+                        movieContainer.Show();
+                    }
+                }catch(Exception e)
+                {
+                    Debug.WriteLine(e.Message);
+                }
+
+            }
+        }
     }
 }

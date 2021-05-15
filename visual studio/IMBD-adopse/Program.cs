@@ -20,7 +20,14 @@ namespace IMBD_adopse
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindowForm());
- 
+           /* MovieTeiApiRecommends obj = new MovieTeiApiRecommends(35);
+            IEnumerable<Movie> test = obj.recommends();
+            foreach(Movie m in test)
+            {
+                Debug.WriteLine(m.Name);
+            }*/
+
+
 
         }
     }
