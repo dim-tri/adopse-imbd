@@ -35,8 +35,8 @@ Leave your impressions and reviews for any movie while reading through other use
 | Friend List    | 10%   | Medium   |  
 | Search Filters | 30%   | High     | 
 
-## 📚 For more info, have a look at our [WIKI](https://github.com/dim-tri/adopse-imbd/wiki)
+***
+### 📚 For more info, have a look at our [WIKI](https://github.com/dim-tri/adopse-imbd/wiki)
+### ⚖️ MIT [Licence](https://github.com/dim-tri/adopse-imbd/blob/main/LICENSE)
 
-## ⚖️ MIT Licence
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 ![Logo](/development/images/cinema-vector.png)
