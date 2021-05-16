@@ -207,5 +207,113 @@ namespace IMBD_adopse.classes
 
 
 
+        public Users getUserAll(int id)
+        {
+            try
+            {
+                Users user = new Users();
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+                string sql = "SELECT * FROM users where id = @id";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Prepare();
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (!reader.HasRows) { return null; }
+                while (reader.Read())
+                {
+                    user.id = (int)reader[0];
+                    user.name = (string)reader[1];
+                    user.surname = (string)reader[2];
+                    user.email = (string)reader[3];
+                    user.password = (string)reader[4];
+                    user.role = (string)reader[5];
+                    user.username = (string)reader[6];
+                    user.loggedin = (string)reader[7];
+                }
+                reader.Close();
+                db.connectionClose();
+                return user;
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            return null;
+        }
+
+
+        public Boolean UpdateUserData(Users obj)
+        {
+            try
+            {
+                Users user = obj;
+               // Debug.WriteLine("ID: " + user.Id);
+            //    Debug.WriteLine("User: " + user.Password);
+                DbConnection db = new DbConnection();
+                MySqlConnection conn = db.Conn;
+            
+                if(obj.name != null)
+                {
+                    string sql = "UPDATE users set name = @name where id = @id";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", obj.id);
+                    cmd.Parameters.AddWithValue("@name", obj.name);
+                    cmd.Prepare();
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (obj.surname != null)
+                {
+                    string sql = "UPDATE users set surname = @sur where id = @id";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", obj.id);
+                    cmd.Parameters.AddWithValue("@sur", obj.surname);
+                    cmd.Prepare();
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (obj.email != null)
+                {
+
+                    string sql = "UPDATE users set email = @email where id = @id";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", obj.id);
+                    cmd.Parameters.AddWithValue("@email", obj.email);
+                    cmd.Prepare();
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (obj.username != null)
+                {
+                    string sql = "UPDATE users set username = @user where id = @id";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", obj.id);
+                    cmd.Parameters.AddWithValue("@user", obj.username);
+                    cmd.Prepare();
+                    cmd.ExecuteNonQuery();
+                }
+
+                if (obj.password != null)
+                {
+                    string sql = "UPDATE users set password = @pass where id = @id";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@id", obj.id);
+                    cmd.Parameters.AddWithValue("@pass", obj.password);
+                    cmd.Prepare();
+                    cmd.ExecuteNonQuery();
+                }
+
+                db.connectionClose();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                Debug.WriteLine("Error: " + ex.Message + "\n" + "Code: " + ex.Code);
+            }
+            return false;
+        }
+
+
     }
 }
