@@ -50,6 +50,7 @@ namespace IMBD_adopse
             this.MovieImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.MovieImage.TabIndex = 1;
             this.MovieImage.TabStop = false;
+            this.MovieImage.Click += new System.EventHandler(this.MovieImage_Click);
             // 
             // MovieTitle
             // 

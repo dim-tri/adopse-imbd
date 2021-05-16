@@ -48,5 +48,10 @@ namespace IMBD_adopse
             if (wishlist.Remove(MainWindowForm.getUserID(), this.Movie.Id)) { MessageBox.Show("Successfully removed movie from wishlist.", "Wishlist"); }
             MainForm.LoadWatchlistPage();
         }
+
+        private void MovieImage_Click(object sender, EventArgs e)
+        {
+            MainForm.LoadMoviePage(Movie.Id);
+        }
     }
 }
