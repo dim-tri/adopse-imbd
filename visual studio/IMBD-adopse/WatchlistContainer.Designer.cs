@@ -42,6 +42,7 @@ namespace IMBD_adopse
             // 
             // MovieImage
             // 
+            this.MovieImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MovieImage.ImageLocation = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlY" +
     "WMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg";
             this.MovieImage.Location = new System.Drawing.Point(8, 5);
