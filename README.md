@@ -17,9 +17,13 @@ Back End, Client Side Developer
 UI/UX, Client Side Developer
 
 # ![vc1](/development/images/cine-vector1.png)  Movie Information
+Find any information you desire for all your favourite movies! Our database includes hundrends of movies and is always up to date with the latest and greatest! OMDb API ensures that we deliver you information even if the data is not available in our database. 
 # ![vc1](/development/images/cine-vector2.png)  Movie Discovery
+Explore all the movies included in our database, see the top rated and newly released films! Looking for something specific? Use the search function and find any specific movie!
 # ![vc1](/development/images/cine-vector4.png)  Movie Recommendation
+Don't know what to watch? Our recommendation algorithm with deliver you personalized suggestions that are sure to suprise you!
 # ![vc1](/development/images/cine-vector5.png)  Watchlist
+Not enough time? Save a personal list of movies to watch any time you like. 
 # ![vc1](/development/images/cine-vector6.png)  Reviews/Comments
-
+Leave your impressions and reviews for any movie while reading through other users comments!
 ![Logo](/development/images/cinema-vector.png)
