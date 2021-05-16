@@ -12,9 +12,20 @@ namespace IMBD_adopse
 {
     public partial class UserPageReviewContainer : UserControl
     {
-        public UserPageReviewContainer()
+        private string comment;
+        private double rank;
+        private string movie_name;
+
+        public UserPageReviewContainer(string name,string comm,double rank)
         {
             InitializeComponent();
+            this.comment = comm;
+            this.movie_name = name;
+            this.rank = rank;
+            txtReview.Text = this.comment;
+            txtMovieName.Text = this.movie_name;
+            rating1.setDefaultValue(this.rank);
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
