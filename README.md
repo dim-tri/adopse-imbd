@@ -1,7 +1,7 @@
 ![Logo](/development/images/MovieClub-Logo.png)
 
 ## 📽️ MOVIECLUB Project
-An IMBD-like client application that aims to bring the movie discovery and information searching abilities of the IMBD website to the desktop enviroment. Developed by a team of 4 students as part of the [Development of Large Software Systems](https://www.iee.ihu.gr/en/course/1948/) course of the [International Hellenic University](https://www.ihu.gr/).\
+An IMBD-like client application that aims to bring the movie discovery and information searching abilities of the IMBD website to the desktop enviroment. Developed by a team of 4 students as part of the [Development of Large Software Systems](https://www.iee.ihu.gr/en/course/1948/) course of the [International Hellenic University](https://www.ihu.gr/).
 
 ![csharp](https://github.com/abranhe/programming-languages-logos/blob/master/src/csharp/csharp_64x64.png)
 ![php](https://github.com/abranhe/programming-languages-logos/blob/master/src/php/php_64x64.png)
@@ -26,4 +26,17 @@ Don't know what to watch? Our recommendation algorithm with deliver you personal
 Not enough time? Save a personal list of movies to watch any time you like. 
 # ![vc1](/development/images/cine-vector6.png)  Reviews/Comments
 Leave your impressions and reviews for any movie while reading through other users comments!
+
+## 🚧 Roadmap
+
+| Feature        | State | Priority |
+|----------------|-------|----------|
+| Dark Mode      | 60%   | Low      | 
+| Friend List    | 10%   | Medium   |  
+| Search Filters | 30%   | High     | 
+
+## 📚 For more indo, have a look at our [WIKI](https://github.com/dim-tri/adopse-imbd/wiki)
+
+## ⚖️ MIT Licence
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 ![Logo](/development/images/cinema-vector.png)
